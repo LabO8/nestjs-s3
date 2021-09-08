@@ -10,6 +10,9 @@
   <a href="https://nestjs.com" target="_blank">
     <img src="https://img.shields.io/badge/built%20with-NestJs-red.svg" alt="Built with NestJS">
   </a>
+
+![master](https://github.com/LabO8/nestjs-s3/actions/workflows/test.yml/badge.svg?branch=master)
+
 </div>
 
 ## Change Log
