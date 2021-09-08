@@ -1,28 +1,16 @@
-<h1 align="center"></h1>
-
 <div align="center">
   <a href="http://nestjs.com/" target="_blank">
-    <img src="https://nestjs.com/img/logo_text.svg" width="150" alt="Nest Logo" />
+    <img src="https://nestjs.com/img/logo_text.svg" width="300" alt="Nest Logo" />
   </a>
 </div>
 
-<h3 align="center">NestJS npm Package Starter</h3>
+<h3 align="center">NestJS Amazon S3 module</h3>
 
 <div align="center">
   <a href="https://nestjs.com" target="_blank">
     <img src="https://img.shields.io/badge/built%20with-NestJs-red.svg" alt="Built with NestJS">
   </a>
 </div>
-
-### Installation
-
-1. Clone the repo
-2. Run yarn install
-
-```bash
-cd nestjs-s3
-npm install
-```
 
 ## Change Log
 
@@ -32,10 +20,27 @@ See [Changelog](CHANGELOG.md) for more information.
 
 Contributions welcome! See [Contributing](CONTRIBUTING.md).
 
-## Author
+## Authors
 
-**John Biundo (Y Prospect on [Discord](https://discord.gg/G7Qnnhy))**
+- **Martin Andreev <martin.andreev@lab08.com>**
+- **Dimitar Dishev <dishev@lab08.com>**
 
 ## License
 
 Licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Development
+
+1. Clone the repo
+2. Run yarn install
+
+```bash
+cd nestjs-s3
+yarn install
+```
+
+## Running tests
+
+```bash
+yarn test
+```
