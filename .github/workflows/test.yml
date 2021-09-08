@@ -12,5 +12,7 @@ jobs:
           node-version: '14'
           cache: 'yarn'
       - run: yarn install
-      - name: Jest tests
+      - name: Linst stage
+        run: yarn lint
+      - name: Test stage
         run: yarn test
