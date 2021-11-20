@@ -1,8 +1,8 @@
 {
-  "name": "@nestjsplus/nestjs-package-starter",
-  "version": "1.0.0",
-  "description": "NestJS npm package starter",
-  "author": "John Biundo <johnfbiundo@gmail.com>",
+  "name": "@lab08/nestjs-s3",
+  "version": "0.1.0",
+  "description": "NestJs module to enable connecting to s3 buckets",
+  "author": "Martin Andreev <martinandreev@lab08.com>",
   "license": "MIT",
   "readmeFilename": "README.md",
   "main": "dist/test.js",
@@ -23,16 +23,17 @@
     "postinstall": "npx husky install"
   },
   "keywords": [
-    "nestjs"
+    "nestjs",
+    "s3"
   ],
   "publishConfig": {
     "access": "public"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/nestjsplus/nestjs-package-starter"
+    "url": "https://github.com/LabO8/nestjs-s3"
   },
-  "bugs": "https://github.com/nestjsplus/nestjs-package-starter",
+  "bugs": "https://github.com/LabO8/nestjs-s3",
   "peerDependencies": {
     "@nestjs/common": "^8.0.0"
   },
