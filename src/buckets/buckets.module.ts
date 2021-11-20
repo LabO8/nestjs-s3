@@ -1,7 +1,9 @@
-import { Module } from '@nestjs/common';
+import { Module, Provider } from '@nestjs/common';
 import { BucketsService } from './buckers.service';
 
+const sharedProviders: Provider[] = [BucketsService];
 @Module({
-  exports: [BucketsService],
+  providers: [...sharedProviders],
+  exports: [...sharedProviders],
 })
 export class BucketsModule {}
