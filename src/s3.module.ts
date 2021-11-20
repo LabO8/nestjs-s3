@@ -1,9 +1,12 @@
 import { DynamicModule, Module } from '@nestjs/common';
-import { S3Config, S3AsyncConfig } from './types';
-import { createS3ServiceProvider } from './s3-service.factory';
+import { BucketsModule } from './buckets/buckets.module';
 import { S3_CONFIG } from './constants';
+import { createS3ServiceProvider } from './s3-service.factory';
+import { S3AsyncConfig, S3Config } from './types';
 
-@Module({})
+@Module({
+  imports: [BucketsModule],
+})
 export class S3Module {
   static forRoot(config: S3Config): DynamicModule {
     return {

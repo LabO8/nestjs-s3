@@ -37,8 +37,9 @@
     "@nestjs/common": "^8.0.0"
   },
   "dependencies": {
-    "@aws-sdk/client-s3": "^3.30.0",
-    "@aws-sdk/s3-request-presigner": "^3.30.0"
+    "@aws-sdk/client-s3": "^3.34.0",
+    "@aws-sdk/node-http-handler": "^3.34.0",
+    "@aws-sdk/s3-request-presigner": "^3.34.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^13.1.0",
@@ -73,7 +74,7 @@
   },
   "lint-staged": {
     "*.ts": [
-      "npx lint --fix",
+      "yarn lint --fix",
       "prettier --write"
     ],
     "*.scss": [
