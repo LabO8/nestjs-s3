@@ -47,3 +47,7 @@ yarn install
 ```bash
 yarn test
 ```
+
+## Docs
+
+- [Installation](docs/install.md)
