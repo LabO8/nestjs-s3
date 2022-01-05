@@ -3,4 +3,5 @@ export type S3Config = {
   accessKeyId: string;
   secretAccessKey: string;
   prefix?: string;
+  endPoint?: string;
 };

@@ -1,15 +1,17 @@
 import { DynamicModule, Global, Module, Provider } from '@nestjs/common';
-import { BucketsModule } from './buckets/buckets.module';
 import { S3_CONFIG } from './constants';
 import { createS3ServiceProvider } from './s3-service.factory';
+import { BucketsService, ObjectsService } from './services';
 import { S3AsyncConfig, S3Config } from './types';
+
+const proviers: Provider[] = [createS3ServiceProvider(), BucketsService, ObjectsService];
 
 const createSharedProviders = (config: S3Config): Provider[] => [
   {
     provide: S3_CONFIG,
     useValue: config,
   },
-  createS3ServiceProvider(),
+  ...proviers,
 ];
 
 const createSharedProvidersAsync = (provider: S3AsyncConfig): Provider[] => [
@@ -18,19 +20,16 @@ const createSharedProvidersAsync = (provider: S3AsyncConfig): Provider[] => [
     useFactory: provider.useFactory,
     inject: provider.inject || [],
   },
-  createS3ServiceProvider(),
+  ...proviers,
 ];
 
 @Global()
-@Module({
-  imports: [BucketsModule],
-})
+@Module({})
 export class S3Module {
   static forRoot(config: S3Config): DynamicModule {
     return {
       module: S3Module,
       global: true,
-      imports: [BucketsModule],
       providers: [...createSharedProviders(config)],
       exports: [...createSharedProviders(config)],
     };

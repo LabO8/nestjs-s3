@@ -8,8 +8,7 @@ module.exports = {
   collectCoverage: true,
   coverageDirectory: 'coverage',
   errorOnDeprecated: false,
-  // A path to a module which exports an async function that is triggered once before all test suites
-  // globalSetup: null,
+  globalSetup: './tests/jest.setup.js',
 
   // A path to a module which exports an async function that is triggered once after all test suites
   // globalTeardown: null,
@@ -18,9 +17,7 @@ module.exports = {
   // globals: {},
 
   resetMocks: true,
-  roots: [
-    './tests'
-  ],
+  roots: ['./tests'],
 
   // Allows you to use a custom runner instead of Jest's default test runner
   // runner: "jest-runner",
@@ -61,9 +58,7 @@ module.exports = {
   transform: {
     '^.+\\.(ts|tsx)?$': 'ts-jest',
   },
-  coveragePathIgnorePatterns: [
-    'index.ts'
-  ]
+  coveragePathIgnorePatterns: ['index.ts'],
 
   // Setting this value to "fake" allows the use of fake timers for functions such as "setTimeout"
   // timers: "real",
