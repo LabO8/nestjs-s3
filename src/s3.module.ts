@@ -1,10 +1,16 @@
 import { DynamicModule, Global, Module, Provider } from '@nestjs/common';
 import { S3_CONFIG } from './constants';
 import { createS3ServiceProvider } from './s3-service.factory';
-import { BucketsService, ObjectsService } from './services';
+import { BucketsService, ObjectsService, PrefixService, PreSignedUrlService } from './services';
 import { S3AsyncConfig, S3Config } from './types';
 
-const proviers: Provider[] = [createS3ServiceProvider(), BucketsService, ObjectsService];
+const proviers: Provider[] = [
+  createS3ServiceProvider(),
+  BucketsService,
+  ObjectsService,
+  PrefixService,
+  PreSignedUrlService,
+];
 
 const createSharedProviders = (config: S3Config): Provider[] => [
   {

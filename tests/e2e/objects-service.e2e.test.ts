@@ -1,6 +1,7 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import * as fs from 'fs';
 import * as path from 'path';
+import { Stream } from 'stream';
 import { v4 as uuidv4 } from 'uuid';
 import { BucketsService, ObjectsService, S3Module } from '../../src';
 
@@ -11,7 +12,7 @@ describe('Object service', () => {
 
   const bucketName = uuidv4();
   const testPath = path.resolve(__dirname, 'data');
-  const testFiles = ['test.txt', 'test-file-path.txt'];
+  const testFiles = ['test.txt', 'test-file-path.txt', 'test-get.txt'];
 
   beforeAll(async () => {
     testingModule = await Test.createTestingModule({
@@ -34,10 +35,6 @@ describe('Object service', () => {
   afterAll(async () => {
     await objectService.deleteObjects(bucketName, testFiles);
     await bucketService.delete(bucketName);
-  });
-
-  it('should be able to prefix a file based on configuration', async () => {
-    expect(objectService.prefixFile('test.txt')).toEqual('test/test.txt');
   });
 
   it('should be able to upload a file from a buffer to a bucket', async () => {
@@ -80,5 +77,14 @@ describe('Object service', () => {
     ]);
 
     expect(result).not.toEqual(null);
+  });
+
+  it('should be get an object that exists from a existing bucket', async () => {
+    const remote = 'test-get.txt';
+    await objectService.putObjectFromPath(bucketName, path.resolve(testPath, 'test.txt'), remote);
+
+    const object = await objectService.getObject(bucketName, remote);
+
+    expect(object.Body).toBeInstanceOf(Stream);
   });
 });
