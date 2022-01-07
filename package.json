@@ -1,7 +1,7 @@
 {
   "name": "@lab08/nestjs-s3",
-  "version": "0.1.0",
-  "description": "NestJs module to enable connecting to s3 buckets",
+  "version": "0.2.0",
+  "description": "NestJs library that lets you manipulate objects and buckets in AWS S3",
   "author": "Martin Andreev <martinandreev@lab08.com>",
   "license": "MIT",
   "readmeFilename": "README.md",
