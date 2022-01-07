@@ -1,6 +1,6 @@
 import { S3Client } from '@aws-sdk/client-s3';
 import { Test } from '@nestjs/testing';
-import { S3Config, S3Module, S3_SERVICE } from '../src';
+import { S3Config, S3Module, S3_SERVICE } from '../../src';
 
 describe('S3Module', () => {
   it('should create the s3 service with the passed settings', async () => {

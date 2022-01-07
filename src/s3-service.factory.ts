@@ -8,6 +8,7 @@ export const createS3ServiceProvider = (): Provider => ({
   inject: [S3_CONFIG],
   useFactory: (config: S3Config) =>
     new S3Client({
+      endpoint: config.endPoint ?? null,
       region: config.region,
       credentials: {
         accessKeyId: config.accessKeyId,

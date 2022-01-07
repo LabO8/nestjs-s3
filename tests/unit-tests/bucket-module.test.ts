@@ -1,6 +1,6 @@
 import { S3Client } from '@aws-sdk/client-s3';
 import { Test, TestingModule } from '@nestjs/testing';
-import { BucketsModule, BucketsService, S3Module, S3_SERVICE } from '../src';
+import { BucketsService, S3Module, S3_SERVICE } from '../../src';
 
 describe('Bucket module', () => {
   let testingModule!: TestingModule;
@@ -15,7 +15,6 @@ describe('Bucket module', () => {
           accessKeyId: 'test',
           secretAccessKey: 'test',
         }),
-        BucketsModule,
       ],
     }).compile();
 
