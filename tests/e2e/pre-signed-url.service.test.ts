@@ -1,11 +1,11 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { v4 as uuidv4 } from 'uuid';
 import { S3Module } from '../../src/s3.module';
-import { BucketsService, PreSignedUrlService } from '../../src/services';
+import { BucketsService, SignedUrlService } from '../../src/services';
 
 describe('Pre signed url service', () => {
   let testingModule!: TestingModule;
-  let presignedUrlService!: PreSignedUrlService;
+  let presignedUrlService!: SignedUrlService;
   let bucketService!: BucketsService;
 
   const testBucket = uuidv4();
@@ -21,7 +21,7 @@ describe('Pre signed url service', () => {
       ],
     }).compile();
 
-    presignedUrlService = testingModule.get(PreSignedUrlService);
+    presignedUrlService = testingModule.get(SignedUrlService);
     bucketService = testingModule.get(BucketsService);
 
     await bucketService.create(testBucket);

@@ -8,22 +8,28 @@ import {
 import { getSignedUrl } from '@aws-sdk/s3-request-presigner';
 import { Inject, Injectable } from '@nestjs/common';
 import { DEFAULT_EXPIRES_IN, S3_SERVICE } from '../constants';
-import { PutSignedUrl } from '../types';
+import { DeleteObjectOptions, DeleteObjectsOptions, GetObjectOptions, PutObjectOptions, PutSignedUrl } from '../types';
 import { PrefixService } from './prefix.service';
 
 @Injectable()
-export class PreSignedUrlService {
+export class SignedUrlService {
   public constructor(
     @Inject(S3_SERVICE) private readonly client: S3Client,
     private readonly prefixService: PrefixService,
   ) {}
 
-  async getPutSignedUrl(bucket: string, remote: string, expiresIn: number = DEFAULT_EXPIRES_IN): Promise<PutSignedUrl> {
+  async getPutSignedUrl(
+    bucket: string,
+    remote: string,
+    expiresIn: number = DEFAULT_EXPIRES_IN,
+    options?: PutObjectOptions,
+  ): Promise<PutSignedUrl> {
     const prefixedRemote = this.prefixService.prefix(remote);
 
     const command = new PutObjectCommand({
       Bucket: bucket,
       Key: prefixedRemote,
+      ...options,
     });
 
     const preSignedUrl = await getSignedUrl(this.client, command, {
@@ -36,12 +42,18 @@ export class PreSignedUrlService {
     };
   }
 
-  async getSignedUrl(bucket: string, remote: string, expiresIn: number = DEFAULT_EXPIRES_IN): Promise<string> {
+  async getSignedUrl(
+    bucket: string,
+    remote: string,
+    expiresIn: number = DEFAULT_EXPIRES_IN,
+    options?: GetObjectOptions,
+  ): Promise<string> {
     const prefixedRemote = this.prefixService.prefix(remote);
 
     const command = new GetObjectCommand({
       Bucket: bucket,
       Key: prefixedRemote,
+      ...options,
     });
 
     const preSignedUrl = await getSignedUrl(this.client, command, {
@@ -51,12 +63,18 @@ export class PreSignedUrlService {
     return preSignedUrl;
   }
 
-  async getDeleteSignedUrl(bucket: string, remote: string, expiresIn: number = DEFAULT_EXPIRES_IN): Promise<string> {
+  async getDeleteSignedUrl(
+    bucket: string,
+    remote: string,
+    expiresIn: number = DEFAULT_EXPIRES_IN,
+    options?: DeleteObjectOptions,
+  ): Promise<string> {
     const prefixedRemote = this.prefixService.prefix(remote);
 
     const command = new DeleteObjectCommand({
       Bucket: bucket,
       Key: prefixedRemote,
+      ...options,
     });
 
     const preSignedUrl = await getSignedUrl(this.client, command, {
@@ -70,6 +88,7 @@ export class PreSignedUrlService {
     bucket: string,
     remotes: string[],
     expiresIn: number = DEFAULT_EXPIRES_IN,
+    options?: DeleteObjectsOptions,
   ): Promise<string> {
     const prefixedRemotes = remotes.map((r) => ({
       Key: this.prefixService.prefix(r),
@@ -80,6 +99,7 @@ export class PreSignedUrlService {
       Delete: {
         Objects: prefixedRemotes,
       },
+      ...options,
     });
 
     const preSignedUrl = await getSignedUrl(this.client, command, {

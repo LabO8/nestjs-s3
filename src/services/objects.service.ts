@@ -1,21 +1,18 @@
 import {
   DeleteObjectCommand,
-  DeleteObjectCommandInput,
   DeleteObjectOutput,
   DeleteObjectsCommand,
-  DeleteObjectsCommandInput,
   DeleteObjectsOutput,
   GetObjectCommand,
-  GetObjectCommandInput,
   GetObjectOutput,
   PutObjectCommand,
-  PutObjectCommandInput,
   PutObjectOutput,
   S3Client,
 } from '@aws-sdk/client-s3';
 import { Inject, Injectable } from '@nestjs/common';
 import * as fs from 'fs';
 import { S3_SERVICE } from '../constants';
+import { DeleteObjectOptions, DeleteObjectsOptions, GetObjectOptions, PutObjectOptions } from '../types';
 import { PrefixService } from './prefix.service';
 
 @Injectable()
@@ -29,7 +26,7 @@ export class ObjectsService {
     bucket: string,
     body: Buffer,
     remote: string,
-    options: Omit<PutObjectCommandInput, 'Bucket' | 'Body' | 'Key'> = {},
+    options?: PutObjectOptions,
   ): Promise<PutObjectOutput> {
     return this.client.send(
       new PutObjectCommand({
@@ -45,7 +42,7 @@ export class ObjectsService {
     bucket: string,
     path: string,
     remote: string,
-    options: Omit<PutObjectCommandInput, 'Bucket' | 'Body' | 'Key'> = {},
+    options?: PutObjectOptions,
   ): Promise<PutObjectOutput> {
     const buffer = fs.readFileSync(path);
 
@@ -55,7 +52,7 @@ export class ObjectsService {
   public async deleteObject(
     bucket: string,
     remote: string,
-    options: Omit<DeleteObjectCommandInput, 'Bucket' | 'Key'> = {},
+    options?: DeleteObjectOptions,
   ): Promise<DeleteObjectOutput> {
     return this.client.send(
       new DeleteObjectCommand({
@@ -69,7 +66,7 @@ export class ObjectsService {
   public async deleteObjects(
     bucket: string,
     remotes: string[],
-    options: Omit<DeleteObjectsCommandInput, 'Bucket' | 'Delete'> = {},
+    options?: DeleteObjectsOptions,
   ): Promise<DeleteObjectsOutput> {
     return this.client.send(
       new DeleteObjectsCommand({
@@ -82,11 +79,7 @@ export class ObjectsService {
     );
   }
 
-  public async getObject(
-    bucket: string,
-    remote: string,
-    options: Omit<GetObjectCommandInput, 'Bucket' | 'Key'> = {},
-  ): Promise<GetObjectOutput> {
+  public async getObject(bucket: string, remote: string, options?: GetObjectOptions): Promise<GetObjectOutput> {
     return this.client.send(
       new GetObjectCommand({
         Bucket: bucket,

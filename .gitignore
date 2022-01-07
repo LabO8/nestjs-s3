@@ -35,3 +35,4 @@ lerna-debug.log*
 .history
 
 .env
+tests/e2e/data/test-download.txt

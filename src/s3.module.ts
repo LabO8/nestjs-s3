@@ -1,15 +1,18 @@
+import { HttpModule } from '@nestjs/axios';
 import { DynamicModule, Global, Module, Provider } from '@nestjs/common';
 import { S3_CONFIG } from './constants';
 import { createS3ServiceProvider } from './s3-service.factory';
-import { BucketsService, ObjectsService, PrefixService, PreSignedUrlService } from './services';
+import { BucketsService, ObjectsService, PrefixService, SignedUrlService } from './services';
 import { S3AsyncConfig, S3Config } from './types';
+import { DownloadService } from './utils';
 
 const proviers: Provider[] = [
   createS3ServiceProvider(),
   BucketsService,
   ObjectsService,
   PrefixService,
-  PreSignedUrlService,
+  SignedUrlService,
+  DownloadService,
 ];
 
 const createSharedProviders = (config: S3Config): Provider[] => [
@@ -30,7 +33,9 @@ const createSharedProvidersAsync = (provider: S3AsyncConfig): Provider[] => [
 ];
 
 @Global()
-@Module({})
+@Module({
+  imports: [HttpModule],
+})
 export class S3Module {
   static forRoot(config: S3Config): DynamicModule {
     return {
@@ -38,6 +43,7 @@ export class S3Module {
       global: true,
       providers: [...createSharedProviders(config)],
       exports: [...createSharedProviders(config)],
+      imports: [HttpModule],
     };
   }
 
@@ -46,7 +52,7 @@ export class S3Module {
       module: S3Module,
       global: true,
       providers: [...createSharedProvidersAsync(provider), ...(provider.providers || [])],
-      imports: [...(provider.imports || [])],
+      imports: [...(provider.imports || [HttpModule])],
       exports: [...createSharedProvidersAsync(provider)],
     };
   }

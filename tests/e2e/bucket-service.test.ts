@@ -34,7 +34,7 @@ describe('Bucket service', () => {
   it('should be able to view buckets', async () => {
     const buckets = await bucketService.list();
 
-    expect(buckets.Buckets.length).toEqual(1);
+    expect(buckets.Buckets.length).toBeGreaterThanOrEqual(1);
   });
 
   it('should be able to create buckets', async () => {
