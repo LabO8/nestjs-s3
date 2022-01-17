@@ -87,7 +87,7 @@ const config = {
             ],
           },
           {
-            title: 'More',
+            title: 'Usefull links',
             items: [
               {
                 label: 'GitHub',
