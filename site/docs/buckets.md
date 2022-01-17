@@ -62,7 +62,7 @@ interface ListBucketsCommandOutput {
 
 ### Creating buckets
 
-When we need to create a new bucket we can just simply
+When we need to create a new bucket we can just simply call
 
 ```typescript
 const bucket = await this.bucketService.create('test-bucket');
