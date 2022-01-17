@@ -1,4 +1,7 @@
-# RELEASE 0.1.0
+# RELEASE 1.0.0
 
-- S3 module to use in NestJS
-- Bucket module and Bucket service to manage S3 Buckets
+- S3 module
+- Bucket service for listing, creating and updateing buckets and configurations
+- Object storage service for managing s3 objects
+- File prefix service that allows you to prefix file remotes
+- Download helper, that allows you easier object downloading

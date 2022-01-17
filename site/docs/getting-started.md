@@ -1,10 +1,31 @@
-# Instalation and usage
+---
+id: getting-started
+title: Getting started with NestJS S3 module
+sidebar_label: Getting Started
+slug: /
+---
 
-## Installing NestJS S3
+# Getting started with NestJS S3 module
 
-## Using the NestJS S3 module in NestJS
+This is a simple NestJS AWS S3 library that allows you to use the AWS SDK v3 in a more friendly and familiar way, by providing you with injectable services for managing things like buckets and objects.
 
-The S3 module support multiple ways to init it
+## Getting Started
+
+To start using the module you first need to install it by simply running
+
+```
+yarn add @lab08/nestjs-s3
+```
+
+or
+
+```
+npm install @lab08/nestjs-s3
+```
+
+## Using the module
+
+The module support multiple ways to initialize it.
 
 The strait approach is simple just calling `S3Module.forRoot` and specifing the region, access key id and secret access key.
 

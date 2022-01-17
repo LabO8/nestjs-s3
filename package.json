@@ -1,7 +1,7 @@
 {
   "name": "@lab08/nestjs-s3",
-  "version": "0.2.0",
-  "description": "NestJs library that lets you manipulate objects and buckets in AWS S3",
+  "version": "1.0.0",
+  "description": "A NestJS library that wraps the AWS S3 bucket SDK v3 and lets you use it in a more NestJS friendly way.",
   "author": "Martin Andreev <martinandreev@lab08.com>",
   "license": "MIT",
   "readmeFilename": "README.md",
@@ -13,14 +13,13 @@
   "scripts": {
     "start:dev": "tsc -w",
     "build": "tsc",
-    "prepare": "npm run build",
+    "prepare": "npm run build && husky install",
     "format": "prettier --write \"src/**/*.ts\"",
     "lint": "eslint src",
     "test": "jest --runInBand",
     "test:watch": "jest --watch",
     "test:cov": "jest --coverage",
-    "test:e2e": "jest --config ./test/jest-e2e.json",
-    "postinstall": "npx husky install"
+    "test:e2e": "jest --config ./test/jest-e2e.json"
   },
   "keywords": [
     "nestjs",

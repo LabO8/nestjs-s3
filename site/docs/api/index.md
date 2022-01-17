@@ -1,3 +1,12 @@
+---
+id: "index"
+title: "@lab08/nestjs-s3"
+slug: "/api/"
+sidebar_label: "Readme"
+sidebar_position: 0
+custom_edit_url: null
+---
+
 <div align="center">
   <a href="http://nestjs.com/" target="_blank">
     <img src="https://nestjs.com/img/logo_text.svg" width="300" alt="Nest Logo" />
