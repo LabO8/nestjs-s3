@@ -30,7 +30,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[s3.module.ts:40](https://github.com/LabO8/nestjs-s3/blob/3fc7453/src/s3.module.ts#L40)
+[s3.module.ts:40](https://github.com/LabO8/nestjs-s3/blob/91ee2ce/src/s3.module.ts#L40)
 
 ___
 
@@ -50,4 +50,4 @@ ___
 
 #### Defined in
 
-[s3.module.ts:50](https://github.com/LabO8/nestjs-s3/blob/3fc7453/src/s3.module.ts#L50)
+[s3.module.ts:50](https://github.com/LabO8/nestjs-s3/blob/91ee2ce/src/s3.module.ts#L50)

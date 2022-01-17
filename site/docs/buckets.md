@@ -2,7 +2,7 @@
 id: buckets
 title: Buckets service
 sidebar_label: Buckets
-slug: /docs/buckets-service
+slug: /buckets-service
 ---
 
 ## Introduction
