@@ -26,22 +26,10 @@ This is a simple NestJS AWS S3 library that allows you to use the AWS SDK v3 in 
 
 </div>
 
-## Change Log
-
-See [Changelog](CHANGELOG.md) for more information.
-
-## Contributing
-
-Contributions welcome! See [Contributing](CONTRIBUTING.md).
-
 ## Authors
 
 - **Martin Andreev <martin.andreev@lab08.com>**
 - **Dimitar Dishev <dishev@lab08.com>**
-
-## License
-
-Licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Development
 
