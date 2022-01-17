@@ -20,7 +20,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[services/prefix.service.ts:7](https://github.com/LabO8/nestjs-s3/blob/b27b70b/src/services/prefix.service.ts#L7)
+[services/prefix.service.ts:7](https://github.com/LabO8/nestjs-s3/blob/3fc7453/src/services/prefix.service.ts#L7)
 
 ## Methods
 
@@ -40,4 +40,4 @@ custom_edit_url: null
 
 #### Defined in
 
-[services/prefix.service.ts:9](https://github.com/LabO8/nestjs-s3/blob/b27b70b/src/services/prefix.service.ts#L9)
+[services/prefix.service.ts:9](https://github.com/LabO8/nestjs-s3/blob/3fc7453/src/services/prefix.service.ts#L9)

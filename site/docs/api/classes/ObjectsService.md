@@ -21,7 +21,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[services/objects.service.ts:20](https://github.com/LabO8/nestjs-s3/blob/b27b70b/src/services/objects.service.ts#L20)
+[services/objects.service.ts:20](https://github.com/LabO8/nestjs-s3/blob/3fc7453/src/services/objects.service.ts#L20)
 
 ## Methods
 
@@ -43,7 +43,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[services/objects.service.ts:52](https://github.com/LabO8/nestjs-s3/blob/b27b70b/src/services/objects.service.ts#L52)
+[services/objects.service.ts:52](https://github.com/LabO8/nestjs-s3/blob/3fc7453/src/services/objects.service.ts#L52)
 
 ___
 
@@ -65,7 +65,7 @@ ___
 
 #### Defined in
 
-[services/objects.service.ts:66](https://github.com/LabO8/nestjs-s3/blob/b27b70b/src/services/objects.service.ts#L66)
+[services/objects.service.ts:66](https://github.com/LabO8/nestjs-s3/blob/3fc7453/src/services/objects.service.ts#L66)
 
 ___
 
@@ -87,7 +87,7 @@ ___
 
 #### Defined in
 
-[services/objects.service.ts:82](https://github.com/LabO8/nestjs-s3/blob/b27b70b/src/services/objects.service.ts#L82)
+[services/objects.service.ts:82](https://github.com/LabO8/nestjs-s3/blob/3fc7453/src/services/objects.service.ts#L82)
 
 ___
 
@@ -110,7 +110,7 @@ ___
 
 #### Defined in
 
-[services/objects.service.ts:25](https://github.com/LabO8/nestjs-s3/blob/b27b70b/src/services/objects.service.ts#L25)
+[services/objects.service.ts:25](https://github.com/LabO8/nestjs-s3/blob/3fc7453/src/services/objects.service.ts#L25)
 
 ___
 
@@ -133,4 +133,4 @@ ___
 
 #### Defined in
 
-[services/objects.service.ts:41](https://github.com/LabO8/nestjs-s3/blob/b27b70b/src/services/objects.service.ts#L41)
+[services/objects.service.ts:41](https://github.com/LabO8/nestjs-s3/blob/3fc7453/src/services/objects.service.ts#L41)
