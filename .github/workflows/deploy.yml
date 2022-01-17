@@ -15,6 +15,10 @@ jobs:
         with:
           node-version: 14.x
           cache: yarn
+      - name: Build library
+        run: |
+          yarn install --frozen-lockfile
+          yarn build
       - name: Build website
         working-directory: site
         run: |

@@ -26,27 +26,6 @@ This is a simple NestJS AWS S3 library that allows you to use the AWS SDK v3 in 
 
 </div>
 
-## Authors
-
-- **Martin Andreev <martin.andreev@lab08.com>**
-- **Dimitar Dishev <dishev@lab08.com>**
-
-## Development
-
-1. Clone the repo
-2. Run yarn install
-
-```bash
-cd nestjs-s3
-yarn install
-```
-
-## Running tests
-
-```bash
-yarn test
-```
-
 ## Installation
 
 To install it simple run
@@ -101,3 +80,89 @@ S3Module.forRootAsync({
   import: [ConfigModule],
 });
 ```
+
+# Documentation
+
+If you want to read the more on the usage, you can check [the documentation](https://labo8.github.io/nestjs-s3/)
+
+# Contributing
+
+1. [Fork it](https://help.github.com/articles/fork-a-repo/)
+2. Install dependencies (`yarn install`)
+3. Create your feature branch (`git checkout -b feature/my-feature`)
+4. Commit your changes (`git commit -am 'Added some feature'`)
+5. Test your changes (`yarn test`)
+6. Push to the branch (`git push origin feature/my-feature`)
+7. [Create new Pull Request](https://help.github.com/articles/creating-a-pull-request/)
+
+## Testing
+
+We use [Jest](https://github.com/facebook/jest) to write tests. Run our test suite with this command:
+
+```
+yarn test
+```
+
+## Code Style
+
+We use [Prettier](https://prettier.io/) and tslint to maintain code style and best practices.
+Please make sure your PR adheres to the guides by running:
+
+```
+yarn format
+```
+
+and
+
+```
+yarn lint
+```
+
+## Authors
+
+- **Martin Andreev <martin.andreev@lab08.com>**
+- **Dimitar Dishev <dishev@lab08.com>**
+
+## Docs
+
+If you want to read the
+
+## Development
+
+1. Clone the repo
+2. Run yarn install
+
+```bash
+cd nestjs-s3
+yarn install
+```
+
+## Running tests
+
+```bash
+yarn test
+```
+
+## License
+
+MIT License
+
+Copyright (c) 2019 John Biundo
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
