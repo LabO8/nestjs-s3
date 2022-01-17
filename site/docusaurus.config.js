@@ -9,7 +9,7 @@ const config = {
   title: 'NestJS S3 Module',
   tagline: 'Dinosaurs are cool',
   url: 'https://nestjs-s3.github.io',
-  baseUrl: '/',
+  baseUrl: '/nestjs-s3/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
