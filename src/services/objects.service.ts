@@ -5,6 +5,9 @@ import {
   DeleteObjectsOutput,
   GetObjectCommand,
   GetObjectOutput,
+  ListObjectsCommand,
+  ListObjectsCommandInput,
+  ListObjectsOutput,
   PutObjectCommand,
   PutObjectOutput,
   S3Client,
@@ -12,7 +15,7 @@ import {
 import { Inject, Injectable } from '@nestjs/common';
 import * as fs from 'fs';
 import { S3_SERVICE } from '../constants';
-import { DeleteObjectOptions, DeleteObjectsOptions, GetObjectOptions, PutObjectOptions } from '../types';
+import { DeleteObjectOptions, DeleteObjectsOptions, GetObjectOptions, ListObjectOptions, PutObjectOptions } from '../types';
 import { PrefixService } from './prefix.service';
 
 @Injectable()
@@ -85,6 +88,15 @@ export class ObjectsService {
         Bucket: bucket,
         Key: this.prefixService.prefix(remote),
         ...options,
+      }),
+    );
+  }
+
+  public async listObjects(bucket: string, remote: string, options?: ListObjectOptions): Promise<ListObjectsOutput> {
+    return this.client.send(
+      new ListObjectsCommand({
+        Bucket: bucket,
+        ...options
       }),
     );
   }
