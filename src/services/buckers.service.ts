@@ -15,6 +15,7 @@ import {
   PutBucketAccelerateConfigurationCommandOutput,
   PutBucketAclCommand,
   PutBucketAclCommandInput,
+  PutBucketAclCommandOutput,
   PutBucketCorsCommand,
   PutBucketCorsCommandOutput,
   PutBucketEncryptionCommand,
@@ -82,7 +83,7 @@ export class BucketsService {
   public async updateAcl(
     bucket: string,
     configuration: Omit<PutBucketAclCommandInput, 'Bucket'>,
-  ): Promise<PutBucketCorsCommandOutput> {
+  ): Promise<PutBucketAclCommandOutput> {
     return await this.client.send(
       new PutBucketAclCommand({
         Bucket: bucket,
