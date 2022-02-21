@@ -21,7 +21,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[services/objects.service.ts:20](https://github.com/LabO8/nestjs-s3/blob/91ee2ce/src/services/objects.service.ts#L20)
+[services/objects.service.ts:28](https://github.com/LabO8/nestjs-s3/blob/2156324/src/services/objects.service.ts#L28)
 
 ## Methods
 
@@ -43,7 +43,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[services/objects.service.ts:52](https://github.com/LabO8/nestjs-s3/blob/91ee2ce/src/services/objects.service.ts#L52)
+[services/objects.service.ts:60](https://github.com/LabO8/nestjs-s3/blob/2156324/src/services/objects.service.ts#L60)
 
 ___
 
@@ -65,7 +65,7 @@ ___
 
 #### Defined in
 
-[services/objects.service.ts:66](https://github.com/LabO8/nestjs-s3/blob/91ee2ce/src/services/objects.service.ts#L66)
+[services/objects.service.ts:74](https://github.com/LabO8/nestjs-s3/blob/2156324/src/services/objects.service.ts#L74)
 
 ___
 
@@ -87,7 +87,28 @@ ___
 
 #### Defined in
 
-[services/objects.service.ts:82](https://github.com/LabO8/nestjs-s3/blob/91ee2ce/src/services/objects.service.ts#L82)
+[services/objects.service.ts:90](https://github.com/LabO8/nestjs-s3/blob/2156324/src/services/objects.service.ts#L90)
+
+___
+
+### listObjects
+
+▸ **listObjects**(`bucket`, `options?`): `Promise`<`ListObjectsOutput`\>
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `bucket` | `string` |
+| `options?` | [`ListObjectOptions`](../modules#listobjectoptions) |
+
+#### Returns
+
+`Promise`<`ListObjectsOutput`\>
+
+#### Defined in
+
+[services/objects.service.ts:100](https://github.com/LabO8/nestjs-s3/blob/2156324/src/services/objects.service.ts#L100)
 
 ___
 
@@ -110,7 +131,7 @@ ___
 
 #### Defined in
 
-[services/objects.service.ts:25](https://github.com/LabO8/nestjs-s3/blob/91ee2ce/src/services/objects.service.ts#L25)
+[services/objects.service.ts:33](https://github.com/LabO8/nestjs-s3/blob/2156324/src/services/objects.service.ts#L33)
 
 ___
 
@@ -133,4 +154,4 @@ ___
 
 #### Defined in
 
-[services/objects.service.ts:41](https://github.com/LabO8/nestjs-s3/blob/91ee2ce/src/services/objects.service.ts#L41)
+[services/objects.service.ts:49](https://github.com/LabO8/nestjs-s3/blob/2156324/src/services/objects.service.ts#L49)

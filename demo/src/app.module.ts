@@ -2,12 +2,17 @@ import { Module } from '@nestjs/common';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { S3Module } from '../../src';
 import { aws, AwsType } from './aws';
-import { CreateBucketCommand, ListBucketCommand } from './commands';
+import {
+  CreateBucketCommand,
+  ListBucketCommand,
+  ListObjectsCommand,
+  UploadFileCommand,
+} from './commands';
 
 @Module({
   imports: [
     ConfigModule.forRoot({
-      load: [aws]
+      load: [aws],
     }),
     S3Module.forRootAsync({
       useFactory: (config: ConfigService) => {
@@ -15,16 +20,19 @@ import { CreateBucketCommand, ListBucketCommand } from './commands';
 
         return {
           ...awsConfig,
-          prefix: 'test-'
-        }
+          prefix: 'test-',
+        };
       },
       imports: [ConfigModule],
-      inject: [ConfigService]
-    })],
+      inject: [ConfigService],
+    }),
+  ],
   controllers: [],
   providers: [
     CreateBucketCommand,
-    ListBucketCommand
+    ListBucketCommand,
+    ListObjectsCommand,
+    UploadFileCommand,
   ],
 })
-export class AppModule { }
+export class AppModule {}
