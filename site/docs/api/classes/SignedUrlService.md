@@ -21,7 +21,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[services/signed-url.service.ts:16](https://github.com/LabO8/nestjs-s3/blob/2156324/src/services/signed-url.service.ts#L16)
+[services/signed-url.service.ts:16](https://github.com/LabO8/nestjs-s3/blob/c5f8060/src/services/signed-url.service.ts#L16)
 
 ## Methods
 
@@ -44,7 +44,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[services/signed-url.service.ts:87](https://github.com/LabO8/nestjs-s3/blob/2156324/src/services/signed-url.service.ts#L87)
+[services/signed-url.service.ts:87](https://github.com/LabO8/nestjs-s3/blob/c5f8060/src/services/signed-url.service.ts#L87)
 
 ___
 
@@ -67,7 +67,7 @@ ___
 
 #### Defined in
 
-[services/signed-url.service.ts:66](https://github.com/LabO8/nestjs-s3/blob/2156324/src/services/signed-url.service.ts#L66)
+[services/signed-url.service.ts:66](https://github.com/LabO8/nestjs-s3/blob/c5f8060/src/services/signed-url.service.ts#L66)
 
 ___
 
@@ -90,7 +90,7 @@ ___
 
 #### Defined in
 
-[services/signed-url.service.ts:21](https://github.com/LabO8/nestjs-s3/blob/2156324/src/services/signed-url.service.ts#L21)
+[services/signed-url.service.ts:21](https://github.com/LabO8/nestjs-s3/blob/c5f8060/src/services/signed-url.service.ts#L21)
 
 ___
 
@@ -113,4 +113,4 @@ ___
 
 #### Defined in
 
-[services/signed-url.service.ts:45](https://github.com/LabO8/nestjs-s3/blob/2156324/src/services/signed-url.service.ts#L45)
+[services/signed-url.service.ts:45](https://github.com/LabO8/nestjs-s3/blob/c5f8060/src/services/signed-url.service.ts#L45)

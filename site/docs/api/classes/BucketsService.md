@@ -20,7 +20,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[services/buckers.service.ts:33](https://github.com/LabO8/nestjs-s3/blob/2156324/src/services/buckers.service.ts#L33)
+[services/buckers.service.ts:34](https://github.com/LabO8/nestjs-s3/blob/c5f8060/src/services/buckers.service.ts#L34)
 
 ## Methods
 
@@ -41,7 +41,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[services/buckers.service.ts:35](https://github.com/LabO8/nestjs-s3/blob/2156324/src/services/buckers.service.ts#L35)
+[services/buckers.service.ts:36](https://github.com/LabO8/nestjs-s3/blob/c5f8060/src/services/buckers.service.ts#L36)
 
 ___
 
@@ -61,7 +61,7 @@ ___
 
 #### Defined in
 
-[services/buckers.service.ts:47](https://github.com/LabO8/nestjs-s3/blob/2156324/src/services/buckers.service.ts#L47)
+[services/buckers.service.ts:48](https://github.com/LabO8/nestjs-s3/blob/c5f8060/src/services/buckers.service.ts#L48)
 
 ___
 
@@ -81,7 +81,7 @@ ___
 
 #### Defined in
 
-[services/buckers.service.ts:59](https://github.com/LabO8/nestjs-s3/blob/2156324/src/services/buckers.service.ts#L59)
+[services/buckers.service.ts:60](https://github.com/LabO8/nestjs-s3/blob/c5f8060/src/services/buckers.service.ts#L60)
 
 ___
 
@@ -95,7 +95,7 @@ ___
 
 #### Defined in
 
-[services/buckers.service.ts:55](https://github.com/LabO8/nestjs-s3/blob/2156324/src/services/buckers.service.ts#L55)
+[services/buckers.service.ts:56](https://github.com/LabO8/nestjs-s3/blob/c5f8060/src/services/buckers.service.ts#L56)
 
 ___
 
@@ -115,7 +115,7 @@ ___
 
 #### Defined in
 
-[services/buckers.service.ts:65](https://github.com/LabO8/nestjs-s3/blob/2156324/src/services/buckers.service.ts#L65)
+[services/buckers.service.ts:66](https://github.com/LabO8/nestjs-s3/blob/c5f8060/src/services/buckers.service.ts#L66)
 
 ___
 
@@ -136,13 +136,13 @@ ___
 
 #### Defined in
 
-[services/buckers.service.ts:118](https://github.com/LabO8/nestjs-s3/blob/2156324/src/services/buckers.service.ts#L118)
+[services/buckers.service.ts:119](https://github.com/LabO8/nestjs-s3/blob/c5f8060/src/services/buckers.service.ts#L119)
 
 ___
 
 ### updateAcl
 
-▸ **updateAcl**(`bucket`, `configuration`): `Promise`<`PutBucketCorsCommandOutput`\>
+▸ **updateAcl**(`bucket`, `configuration`): `Promise`<`PutBucketAclCommandOutput`\>
 
 #### Parameters
 
@@ -153,11 +153,11 @@ ___
 
 #### Returns
 
-`Promise`<`PutBucketCorsCommandOutput`\>
+`Promise`<`PutBucketAclCommandOutput`\>
 
 #### Defined in
 
-[services/buckers.service.ts:82](https://github.com/LabO8/nestjs-s3/blob/2156324/src/services/buckers.service.ts#L82)
+[services/buckers.service.ts:83](https://github.com/LabO8/nestjs-s3/blob/c5f8060/src/services/buckers.service.ts#L83)
 
 ___
 
@@ -178,7 +178,7 @@ ___
 
 #### Defined in
 
-[services/buckers.service.ts:73](https://github.com/LabO8/nestjs-s3/blob/2156324/src/services/buckers.service.ts#L73)
+[services/buckers.service.ts:74](https://github.com/LabO8/nestjs-s3/blob/c5f8060/src/services/buckers.service.ts#L74)
 
 ___
 
@@ -199,7 +199,7 @@ ___
 
 #### Defined in
 
-[services/buckers.service.ts:106](https://github.com/LabO8/nestjs-s3/blob/2156324/src/services/buckers.service.ts#L106)
+[services/buckers.service.ts:107](https://github.com/LabO8/nestjs-s3/blob/c5f8060/src/services/buckers.service.ts#L107)
 
 ___
 
@@ -220,4 +220,4 @@ ___
 
 #### Defined in
 
-[services/buckers.service.ts:94](https://github.com/LabO8/nestjs-s3/blob/2156324/src/services/buckers.service.ts#L94)
+[services/buckers.service.ts:95](https://github.com/LabO8/nestjs-s3/blob/c5f8060/src/services/buckers.service.ts#L95)
