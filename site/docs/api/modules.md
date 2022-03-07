@@ -22,7 +22,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[types/object-command-options.type.ts:12](https://github.com/LabO8/nestjs-s3/blob/2156324/src/types/object-command-options.type.ts#L12)
+[types/object-command-options.type.ts:12](https://github.com/LabO8/nestjs-s3/blob/c5f8060/src/types/object-command-options.type.ts#L12)
 
 ___
 
@@ -32,7 +32,7 @@ ___
 
 #### Defined in
 
-[types/object-command-options.type.ts:10](https://github.com/LabO8/nestjs-s3/blob/2156324/src/types/object-command-options.type.ts#L10)
+[types/object-command-options.type.ts:10](https://github.com/LabO8/nestjs-s3/blob/c5f8060/src/types/object-command-options.type.ts#L10)
 
 ___
 
@@ -50,7 +50,7 @@ ___
 
 #### Defined in
 
-[types/download-options.type.ts:1](https://github.com/LabO8/nestjs-s3/blob/2156324/src/types/download-options.type.ts#L1)
+[types/download-options.type.ts:1](https://github.com/LabO8/nestjs-s3/blob/c5f8060/src/types/download-options.type.ts#L1)
 
 ___
 
@@ -60,7 +60,7 @@ ___
 
 #### Defined in
 
-[types/object-command-options.type.ts:9](https://github.com/LabO8/nestjs-s3/blob/2156324/src/types/object-command-options.type.ts#L9)
+[types/object-command-options.type.ts:9](https://github.com/LabO8/nestjs-s3/blob/c5f8060/src/types/object-command-options.type.ts#L9)
 
 ___
 
@@ -70,7 +70,7 @@ ___
 
 #### Defined in
 
-[types/object-command-options.type.ts:13](https://github.com/LabO8/nestjs-s3/blob/2156324/src/types/object-command-options.type.ts#L13)
+[types/object-command-options.type.ts:13](https://github.com/LabO8/nestjs-s3/blob/c5f8060/src/types/object-command-options.type.ts#L13)
 
 ___
 
@@ -80,7 +80,7 @@ ___
 
 #### Defined in
 
-[types/object-command-options.type.ts:11](https://github.com/LabO8/nestjs-s3/blob/2156324/src/types/object-command-options.type.ts#L11)
+[types/object-command-options.type.ts:11](https://github.com/LabO8/nestjs-s3/blob/c5f8060/src/types/object-command-options.type.ts#L11)
 
 ___
 
@@ -97,7 +97,7 @@ ___
 
 #### Defined in
 
-[types/signed-url.type.ts:1](https://github.com/LabO8/nestjs-s3/blob/2156324/src/types/signed-url.type.ts#L1)
+[types/signed-url.type.ts:1](https://github.com/LabO8/nestjs-s3/blob/c5f8060/src/types/signed-url.type.ts#L1)
 
 ___
 
@@ -107,7 +107,7 @@ ___
 
 #### Defined in
 
-[types/s3-config.type.ts:12](https://github.com/LabO8/nestjs-s3/blob/2156324/src/types/s3-config.type.ts#L12)
+[types/s3-config.type.ts:12](https://github.com/LabO8/nestjs-s3/blob/c5f8060/src/types/s3-config.type.ts#L12)
 
 ___
 
@@ -127,7 +127,7 @@ ___
 
 #### Defined in
 
-[types/s3-config.type.ts:4](https://github.com/LabO8/nestjs-s3/blob/2156324/src/types/s3-config.type.ts#L4)
+[types/s3-config.type.ts:4](https://github.com/LabO8/nestjs-s3/blob/c5f8060/src/types/s3-config.type.ts#L4)
 
 ## Variables
 
@@ -137,7 +137,7 @@ ___
 
 #### Defined in
 
-[constants.ts:4](https://github.com/LabO8/nestjs-s3/blob/2156324/src/constants.ts#L4)
+[constants.ts:4](https://github.com/LabO8/nestjs-s3/blob/c5f8060/src/constants.ts#L4)
 
 ___
 
@@ -147,7 +147,7 @@ ___
 
 #### Defined in
 
-[constants.ts:1](https://github.com/LabO8/nestjs-s3/blob/2156324/src/constants.ts#L1)
+[constants.ts:1](https://github.com/LabO8/nestjs-s3/blob/c5f8060/src/constants.ts#L1)
 
 ___
 
@@ -157,7 +157,7 @@ ___
 
 #### Defined in
 
-[constants.ts:2](https://github.com/LabO8/nestjs-s3/blob/2156324/src/constants.ts#L2)
+[constants.ts:2](https://github.com/LabO8/nestjs-s3/blob/c5f8060/src/constants.ts#L2)
 
 ## Functions
 
@@ -171,4 +171,4 @@ ___
 
 #### Defined in
 
-[s3-service.factory.ts:6](https://github.com/LabO8/nestjs-s3/blob/2156324/src/s3-service.factory.ts#L6)
+[s3-service.factory.ts:6](https://github.com/LabO8/nestjs-s3/blob/c5f8060/src/s3-service.factory.ts#L6)

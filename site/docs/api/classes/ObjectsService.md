@@ -21,7 +21,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[services/objects.service.ts:28](https://github.com/LabO8/nestjs-s3/blob/2156324/src/services/objects.service.ts#L28)
+[services/objects.service.ts:28](https://github.com/LabO8/nestjs-s3/blob/c5f8060/src/services/objects.service.ts#L28)
 
 ## Methods
 
@@ -43,7 +43,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[services/objects.service.ts:60](https://github.com/LabO8/nestjs-s3/blob/2156324/src/services/objects.service.ts#L60)
+[services/objects.service.ts:60](https://github.com/LabO8/nestjs-s3/blob/c5f8060/src/services/objects.service.ts#L60)
 
 ___
 
@@ -65,7 +65,7 @@ ___
 
 #### Defined in
 
-[services/objects.service.ts:74](https://github.com/LabO8/nestjs-s3/blob/2156324/src/services/objects.service.ts#L74)
+[services/objects.service.ts:74](https://github.com/LabO8/nestjs-s3/blob/c5f8060/src/services/objects.service.ts#L74)
 
 ___
 
@@ -87,7 +87,7 @@ ___
 
 #### Defined in
 
-[services/objects.service.ts:90](https://github.com/LabO8/nestjs-s3/blob/2156324/src/services/objects.service.ts#L90)
+[services/objects.service.ts:90](https://github.com/LabO8/nestjs-s3/blob/c5f8060/src/services/objects.service.ts#L90)
 
 ___
 
@@ -108,7 +108,7 @@ ___
 
 #### Defined in
 
-[services/objects.service.ts:100](https://github.com/LabO8/nestjs-s3/blob/2156324/src/services/objects.service.ts#L100)
+[services/objects.service.ts:100](https://github.com/LabO8/nestjs-s3/blob/c5f8060/src/services/objects.service.ts#L100)
 
 ___
 
@@ -131,7 +131,7 @@ ___
 
 #### Defined in
 
-[services/objects.service.ts:33](https://github.com/LabO8/nestjs-s3/blob/2156324/src/services/objects.service.ts#L33)
+[services/objects.service.ts:33](https://github.com/LabO8/nestjs-s3/blob/c5f8060/src/services/objects.service.ts#L33)
 
 ___
 
@@ -154,4 +154,4 @@ ___
 
 #### Defined in
 
-[services/objects.service.ts:49](https://github.com/LabO8/nestjs-s3/blob/2156324/src/services/objects.service.ts#L49)
+[services/objects.service.ts:49](https://github.com/LabO8/nestjs-s3/blob/c5f8060/src/services/objects.service.ts#L49)
