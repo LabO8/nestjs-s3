@@ -1,17 +1,17 @@
 ---
 id: signed-url
-title: Signed url service
-sidebar_label: Signed url service
+title: Signed URL service
+sidebar_label: Signed URL service
 slug: /signed-url-service
 ---
 
 ## Introduction
 
-We use Signed url service, to generate all kind of signed urls, that we will need.
+We use Signed URL service, to generate all kinds of signed URLs, that we will need.
 
 ## Basic usage
 
-The pre-requisites to use this service is just to have the main module initialized in our app, so we have access to all the services that it exports.
+The pre-requisites to use this service are just to have the main module initialized in our app, so we have access to all the services it exports.
 Later when we need a service we can simply:
 
 ```typescript
@@ -26,9 +26,9 @@ export class MyService {
 
 then we can simply call start using the service freely.
 
-### PUT signed url
+### PUT signed URL
 
-In order to get a signed url you can call
+To to get a signed URL you can call
 
 ```typescript
 const result = this.signedUrlService.getPutSignedUrl('bucket', 'remote', expiresIn, options);
@@ -153,12 +153,12 @@ type PutObjectOptions {
      */
     WebsiteRedirectLocation?: string;
     /**
-     * <p>Specifies the algorithm to use to when encrypting the object (for example,
+     * <p>Specifies the algorithm to use when encrypting the object (for example,
      *          AES256).</p>
      */
     SSECustomerAlgorithm?: string;
     /**
-     * <p>Specifies the customer-provided encryption key for Amazon S3 to use in encrypting data. This
+     * <p>Specifies the customer-provided encryption key for Amazon S3 to encrypt data. This
      *          value is used to store the object and then it is discarded; Amazon S3 does not store the
      *          encryption key. The key must be appropriate for use with the algorithm specified in the
      *             <code>x-amz-server-side-encryption-customer-algorithm</code> header.</p>
@@ -173,7 +173,7 @@ type PutObjectOptions {
     /**
      * <p>If <code>x-amz-server-side-encryption</code> is present and has the value of
      *          <code>aws:kms</code>, this header specifies the ID of the Amazon Web Services Key Management Service
-     *          (Amazon Web Services KMS) symmetrical customer managed key that was used for the
+     *          (Amazon Web Services KMS) symmetrical customer-managed key that was used for the
      *          object. If you specify <code>x-amz-server-side-encryption:aws:kms</code>, but do not
      *          provide<code> x-amz-server-side-encryption-aws-kms-key-id</code>, Amazon S3 uses the Amazon Web Services
      *          managed key to protect the data. If the KMS key does not exist in the same account
@@ -182,7 +182,7 @@ type PutObjectOptions {
      */
     SSEKMSKeyId?: string;
     /**
-     * <p>Specifies the Amazon Web Services KMS Encryption Context to use for object encryption. The value of this
+     * <p>Specifies the Amazon Web Services KMS Encryption Context for object encryption. The value of this
      *          header is a base64-encoded UTF-8 string holding JSON with the encryption context key-value
      *          pairs.</p>
      */
@@ -193,7 +193,7 @@ type PutObjectOptions {
      */
     BucketKeyEnabled?: boolean;
     /**
-     * <p>Confirms that the requester knows that they will be charged for the request. Bucket
+     * <p>Confirms that the requester knows that it will be charged for the request. Bucket
      *          owners need not specify this parameter in their requests. For information about downloading
      *          objects from requester pays buckets, see <a href="https://docs.aws.amazon.com/AmazonS3/latest/dev/ObjectsinRequesterPaysBuckets.html">Downloading Objects in
      *             Requestor Pays Buckets</a> in the <i>Amazon S3 User Guide</i>.</p>
@@ -209,7 +209,7 @@ type PutObjectOptions {
      */
     ObjectLockMode?: ObjectLockMode | string;
     /**
-     * <p>The date and time when you want this object's Object Lock to expire. Must be formatted
+     * <p>The date and time we want this object's Object Lock to expire. Must be formatted
      *          as a timestamp parameter.</p>
      */
     ObjectLockRetainUntilDate?: Date;
@@ -305,12 +305,12 @@ type GetObjectOptions {
      */
     VersionId?: string;
     /**
-     * <p>Specifies the algorithm to use to when decrypting the object (for example,
+     * <p>Specifies the algorithm to use when decrypting the object (for example,
      *          AES256).</p>
      */
     SSECustomerAlgorithm?: string;
     /**
-     * <p>Specifies the customer-provided encryption key for Amazon S3 used to encrypt the data. This
+     * <p>Specifies the customer-provided encryption key for Amazon S3 to encrypt the data. This
      *          value is used to decrypt the object when recovering it and must match the one used when
      *          storing the data. The key must be appropriate for use with the algorithm specified in the
      *             <code>x-amz-server-side-encryption-customer-algorithm</code> header.</p>
@@ -318,12 +318,12 @@ type GetObjectOptions {
     SSECustomerKey?: string;
     /**
      * <p>Specifies the 128-bit MD5 digest of the encryption key according to RFC 1321. Amazon S3 uses
-     *          this header for a message integrity check to ensure that the encryption key was transmitted
+     *          this header for message integrity check to ensure that the encryption key was transmitted
      *          without error.</p>
      */
     SSECustomerKeyMD5?: string;
     /**
-     * <p>Confirms that the requester knows that they will be charged for the request. Bucket
+     * <p>Confirms that the requester knows they will be charged for the request. Bucket
      *          owners need not specify this parameter in their requests. For information about downloading
      *          objects from requester pays buckets, see <a href="https://docs.aws.amazon.com/AmazonS3/latest/dev/ObjectsinRequesterPaysBuckets.html">Downloading Objects in
      *             Requestor Pays Buckets</a> in the <i>Amazon S3 User Guide</i>.</p>
@@ -342,9 +342,9 @@ type GetObjectOptions {
 }
 ```
 
-and returns a `Promise` with a string containting the url
+and returns a `Promise` with a string containting the URL
 
-### DELETE presiged url
+### DELETE pre-signed URL
 
 We can also create a delete presigned urls.
 
@@ -360,7 +360,7 @@ which takes:
 type DeleteObjectOptions {
     /**
      * <p>The concatenation of the authentication device's serial number, a space, and the value
-     *          that is displayed on your authentication device. Required to permanently delete a versioned
+     *          that is displayed on your authentication device. Required to delete a versioned permanently
      *          object if versioning is configured with MFA delete enabled.</p>
      */
     MFA?: string;
@@ -376,7 +376,7 @@ type DeleteObjectOptions {
      */
     RequestPayer?: RequestPayer | string;
     /**
-     * <p>Indicates whether S3 Object Lock should bypass Governance-mode restrictions to process
+     * <p>Indicates whether S3 Object Lock should bypass Governance-mode restrictions to the process
      *          this operation. To use this header, you must have the <code>s3:PutBucketPublicAccessBlock</code>
      *          permission.</p>
      */
@@ -400,7 +400,7 @@ const result = this.signedUrlService.getDeleteObjectsSignedUrl('bucket', ['remot
 type DeleteObjectsOptions = {
   /**
    * <p>The concatenation of the authentication device's serial number, a space, and the value
-   *          that is displayed on your authentication device. Required to permanently delete a versioned
+   *          that is displayed on your authentication device. Required to delete a versioned permanently
    *          object if versioning is configured with MFA delete enabled.</p>
    */
   MFA?: string;
