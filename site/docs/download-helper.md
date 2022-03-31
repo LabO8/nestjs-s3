@@ -7,7 +7,7 @@ slug: /download helper
 
 ## Introduction
 
-Sometimes, we have to do day to day tasks like downloading objests and storing the locally. This leads to a lot of boilerplate code, for managing the directories, writing to files and etc.
+Sometimes, we have to do day-to-day tasks like downloading objects and storing them locally. This leads to a lot of boilerplate code, for managing the directories, writing to files, etc.
 
 In order to do that we can use the download helper.
 
@@ -21,7 +21,7 @@ export class MyService {
 }
 ```
 
-What the download service does is help us do this day to day tasks earily and without a lot of code.
+What the download service does is help us do these day-to-day tasks easily and without a lot of code.
 
 In order to download an object, we can simply
 
@@ -111,12 +111,12 @@ type GetObjectOptions {
      */
     VersionId?: string;
     /**
-     * <p>Specifies the algorithm to use to when decrypting the object (for example,
+     * <p>Specifies the algorithm to use when decrypting the object (for example,
      *          AES256).</p>
      */
     SSECustomerAlgorithm?: string;
     /**
-     * <p>Specifies the customer-provided encryption key for Amazon S3 used to encrypt the data. This
+     * <p>Specifies the customer-provided encryption key for Amazon S3 to encrypt the data. This
      *          value is used to decrypt the object when recovering it and must match the one used when
      *          storing the data. The key must be appropriate for use with the algorithm specified in the
      *             <code>x-amz-server-side-encryption-customer-algorithm</code> header.</p>
@@ -124,12 +124,12 @@ type GetObjectOptions {
     SSECustomerKey?: string;
     /**
      * <p>Specifies the 128-bit MD5 digest of the encryption key according to RFC 1321. Amazon S3 uses
-     *          this header for a message integrity check to ensure that the encryption key was transmitted
+     *          this header for message integrity check to ensure that the encryption key was transmitted
      *          without error.</p>
      */
     SSECustomerKeyMD5?: string;
     /**
-     * <p>Confirms that the requester knows that they will be charged for the request. Bucket
+     * <p>Confirms that the requester knows they will be charged for the request. Bucket
      *          owners need not specify this parameter in their requests. For information about downloading
      *          objects from requester pays buckets, see <a href="https://docs.aws.amazon.com/AmazonS3/latest/dev/ObjectsinRequesterPaysBuckets.html">Downloading Objects in
      *             Requestor Pays Buckets</a> in the <i>Amazon S3 User Guide</i>.</p>
@@ -148,4 +148,4 @@ type GetObjectOptions {
 }
 ```
 
-This method will return a `Promise` containg the local absolute path.
+This method will return a `Promise` containing the local absolute path.

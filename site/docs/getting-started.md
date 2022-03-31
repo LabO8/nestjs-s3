@@ -27,7 +27,7 @@ npm install @lab08/nestjs-s3
 
 The module support multiple ways to initialize it.
 
-The strait approach is simple just calling `S3Module.forRoot` and specifing the region, access key id and secret access key.
+The strait approach is simply just calling `S3Module.forRoot` and specifing the region, access key id and secret access key.
 
 ```typescript
 S3Module.forRoot({
@@ -37,7 +37,7 @@ S3Module.forRoot({
 });
 ```
 
-However, there are times, where configuration if loaded from a service or depends on other providers. This can be achived using the `S3Module.forRootAsync`.
+However, there are times, where the configuration is loaded from a service or depends on other providers. This can be achieved using the `S3Module.forRootAsync`.
 
 ```typescript
 S3Module.forRootAsync({

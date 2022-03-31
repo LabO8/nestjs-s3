@@ -14,12 +14,12 @@ We can do multiple things with this service like:
 - create buckets
 - list buckets
 - delete buckets
-- tag buckets and etc.
+- tag buckets, etc.
 
 ## Basic usage
 
-The pre-requisites to use this service is just to have the main module initialized in our app, so we have access to all the services that it exports.
-Later when we need a service we can simply:
+The pre-requisites to use this service are to have the main module initialized in our app, so we can access all the services it exports.
+Later, when we need a service we can simply:
 
 ```typescript
 import { Injectable } from '@nestjs/common';
@@ -100,7 +100,7 @@ export interface CreateBucketRequest {
   GrantReadACP?: string;
   /**
    * Allows grantee to create new objects in the bucket.
-   * For the bucket and object owners of existing objects, also allows deletions and overwrites of those objects.
+   * For the bucket and object owners of existing objects, it also allows deletions and overwrites.
    */
   GrantWrite?: string;
   /**
@@ -108,7 +108,7 @@ export interface CreateBucketRequest {
    */
   GrantWriteACP?: string;
   /**
-   * Specifies whether you want S3 Object Lock to be enabled for the new bucket.
+   * Specifies whether you want S3 Object Lock for the new bucket.
    */
   ObjectLockEnabledForBucket?: boolean;
 }
@@ -133,7 +133,7 @@ interface CreateBucketCommandOutput {
 
 ### Deleting buckets
 
-After we already have a bucket, we can easyly remove it. This can be done by calling the `delete` method.
+After we already have a bucket, we can easily remove it. This can be done by calling the `delete` method.
 
 ```typescript
 const result = await this.bucketService.delete('test-bucket');
@@ -152,7 +152,7 @@ interface DeleteBucketCommandOutput {
 
 ### Listing buckets
 
-If we want to get all our existing buckets, we can call the `list` method.
+We can call the `list` method if we want to get all our existing buckets.
 
 ```typescript
 const result = await this.bucketService.list();
@@ -186,13 +186,13 @@ If we want to see if we have a bucket with a specific name, we can use the `find
 const result = await this.bucketService.find('test');
 ```
 
-This method will return a `Promise` with a `Bucket` object if found or `undefined` if it cannot find a bucket with this name.
+If found this method will return a `Promise` with a `Bucket` object, or if it cannot find a bucket - `undefined`.
 
 ### Upading a bucket
 
 #### Tagging
 
-We can do other things with a bucket like upading tags
+We can do other things with a bucket like updating tags
 
 ```typescript
 const result = await this.bucketService.tagging('test');
@@ -227,7 +227,7 @@ which can receive the following options
 ```typescript
 export interface CORSConfiguration {
   /**
-   * <p>A set of origins and methods (cross-origin access that you want to allow). You can add
+   * <p>A set of origins and methods (cross-origin access you want to allow). You can add
    *          up to 100 rules to the configuration.</p>
    */
   CORSRules: CORSRule[] | undefined;
@@ -295,7 +295,7 @@ export interface CORSConfiguration {
    */
   GrantWriteACP?: string;
   /**
-   * <p>The account ID of the expected bucket owner. If the bucket is owned by a different account, the request will fail with an HTTP <code>403 (Access Denied)</code> error.</p>
+   * <p>The account ID of the expected bucket owner. If different account owns the bucket, the request will fail with an HTTP <code>403 (Access Denied)</code> error.</p>
    */
   ExpectedBucketOwner?: string;
 }

@@ -9,11 +9,11 @@ slug: /objects-service
 
 The S3 objects service is used when we want to interact with objects in a bucket
 
-With it you can do simple operations like puting, fetching and listing objects.
+You can do simple operations like puting, fetching and listing objects.
 
 ## Basic usage
 
-The pre-requisites to use this service is just to have the main module initialized in our app, so we have access to all the services that it exports.
+The pre-requisites to use this service are to have the main module initialized in our app, so we can access all the services it exports.
 Later when we need a service we can simply:
 
 ```typescript
@@ -46,15 +46,15 @@ interface ListObjectsOutput {
    */
   IsTruncated?: boolean;
   /**
-   * <p>Indicates where in the bucket listing begins. Marker is included in the response if it
+   * <p>Indicates where the bucket listing begins. Marker is included in the response if it
    *          was sent with the request.</p>
    */
   Marker?: string;
   /**
-   * <p>When response is truncated (the IsTruncated element value in the response is true), you
-   *          can use the key name in this field as marker in the subsequent request to get next set of
+   * <p>When the response is truncated (the IsTruncated element value in the response is true), you
+   *          can use the key name in this field as a marker in the subsequent request to get the next set of
    *          objects. Amazon S3 lists objects in alphabetical order Note: This element is returned only if
-   *          you have delimiter request parameter specified. If response does not include the NextMarker
+   *          you have delimiter request parameter specified. If the response does not include the NextMarker
    *          and it is truncated, you can use the value of the last Key in the response as the marker in
    *          the subsequent request to get the next set of object keys.</p>
    */
@@ -72,7 +72,7 @@ interface ListObjectsOutput {
    */
   Prefix?: string;
   /**
-   * <p>Causes keys that contain the same string between the prefix and the first occurrence of
+   * <p>Causes keys that contain the exact string between the prefix and the first occurrence of
    *          the delimiter to be rolled up into a single result element in the
    *             <code>CommonPrefixes</code> collection. These rolled-up keys are not returned elsewhere
    *          in the response. Each rolled-up result counts as only one return against the
@@ -124,12 +124,12 @@ it also accepts the following options
     EncodingType?: EncodingType | string;
     /**
      * <p>Marker is where you want Amazon S3 to start listing from. Amazon S3 starts listing after
-     *           this specified key. Marker can be any key in the bucket.</p>
+     *           this specified key. A marker can be any key in the bucket.</p>
      */
     Marker?: string;
     /**
      * <p>Sets the maximum number of keys returned in the response. By default the action returns up
-     *          to 1,000 key names. The response might contain fewer keys but will never contain more.
+     *          to 1,000 key names. The response might contain fewer keys but will never have more.
      *       </p>
      */
     MaxKeys?: number;
@@ -138,7 +138,7 @@ it also accepts the following options
      */
     Prefix?: string;
     /**
-     * <p>Confirms that the requester knows that she or he will be charged for the list objects
+     * <p>Confirms that the requester knows that they will be charged for the list of objects
      *          request. Bucket owners need not specify this parameter in their requests.</p>
      */
     RequestPayer?: RequestPayer | string;
@@ -148,11 +148,11 @@ it also accepts the following options
     ExpectedBucketOwner?: string;
 ```
 
-### Puting objects in s3
+### Putting objects in s3
 
-There are two ways to put objects in s3, from a Buffer or from a local path.
+There are two ways to put objects in s3, from a Buffer or a local path.
 
-**Keep in mind that all remotes are prefixed if you specified a prefix, when the module was initialized**
+**Keep in mind that all remotes are prefixed if you specified a prefix when the module was initialized**
 
 If you want to use a buffer you can use
 
@@ -179,7 +179,7 @@ type PutObjectOptions {
      */
     ACL?: ObjectCannedACL | string;
     /**
-     * <p> Can be used to specify caching behavior along the request/reply chain. For more
+     * <p> Can specify caching behavior along the request/reply chain. For more
      *          information, see <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.9">http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.9</a>.</p>
      */
     CacheControl?: string;
@@ -292,7 +292,7 @@ type PutObjectOptions {
      */
     SSECustomerAlgorithm?: string;
     /**
-     * <p>Specifies the customer-provided encryption key for Amazon S3 to use in encrypting data. This
+     * <p>Specifies the customer-provided encryption key for Amazon S3 to encrypt. This
      *          value is used to store the object and then it is discarded; Amazon S3 does not store the
      *          encryption key. The key must be appropriate for use with the algorithm specified in the
      *             <code>x-amz-server-side-encryption-customer-algorithm</code> header.</p>
@@ -307,7 +307,7 @@ type PutObjectOptions {
     /**
      * <p>If <code>x-amz-server-side-encryption</code> is present and has the value of
      *          <code>aws:kms</code>, this header specifies the ID of the Amazon Web Services Key Management Service
-     *          (Amazon Web Services KMS) symmetrical customer managed key that was used for the
+     *          (Amazon Web Services KMS) symmetrical customer-managed key that was used for the
      *          object. If you specify <code>x-amz-server-side-encryption:aws:kms</code>, but do not
      *          provide<code> x-amz-server-side-encryption-aws-kms-key-id</code>, Amazon S3 uses the Amazon Web Services
      *          managed key to protect the data. If the KMS key does not exist in the same account
@@ -316,7 +316,7 @@ type PutObjectOptions {
      */
     SSEKMSKeyId?: string;
     /**
-     * <p>Specifies the Amazon Web Services KMS Encryption Context to use for object encryption. The value of this
+     * <p>Specifies the Amazon Web Services KMS Encryption Context for object encryption. The value of this
      *          header is a base64-encoded UTF-8 string holding JSON with the encryption context key-value
      *          pairs.</p>
      */
@@ -327,7 +327,7 @@ type PutObjectOptions {
      */
     BucketKeyEnabled?: boolean;
     /**
-     * <p>Confirms that the requester knows that they will be charged for the request. Bucket
+     * <p>Confirms that the requester knows they will be charged for the request. Bucket
      *          owners need not specify this parameter in their requests. For information about downloading
      *          objects from requester pays buckets, see <a href="https://docs.aws.amazon.com/AmazonS3/latest/dev/ObjectsinRequesterPaysBuckets.html">Downloading Objects in
      *             Requestor Pays Buckets</a> in the <i>Amazon S3 User Guide</i>.</p>
@@ -343,7 +343,7 @@ type PutObjectOptions {
      */
     ObjectLockMode?: ObjectLockMode | string;
     /**
-     * <p>The date and time when you want this object's Object Lock to expire. Must be formatted
+     * <p>The date and time you want this object's Object Lock to expire. Must be formatted
      *          as a timestamp parameter.</p>
      */
     ObjectLockRetainUntilDate?: Date;
@@ -366,7 +366,7 @@ and as a result it will return a `Promise` with:
 interface PutObjectOutput {
   /**
    * <p> If the expiration is configured for the object (see <a href="https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketLifecycleConfiguration.html">PutBucketLifecycleConfiguration</a>), the response includes this header. It
-   *          includes the expiry-date and rule-id key-value pairs that provide information about object
+   *          includes the expiry-date and rule-id key-value pairs that provide information about the object
    *          expiration. The value of the rule-id is URL encoded.</p>
    */
   Expiration?: string;
@@ -398,12 +398,12 @@ interface PutObjectOutput {
   /**
    * <p>If <code>x-amz-server-side-encryption</code> is present and has the value of
    *             <code>aws:kms</code>, this header specifies the ID of the Amazon Web Services Key Management Service
-   *          (Amazon Web Services KMS) symmetric customer managed key that was used for the
+   *          (Amazon Web Services KMS) symmetric customer-managed key that was used for the
    *          object. </p>
    */
   SSEKMSKeyId?: string;
   /**
-   * <p>If present, specifies the Amazon Web Services KMS Encryption Context to use for object encryption. The
+   * <p>If present, specifies the Amazon Web Services KMS Encryption Context for object encryption. The
    *          value of this header is a base64-encoded UTF-8 string holding JSON with the encryption
    *          context key-value pairs.</p>
    */
@@ -508,7 +508,7 @@ type GetObjectOptions {
      */
     SSECustomerKeyMD5?: string;
     /**
-     * <p>Confirms that the requester knows that they will be charged for the request. Bucket
+     * <p>Confirms that the requester knows they will be charged for the request. Bucket
      *          owners need not specify this parameter in their requests. For information about downloading
      *          objects from requester pays buckets, see <a href="https://docs.aws.amazon.com/AmazonS3/latest/dev/ObjectsinRequesterPaysBuckets.html">Downloading Objects in
      *             Requestor Pays Buckets</a> in the <i>Amazon S3 User Guide</i>.</p>
@@ -693,7 +693,7 @@ If we want to remove an object from a bucket, we can use:
 const result = await this.objectsService.deleteObject('bucket-name', 'remote', options);
 ```
 
-**Again, all if you specified a prefix in your module init, all remotes will be auto prefixed.**
+**Again, if you specified a prefix in your module init, all remotes will be auto prefixed.**
 
 This method accepts the following options:
 
@@ -701,7 +701,7 @@ This method accepts the following options:
 type DeleteObjectOptions {
     /**
      * <p>The concatenation of the authentication device's serial number, a space, and the value
-     *          that is displayed on your authentication device. Required to permanently delete a versioned
+     *          that is displayed on your authentication device. Required to delete a versioned permanently
      *          object if versioning is configured with MFA delete enabled.</p>
      */
     MFA?: string;
@@ -710,7 +710,7 @@ type DeleteObjectOptions {
      */
     VersionId?: string;
     /**
-     * <p>Confirms that the requester knows that they will be charged for the request. Bucket
+     * <p>Confirms that the requester knows they will be charged for the request. Bucket
      *          owners need not specify this parameter in their requests. For information about downloading
      *          objects from requester pays buckets, see <a href="https://docs.aws.amazon.com/AmazonS3/latest/dev/ObjectsinRequesterPaysBuckets.html">Downloading Objects in
      *             Requestor Pays Buckets</a> in the <i>Amazon S3 User Guide</i>.</p>
@@ -765,12 +765,12 @@ The method accepts:
 type DeleteObjectsOptions = {
   /**
    * <p>The concatenation of the authentication device's serial number, a space, and the value
-   *          that is displayed on your authentication device. Required to permanently delete a versioned
+   *          that is displayed on your authentication device. Required to delete a versioned permanently
    *          object if versioning is configured with MFA delete enabled.</p>
    */
   MFA?: string;
   /**
-   * <p>Confirms that the requester knows that they will be charged for the request. Bucket
+   * <p>Confirms that the requester knows they will be charged for the request. Bucket
    *          owners need not specify this parameter in their requests. For information about downloading
    *          objects from requester pays buckets, see <a href="https://docs.aws.amazon.com/AmazonS3/latest/dev/ObjectsinRequesterPaysBuckets.html">Downloading Objects in
    *             Requestor Pays Buckets</a> in the <i>Amazon S3 User Guide</i>.</p>
