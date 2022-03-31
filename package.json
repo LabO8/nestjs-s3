@@ -5,7 +5,7 @@
   "author": "Martin Andreev <martinandreev@lab08.com>",
   "license": "MIT",
   "readmeFilename": "README.md",
-  "main": "dist/test.js",
+  "main": "./dist/index.js",
   "files": [
     "dist/**/*",
     "*.md"
@@ -33,6 +33,7 @@
     "url": "https://github.com/LabO8/nestjs-s3"
   },
   "bugs": "https://github.com/LabO8/nestjs-s3",
+  "homepage": "https://labo8.github.io/nestjs-s3/",
   "peerDependencies": {
     "@nestjs/common": "^8.0.0",
     "@nestjs/axios": "^0.0.4"
