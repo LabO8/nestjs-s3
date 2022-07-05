@@ -6,7 +6,7 @@ import { BucketsService, ObjectsService, PrefixService, SignedUrlService } from 
 import { S3AsyncConfig, S3Config } from './types';
 import { DownloadService } from './utils';
 
-const proviers: Provider[] = [
+const providers: Provider[] = [
   createS3ServiceProvider(),
   BucketsService,
   ObjectsService,
@@ -20,7 +20,7 @@ const createSharedProviders = (config: S3Config): Provider[] => [
     provide: S3_CONFIG,
     useValue: config,
   },
-  ...proviers,
+  ...providers,
 ];
 
 const createSharedProvidersAsync = (provider: S3AsyncConfig): Provider[] => [
@@ -29,7 +29,7 @@ const createSharedProvidersAsync = (provider: S3AsyncConfig): Provider[] => [
     useFactory: provider.useFactory,
     inject: provider.inject || [],
   },
-  ...proviers,
+  ...providers,
 ];
 
 @Global()
