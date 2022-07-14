@@ -22,7 +22,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[utils/download.service.ts:12](https://github.com/LabO8/nestjs-s3/blob/bdcd0b3/src/utils/download.service.ts#L12)
+[utils/download.service.ts:12](https://github.com/LabO8/nestjs-s3/blob/5ca27ba/src/utils/download.service.ts#L12)
 
 ## Methods
 
@@ -46,4 +46,4 @@ custom_edit_url: null
 
 #### Defined in
 
-[utils/download.service.ts:18](https://github.com/LabO8/nestjs-s3/blob/bdcd0b3/src/utils/download.service.ts#L18)
+[utils/download.service.ts:18](https://github.com/LabO8/nestjs-s3/blob/5ca27ba/src/utils/download.service.ts#L18)

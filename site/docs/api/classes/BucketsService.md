@@ -20,7 +20,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[services/buckers.service.ts:34](https://github.com/LabO8/nestjs-s3/blob/bdcd0b3/src/services/buckers.service.ts#L34)
+[services/buckers.service.ts:34](https://github.com/LabO8/nestjs-s3/blob/5ca27ba/src/services/buckers.service.ts#L34)
 
 ## Methods
 
@@ -41,7 +41,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[services/buckers.service.ts:36](https://github.com/LabO8/nestjs-s3/blob/bdcd0b3/src/services/buckers.service.ts#L36)
+[services/buckers.service.ts:36](https://github.com/LabO8/nestjs-s3/blob/5ca27ba/src/services/buckers.service.ts#L36)
 
 ___
 
@@ -61,7 +61,7 @@ ___
 
 #### Defined in
 
-[services/buckers.service.ts:48](https://github.com/LabO8/nestjs-s3/blob/bdcd0b3/src/services/buckers.service.ts#L48)
+[services/buckers.service.ts:48](https://github.com/LabO8/nestjs-s3/blob/5ca27ba/src/services/buckers.service.ts#L48)
 
 ___
 
@@ -81,7 +81,7 @@ ___
 
 #### Defined in
 
-[services/buckers.service.ts:60](https://github.com/LabO8/nestjs-s3/blob/bdcd0b3/src/services/buckers.service.ts#L60)
+[services/buckers.service.ts:60](https://github.com/LabO8/nestjs-s3/blob/5ca27ba/src/services/buckers.service.ts#L60)
 
 ___
 
@@ -95,7 +95,7 @@ ___
 
 #### Defined in
 
-[services/buckers.service.ts:56](https://github.com/LabO8/nestjs-s3/blob/bdcd0b3/src/services/buckers.service.ts#L56)
+[services/buckers.service.ts:56](https://github.com/LabO8/nestjs-s3/blob/5ca27ba/src/services/buckers.service.ts#L56)
 
 ___
 
@@ -115,7 +115,7 @@ ___
 
 #### Defined in
 
-[services/buckers.service.ts:66](https://github.com/LabO8/nestjs-s3/blob/bdcd0b3/src/services/buckers.service.ts#L66)
+[services/buckers.service.ts:66](https://github.com/LabO8/nestjs-s3/blob/5ca27ba/src/services/buckers.service.ts#L66)
 
 ___
 
@@ -136,7 +136,7 @@ ___
 
 #### Defined in
 
-[services/buckers.service.ts:119](https://github.com/LabO8/nestjs-s3/blob/bdcd0b3/src/services/buckers.service.ts#L119)
+[services/buckers.service.ts:119](https://github.com/LabO8/nestjs-s3/blob/5ca27ba/src/services/buckers.service.ts#L119)
 
 ___
 
@@ -157,7 +157,7 @@ ___
 
 #### Defined in
 
-[services/buckers.service.ts:83](https://github.com/LabO8/nestjs-s3/blob/bdcd0b3/src/services/buckers.service.ts#L83)
+[services/buckers.service.ts:83](https://github.com/LabO8/nestjs-s3/blob/5ca27ba/src/services/buckers.service.ts#L83)
 
 ___
 
@@ -178,7 +178,7 @@ ___
 
 #### Defined in
 
-[services/buckers.service.ts:74](https://github.com/LabO8/nestjs-s3/blob/bdcd0b3/src/services/buckers.service.ts#L74)
+[services/buckers.service.ts:74](https://github.com/LabO8/nestjs-s3/blob/5ca27ba/src/services/buckers.service.ts#L74)
 
 ___
 
@@ -199,7 +199,7 @@ ___
 
 #### Defined in
 
-[services/buckers.service.ts:107](https://github.com/LabO8/nestjs-s3/blob/bdcd0b3/src/services/buckers.service.ts#L107)
+[services/buckers.service.ts:107](https://github.com/LabO8/nestjs-s3/blob/5ca27ba/src/services/buckers.service.ts#L107)
 
 ___
 
@@ -220,4 +220,4 @@ ___
 
 #### Defined in
 
-[services/buckers.service.ts:95](https://github.com/LabO8/nestjs-s3/blob/bdcd0b3/src/services/buckers.service.ts#L95)
+[services/buckers.service.ts:95](https://github.com/LabO8/nestjs-s3/blob/5ca27ba/src/services/buckers.service.ts#L95)
