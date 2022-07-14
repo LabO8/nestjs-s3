@@ -13,7 +13,7 @@ custom_edit_url: null
   </a>
 </div>
 
-This is a simple NestJS AWS S3 library that allows you to use the AWS SDK v3 in a more friendly and familiar way, by providing you with injectable services for managing things like buckets and objects.
+This simple NestJS AWS S3 library allows you to use the AWS SDK v3 in a more friendly and familiar way by providing injectable services for managing things like buckets and objects.
 
 <h3 align="center">NestJS Amazon S3 library</h3>
 
@@ -28,7 +28,7 @@ This is a simple NestJS AWS S3 library that allows you to use the AWS SDK v3 in 
 
 ## Installation
 
-To install it simple run
+To install it simply run
 
 ```shell
 yarn add @lab08/nestjs-s3
@@ -44,7 +44,7 @@ npm install @lab08/nestjs-s3
 
 The S3 module support multiple ways to init it
 
-The strait approach is simple just calling `S3Module.forRoot` and specifing the region, access key id and secret access key.
+The strait approach is simply calling `S3Module.forRoot` and specifying the region, access key id, and secret access key.
 
 ```typescript
 S3Module.forRoot({
@@ -54,7 +54,7 @@ S3Module.forRoot({
 });
 ```
 
-However, there are times, where configuration if loaded from a service or depends on other providers. This can be achived using the `S3Module.forRootAsync`.
+However, there are times, when the configuration is loaded from a service or depends on other providers. This can be achieved using the `S3Module.forRootAsync`.
 
 ```typescript
 S3Module.forRootAsync({
@@ -83,7 +83,7 @@ S3Module.forRootAsync({
 
 # Documentation
 
-If you want to read the more on the usage, you can check [the documentation](https://labo8.github.io/nestjs-s3/)
+If you want to read more on the usage, you can check [the documentation](https://labo8.github.io/nestjs-s3/)
 
 # Contributing
 
@@ -93,7 +93,7 @@ If you want to read the more on the usage, you can check [the documentation](htt
 4. Commit your changes (`git commit -am 'Added some feature'`)
 5. Test your changes (`yarn test`)
 6. Push to the branch (`git push origin feature/my-feature`)
-7. [Create new Pull Request](https://help.github.com/articles/creating-a-pull-request/)
+7. [Create a new Pull Request](https://help.github.com/articles/creating-a-pull-request/)
 
 ## Testing
 
@@ -159,10 +159,10 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+THE SOFTWARE IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM,
+OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
