@@ -53,8 +53,6 @@ module.exports = {
 
   // The regexp pattern or array of patterns that Jest uses to detect test files
   // testRegex: [],
-
-  testURL: 'http://localhost',
   transform: {
     '^.+\\.(ts|tsx)?$': 'ts-jest',
   },
