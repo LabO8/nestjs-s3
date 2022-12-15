@@ -1,5 +1,6 @@
 import { Module } from '@nestjs/common';
 import { ConfigModule, ConfigService } from '@nestjs/config';
+import * as path from 'path';
 import { S3Module } from '../../src';
 import { aws, AwsType } from './aws';
 import {
@@ -12,6 +13,7 @@ import {
 @Module({
   imports: [
     ConfigModule.forRoot({
+      envFilePath: path.resolve('../.env'),
       load: [aws],
     }),
     S3Module.forRootAsync({
