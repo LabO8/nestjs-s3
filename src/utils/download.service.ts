@@ -41,12 +41,7 @@ export class DownloadService {
     }
 
     const filename = defaults.filename ?? path.basename(remote);
-    const signedUrl = await this.signedUrlService.getSignedUrl(
-      bucket,
-      this.prefixService.prefix(remote),
-      DEFAULT_EXPIRES_IN,
-      options,
-    );
+    const signedUrl = await this.signedUrlService.getSignedUrl(bucket, remote, DEFAULT_EXPIRES_IN, options);
 
     const localFilePath = path.resolve(downloadDirectory, filename);
 
