@@ -1,1 +1,1 @@
-export type DisableAutoPrefix = { disableAutoPrefix: true };
+export type DisableAutoPrefix = { disableAutoPrefix?: true };
