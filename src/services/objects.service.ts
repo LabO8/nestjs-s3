@@ -82,7 +82,7 @@ export class ObjectsService {
       new DeleteObjectCommand({
         Bucket: bucket,
         Key: disableAutoPrefix ? remote : this.prefixService.prefix(remote),
-        ...options,
+        ...preparedOptions,
       }),
     );
   }
@@ -100,7 +100,7 @@ export class ObjectsService {
         Delete: {
           Objects: remotes.map((r) => ({ Key: disableAutoPrefix ? r : this.prefixService.prefix(r) })),
         },
-        ...options,
+        ...preparedOptions,
       }),
     );
   }
@@ -112,7 +112,7 @@ export class ObjectsService {
       new GetObjectCommand({
         Bucket: bucket,
         Key: disableAutoPrefix ? remote : this.prefixService.prefix(remote),
-        ...options,
+        ...preparedOptions,
       }),
     );
   }
@@ -121,7 +121,7 @@ export class ObjectsService {
     return this.client.send(
       new ListObjectsCommand({
         Bucket: bucket,
-        ...options,
+        ...preparedOptions,
       }),
     );
   }
