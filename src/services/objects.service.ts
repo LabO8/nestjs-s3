@@ -121,7 +121,7 @@ export class ObjectsService {
     return this.client.send(
       new ListObjectsCommand({
         Bucket: bucket,
-        ...preparedOptions,
+        ...options,
       }),
     );
   }
