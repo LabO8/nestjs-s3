@@ -19,6 +19,7 @@ import {
   DeleteObjectsOptions,
   GetObjectOptions,
   ListObjectOptions,
+  OptionsWithAutoPrefix,
   PutObjectOptions,
 } from '../types';
 import { PrefixService } from './prefix.service';
@@ -30,18 +31,31 @@ export class ObjectsService {
     private readonly prefixService: PrefixService,
   ) {}
 
+  private prepareOptions(options: OptionsWithAutoPrefix): {
+    options: Omit<OptionsWithAutoPrefix, 'disableAutoPrefix'>;
+    disableAutoPrefix: boolean;
+  } {
+    const disableAutoPrefix = options?.disableAutoPrefix ?? false;
+
+    delete options?.disableAutoPrefix;
+
+    return { options, disableAutoPrefix };
+  }
+
   public async putObject(
     bucket: string,
     body: Buffer,
     remote: string,
     options?: PutObjectOptions,
   ): Promise<PutObjectOutput> {
+    const { disableAutoPrefix, options: preparedOptions } = this.prepareOptions(options);
+
     return this.client.send(
       new PutObjectCommand({
         Bucket: bucket,
         Body: body,
-        Key: this.prefixService.prefix(remote),
-        ...options,
+        Key: disableAutoPrefix ? remote : this.prefixService.prefix(remote),
+        ...preparedOptions,
       }),
     );
   }
@@ -62,10 +76,12 @@ export class ObjectsService {
     remote: string,
     options?: DeleteObjectOptions,
   ): Promise<DeleteObjectOutput> {
+    const { disableAutoPrefix, options: preparedOptions } = this.prepareOptions(options);
+
     return this.client.send(
       new DeleteObjectCommand({
         Bucket: bucket,
-        Key: this.prefixService.prefix(remote),
+        Key: disableAutoPrefix ? remote : this.prefixService.prefix(remote),
         ...options,
       }),
     );
@@ -76,11 +92,13 @@ export class ObjectsService {
     remotes: string[],
     options?: DeleteObjectsOptions,
   ): Promise<DeleteObjectsOutput> {
+    const { disableAutoPrefix, options: preparedOptions } = this.prepareOptions(options);
+
     return this.client.send(
       new DeleteObjectsCommand({
         Bucket: bucket,
         Delete: {
-          Objects: remotes.map((r) => ({ Key: this.prefixService.prefix(r) })),
+          Objects: remotes.map((r) => ({ Key: disableAutoPrefix ? r : this.prefixService.prefix(r) })),
         },
         ...options,
       }),
@@ -88,10 +106,12 @@ export class ObjectsService {
   }
 
   public async getObject(bucket: string, remote: string, options?: GetObjectOptions): Promise<GetObjectOutput> {
+    const { disableAutoPrefix, options: preparedOptions } = this.prepareOptions(options);
+
     return this.client.send(
       new GetObjectCommand({
         Bucket: bucket,
-        Key: this.prefixService.prefix(remote),
+        Key: disableAutoPrefix ? remote : this.prefixService.prefix(remote),
         ...options,
       }),
     );
