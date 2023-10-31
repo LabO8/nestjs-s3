@@ -21,7 +21,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[services/objects.service.ts:28](https://github.com/LabO8/nestjs-s3/blob/5ca27ba/src/services/objects.service.ts#L28)
+[services/objects.service.ts:32](https://github.com/LabO8/nestjs-s3/blob/65a196f/src/services/objects.service.ts#L32)
 
 ## Methods
 
@@ -43,7 +43,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[services/objects.service.ts:60](https://github.com/LabO8/nestjs-s3/blob/5ca27ba/src/services/objects.service.ts#L60)
+[services/objects.service.ts:66](https://github.com/LabO8/nestjs-s3/blob/65a196f/src/services/objects.service.ts#L66)
 
 ___
 
@@ -65,7 +65,7 @@ ___
 
 #### Defined in
 
-[services/objects.service.ts:74](https://github.com/LabO8/nestjs-s3/blob/5ca27ba/src/services/objects.service.ts#L74)
+[services/objects.service.ts:82](https://github.com/LabO8/nestjs-s3/blob/65a196f/src/services/objects.service.ts#L82)
 
 ___
 
@@ -87,7 +87,7 @@ ___
 
 #### Defined in
 
-[services/objects.service.ts:90](https://github.com/LabO8/nestjs-s3/blob/5ca27ba/src/services/objects.service.ts#L90)
+[services/objects.service.ts:100](https://github.com/LabO8/nestjs-s3/blob/65a196f/src/services/objects.service.ts#L100)
 
 ___
 
@@ -100,7 +100,7 @@ ___
 | Name | Type |
 | :------ | :------ |
 | `bucket` | `string` |
-| `options?` | [`ListObjectOptions`](../modules#listobjectoptions) |
+| `options?` | [`ListObjectsOptions`](../modules#listobjectsoptions) |
 
 #### Returns
 
@@ -108,7 +108,28 @@ ___
 
 #### Defined in
 
-[services/objects.service.ts:100](https://github.com/LabO8/nestjs-s3/blob/5ca27ba/src/services/objects.service.ts#L100)
+[services/objects.service.ts:112](https://github.com/LabO8/nestjs-s3/blob/65a196f/src/services/objects.service.ts#L112)
+
+___
+
+### listObjectsV2
+
+▸ **listObjectsV2**(`bucket`, `options?`): `Promise`<`ListObjectsV2Output`\>
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `bucket` | `string` |
+| `options?` | [`ListObjectsV2Options`](../modules#listobjectsv2options) |
+
+#### Returns
+
+`Promise`<`ListObjectsV2Output`\>
+
+#### Defined in
+
+[services/objects.service.ts:121](https://github.com/LabO8/nestjs-s3/blob/65a196f/src/services/objects.service.ts#L121)
 
 ___
 
@@ -131,7 +152,7 @@ ___
 
 #### Defined in
 
-[services/objects.service.ts:33](https://github.com/LabO8/nestjs-s3/blob/5ca27ba/src/services/objects.service.ts#L33)
+[services/objects.service.ts:37](https://github.com/LabO8/nestjs-s3/blob/65a196f/src/services/objects.service.ts#L37)
 
 ___
 
@@ -154,4 +175,4 @@ ___
 
 #### Defined in
 
-[services/objects.service.ts:49](https://github.com/LabO8/nestjs-s3/blob/5ca27ba/src/services/objects.service.ts#L49)
+[services/objects.service.ts:55](https://github.com/LabO8/nestjs-s3/blob/65a196f/src/services/objects.service.ts#L55)

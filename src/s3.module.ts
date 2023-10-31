@@ -4,7 +4,7 @@ import { S3_CONFIG } from './constants';
 import { createS3ServiceProvider } from './s3-service.factory';
 import { BucketsService, ObjectsService, PrefixService, SignedUrlService } from './services';
 import { S3AsyncConfig, S3Config } from './types';
-import { DownloadService } from './utils';
+import { DeletionService, DownloadService } from './utils';
 
 const providers: Provider[] = [
   createS3ServiceProvider(),
@@ -13,6 +13,7 @@ const providers: Provider[] = [
   PrefixService,
   SignedUrlService,
   DownloadService,
+  DeletionService,
 ];
 
 const createSharedProviders = (config: S3Config): Provider[] => [

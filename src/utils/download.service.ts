@@ -60,6 +60,6 @@ export class DownloadService {
         resolve(localFilePath);
       });
       writer.on('error', reject);
-    });
+    }) as Promise<string>;
   }
 }
