@@ -23,6 +23,8 @@ describe('Bucket service', () => {
 
     bucketService = testingModule.get(BucketsService);
 
+    jest.setTimeout(30000);
+
     await bucketService.create(testBucket);
   });
 

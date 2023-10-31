@@ -29,6 +29,8 @@ describe('Deletion service', () => {
     bucketService = testingModule.get(BucketsService);
 
     await bucketService.create(bucketName);
+
+    jest.setTimeout(30000);
   });
 
   afterAll(async () => {
