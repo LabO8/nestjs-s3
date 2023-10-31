@@ -7,6 +7,8 @@ import {
   GetObjectOutput,
   ListObjectsCommand,
   ListObjectsOutput,
+  ListObjectsV2Command,
+  ListObjectsV2Output,
   PutObjectCommand,
   PutObjectOutput,
   S3Client,
@@ -18,11 +20,12 @@ import {
   DeleteObjectOptions,
   DeleteObjectsOptions,
   GetObjectOptions,
-  ListObjectOptions,
-  OptionsWithAutoPrefix,
+  ListObjectsOptions,
+  ListObjectsV2Options,
   PutObjectOptions,
 } from '../types';
 import { PrefixService } from './prefix.service';
+import { prepareOptions } from '../helpers';
 
 @Injectable()
 export class ObjectsService {
@@ -31,24 +34,13 @@ export class ObjectsService {
     private readonly prefixService: PrefixService,
   ) {}
 
-  private prepareOptions(options: OptionsWithAutoPrefix): {
-    options: Omit<OptionsWithAutoPrefix, 'disableAutoPrefix'>;
-    disableAutoPrefix: boolean;
-  } {
-    const disableAutoPrefix = options?.disableAutoPrefix ?? false;
-
-    delete options?.disableAutoPrefix;
-
-    return { options, disableAutoPrefix };
-  }
-
   public async putObject(
     bucket: string,
     body: Buffer,
     remote: string,
     options?: PutObjectOptions,
   ): Promise<PutObjectOutput> {
-    const { disableAutoPrefix, options: preparedOptions } = this.prepareOptions(options);
+    const { disableAutoPrefix, options: preparedOptions } = prepareOptions(options);
 
     return this.client.send(
       new PutObjectCommand({
@@ -76,7 +68,7 @@ export class ObjectsService {
     remote: string,
     options?: DeleteObjectOptions,
   ): Promise<DeleteObjectOutput> {
-    const { disableAutoPrefix, options: preparedOptions } = this.prepareOptions(options);
+    const { disableAutoPrefix, options: preparedOptions } = prepareOptions(options);
 
     return this.client.send(
       new DeleteObjectCommand({
@@ -92,7 +84,7 @@ export class ObjectsService {
     remotes: string[],
     options?: DeleteObjectsOptions,
   ): Promise<DeleteObjectsOutput> {
-    const { disableAutoPrefix, options: preparedOptions } = this.prepareOptions(options);
+    const { disableAutoPrefix, options: preparedOptions } = prepareOptions(options);
 
     return this.client.send(
       new DeleteObjectsCommand({
@@ -106,7 +98,7 @@ export class ObjectsService {
   }
 
   public async getObject(bucket: string, remote: string, options?: GetObjectOptions): Promise<GetObjectOutput> {
-    const { disableAutoPrefix, options: preparedOptions } = this.prepareOptions(options);
+    const { disableAutoPrefix, options: preparedOptions } = prepareOptions(options);
 
     return this.client.send(
       new GetObjectCommand({
@@ -117,9 +109,18 @@ export class ObjectsService {
     );
   }
 
-  public async listObjects(bucket: string, options?: ListObjectOptions): Promise<ListObjectsOutput> {
+  public async listObjects(bucket: string, options?: ListObjectsOptions): Promise<ListObjectsOutput> {
     return this.client.send(
       new ListObjectsCommand({
+        Bucket: bucket,
+        ...options,
+      }),
+    );
+  }
+
+  public async listObjectsV2(bucket: string, options?: ListObjectsV2Options): Promise<ListObjectsV2Output> {
+    return this.client.send(
+      new ListObjectsV2Command({
         Bucket: bucket,
         ...options,
       }),
