@@ -23,8 +23,6 @@ describe('Bucket service', () => {
 
     bucketService = testingModule.get(BucketsService);
 
-    jest.setTimeout(30000);
-
     await bucketService.create(testBucket);
   });
 
@@ -54,6 +52,7 @@ describe('Bucket service', () => {
   });
 
   it('should not be able to delete bucket that does not exist', async () => {
+    jest.setTimeout(30000);
     const bucketName = 'test-bucket-not-existing';
 
     await expect(bucketService.delete(bucketName)).rejects.toThrow();
