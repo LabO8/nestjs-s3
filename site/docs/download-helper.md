@@ -2,7 +2,7 @@
 id: download-helper
 title: Download helper
 sidebar_label: Download helper
-slug: /download helper
+slug: /download-helper
 ---
 
 ## Introduction

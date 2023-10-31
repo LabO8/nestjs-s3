@@ -2,7 +2,7 @@
 id: deletion-helper
 title: Deletion helper
 sidebar_label: Deletion helper
-slug: /deletion helper
+slug: /deletion-helper
 ---
 
 ## Introduction
