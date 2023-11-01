@@ -37,6 +37,10 @@ export class DeletionService {
         ...listOptions,
       });
 
+      if (!data.Contents) {
+        return false;
+      }
+
       const response = await this.client.send(
         new DeleteObjectsCommand({
           Bucket: bucket,
