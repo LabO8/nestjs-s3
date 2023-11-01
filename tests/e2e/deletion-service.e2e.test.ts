@@ -56,7 +56,30 @@ describe('Deletion service', () => {
 
     const result = await deletionHelperService.deleteObjectsByPrefix(bucketName, 'delete-prefix');
 
+    expect(result).toEqual(true);
+  });
+
+  it('should return an array with the output of the deleted files by prefix from a bucket', async () => {
+    await objectService.putObjectFromPath(
+      bucketName,
+      path.resolve(testPath, 'test.txt'),
+      'delete-prefix/test-file-to-delete.txt',
+    );
+    await objectService.putObjectFromPath(
+      bucketName,
+      path.resolve(testPath, 'test.txt'),
+      'delete-prefix/test-file-to-delete-2.txt',
+    );
+    await objectService.putObjectFromPath(
+      bucketName,
+      path.resolve(testPath, 'test.txt'),
+      'delete-prefix/nested/test-file-to-delete-2.txt',
+    );
+
+    const result = await deletionHelperService.deleteObjectsByPrefix(bucketName, 'delete-prefix', true);
+
     expect(result).not.toEqual(null);
+    expect(result).toBeInstanceOf(Array);
   });
 
   it('should be able to delete paginated files recursively by prefix from a bucket', async () => {
@@ -82,5 +105,11 @@ describe('Deletion service', () => {
     );
 
     expect(result).toEqual(true);
+  });
+
+  it('should return false when no files with the specified prefix are found in the bucket', async () => {
+    const result = await deletionHelperService.deleteObjectsByPrefix(bucketName, 'not-existing-prefix');
+
+    expect(result).toEqual(false);
   });
 });

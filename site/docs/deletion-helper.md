@@ -129,6 +129,13 @@ interface ListObjectsV2Request {
 }
 ```
 
+## Return value
+
+The return value of the function is `Promise<DeleteObjectsOutput[]>` if `logDeletedObjects` is true.
+Otherwise, the return value is `Promise<boolean>`.
+
+If no files are found with the specified `prefix`, the return value is `false`.
+
 ## Examples
 
 ### Delete all objects from a folder with default options
