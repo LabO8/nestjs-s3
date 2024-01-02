@@ -33,6 +33,10 @@ describe('Deletion service', () => {
     jest.setTimeout(30000);
   });
 
+  beforeEach(() => {
+    jest.setTimeout(30000);
+  });
+
   afterAll(async () => {
     await bucketService.delete(bucketName);
   });
