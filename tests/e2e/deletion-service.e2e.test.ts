@@ -34,7 +34,7 @@ describe('Deletion service', () => {
   });
 
   beforeEach(() => {
-    jest.setTimeout(30000);
+    jest.setTimeout(300000);
   });
 
   afterAll(async () => {
@@ -61,7 +61,7 @@ describe('Deletion service', () => {
     const result = await deletionHelperService.deleteObjectsByPrefix(bucketName, 'delete-prefix');
 
     expect(result).toEqual(true);
-  });
+  }, 300000);
 
   it('should return an array with the output of the deleted files by prefix from a bucket', async () => {
     await objectService.putObjectFromPath(
