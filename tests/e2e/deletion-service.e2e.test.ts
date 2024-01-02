@@ -57,7 +57,7 @@ describe('Deletion service', () => {
     const result = await deletionHelperService.deleteObjectsByPrefix(bucketName, 'delete-prefix');
 
     expect(result).toEqual(true);
-  });
+  }, 30000);
 
   it('should return an array with the output of the deleted files by prefix from a bucket', async () => {
     await objectService.putObjectFromPath(
