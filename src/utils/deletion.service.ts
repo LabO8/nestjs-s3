@@ -1,6 +1,6 @@
 import { DeleteObjectOutput, DeleteObjectsCommand, ListObjectsV2Output, S3Client } from '@aws-sdk/client-s3';
 import { Inject, Injectable } from '@nestjs/common';
-import { S3_SERVICE } from '../constants';
+import { PREFIX_ALGORITHM, S3_SERVICE } from '../constants';
 import { DeleteObjectsOptions, ListObjectsV2Options } from '../types';
 import { ObjectsService, PrefixService } from '../services';
 import { prepareOptions } from '../helpers';
@@ -10,7 +10,7 @@ export class DeletionService {
   public constructor(
     @Inject(S3_SERVICE) private readonly client: S3Client,
     private readonly objectsService: ObjectsService,
-    private readonly prefixService: PrefixService,
+    @Inject(PREFIX_ALGORITHM) private readonly prefixService: PrefixService,
   ) {}
 
   /**
@@ -32,7 +32,7 @@ export class DeletionService {
 
     do {
       data = await this.objectsService.listObjectsV2(bucket, {
-        Prefix: disableAutoPrefix ? prefix : this.prefixService.prefix(prefix),
+        Prefix: disableAutoPrefix ? prefix : this.prefixService.prefix(prefix, bucket),
         ContinuationToken: continuationToken,
         ...listOptions,
       });

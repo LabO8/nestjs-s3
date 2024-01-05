@@ -46,7 +46,7 @@ export class ObjectsService {
       new PutObjectCommand({
         Bucket: bucket,
         Body: body,
-        Key: disableAutoPrefix ? remote : this.prefixService.prefix(remote),
+        Key: disableAutoPrefix ? remote : this.prefixService.prefix(remote, bucket),
         ...preparedOptions,
       }),
     );
@@ -73,7 +73,7 @@ export class ObjectsService {
     return this.client.send(
       new DeleteObjectCommand({
         Bucket: bucket,
-        Key: disableAutoPrefix ? remote : this.prefixService.prefix(remote),
+        Key: disableAutoPrefix ? remote : this.prefixService.prefix(remote, bucket),
         ...preparedOptions,
       }),
     );
@@ -90,7 +90,7 @@ export class ObjectsService {
       new DeleteObjectsCommand({
         Bucket: bucket,
         Delete: {
-          Objects: remotes.map((r) => ({ Key: disableAutoPrefix ? r : this.prefixService.prefix(r) })),
+          Objects: remotes.map((r) => ({ Key: disableAutoPrefix ? r : this.prefixService.prefix(r, bucket) })),
         },
         ...preparedOptions,
       }),
@@ -103,7 +103,7 @@ export class ObjectsService {
     return this.client.send(
       new GetObjectCommand({
         Bucket: bucket,
-        Key: disableAutoPrefix ? remote : this.prefixService.prefix(remote),
+        Key: disableAutoPrefix ? remote : this.prefixService.prefix(remote, bucket),
         ...preparedOptions,
       }),
     );

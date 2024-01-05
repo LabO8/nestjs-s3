@@ -26,7 +26,7 @@ export class SignedUrlService {
     options?: PutObjectOptions,
   ): Promise<PutSignedUrl> {
     const { disableAutoPrefix, options: preparedOptions } = prepareOptions(options);
-    const key = disableAutoPrefix ? remote : this.prefixService.prefix(remote);
+    const key = disableAutoPrefix ? remote : this.prefixService.prefix(remote, bucket);
 
     const command = new PutObjectCommand({
       Bucket: bucket,
@@ -54,7 +54,7 @@ export class SignedUrlService {
 
     const command = new GetObjectCommand({
       Bucket: bucket,
-      Key: disableAutoPrefix ? remote : this.prefixService.prefix(remote),
+      Key: disableAutoPrefix ? remote : this.prefixService.prefix(remote, bucket),
       ...preparedOptions,
     });
 
@@ -73,7 +73,7 @@ export class SignedUrlService {
 
     const command = new DeleteObjectCommand({
       Bucket: bucket,
-      Key: disableAutoPrefix ? remote : this.prefixService.prefix(remote),
+      Key: disableAutoPrefix ? remote : this.prefixService.prefix(remote, bucket),
       ...preparedOptions,
     });
 
@@ -93,7 +93,7 @@ export class SignedUrlService {
     const command = new DeleteObjectsCommand({
       Bucket: bucket,
       Delete: {
-        Objects: remotes.map((r) => ({ Key: disableAutoPrefix ? r : this.prefixService.prefix(r) })),
+        Objects: remotes.map((r) => ({ Key: disableAutoPrefix ? r : this.prefixService.prefix(r, bucket) })),
       },
       ...preparedOptions,
     });
