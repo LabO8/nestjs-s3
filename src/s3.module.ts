@@ -29,7 +29,7 @@ const createSharedProviders = (config: S3Config): Provider[] => [
   },
   {
     provide: PREFIX_ALGORITHM,
-    useValue: config.prefixAlgorithm ? (config.prefixAlgorithm as any) : new DefaultPrefixAlgorithmService(),
+    useValue: config.prefixAlgorithm ? config.prefixAlgorithm : new DefaultPrefixAlgorithmService(),
   },
   ...providers,
 ];

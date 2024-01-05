@@ -10,7 +10,7 @@ export class DeletionService {
   public constructor(
     @Inject(S3_SERVICE) private readonly client: S3Client,
     private readonly objectsService: ObjectsService,
-    @Inject(PREFIX_ALGORITHM) private readonly prefixService: PrefixService,
+    private readonly prefixService: PrefixService,
   ) {}
 
   /**
