@@ -32,7 +32,7 @@ export class DeletionService {
 
     do {
       data = await this.objectsService.listObjectsV2(bucket, {
-        Prefix: disableAutoPrefix ? prefix : this.prefixService.prefix(prefix, bucket),
+        Prefix: disableAutoPrefix ? prefix : this.prefixService.prefix(prefix, bucket, deleteOptions?.prefixContext),
         ContinuationToken: continuationToken,
         ...listOptions,
       });
