@@ -10,9 +10,9 @@ export class PrefixService {
     @Inject(PREFIX_ALGORITHM) private readonly prefixAlgorithm: IPrefixAlgorithm,
   ) {}
 
-  public prefix(remote: string, bucket?: string): string {
+  public prefix(remote: string, bucket?: string, context?: any): string {
     const { prefix } = this.config;
 
-    return this.prefixAlgorithm.prefix(remote, prefix, bucket);
+    return this.prefixAlgorithm.prefix(remote, prefix, bucket, context);
   }
 }
