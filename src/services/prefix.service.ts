@@ -1,18 +1,18 @@
 import { Inject, Injectable } from '@nestjs/common';
-import { S3_CONFIG } from '../constants';
+import { PREFIX_ALGORITHM, S3_CONFIG } from '../constants';
 import { S3Config } from '../types';
+import { IPrefixAlgorithm } from '../interfaces';
 
 @Injectable()
 export class PrefixService {
-  public constructor(@Inject(S3_CONFIG) private readonly config: S3Config) {}
+  public constructor(
+    @Inject(S3_CONFIG) private readonly config: S3Config,
+    @Inject(PREFIX_ALGORITHM) private readonly prefixAlgorithm: IPrefixAlgorithm,
+  ) {}
 
-  public prefix(remote: string): string {
+  public prefix(remote: string, bucket?: string): string {
     const { prefix } = this.config;
 
-    if (!prefix) {
-      return remote;
-    }
-
-    return `${prefix}${remote}`;
+    return this.prefixAlgorithm.prefix(remote, prefix, bucket);
   }
 }
