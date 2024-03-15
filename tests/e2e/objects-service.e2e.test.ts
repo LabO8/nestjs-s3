@@ -12,7 +12,7 @@ describe('Object service', () => {
 
   const bucketName = uuidv4();
   const testPath = path.resolve(__dirname, 'data');
-  const testFiles = ['test.txt', 'test-file-path.txt', 'test-get.txt'];
+  const testFiles = ['test.txt', 'test-file-path.txt', 'test-get.txt', 'test-file-to-copy.txt', 'test-file-copied.txt'];
 
   beforeAll(async () => {
     testingModule = await Test.createTestingModule({
@@ -79,12 +79,25 @@ describe('Object service', () => {
     expect(result).not.toEqual(null);
   });
 
-  it('should be get an object that exists from a existing bucket', async () => {
+  it('should get an object that exists from a existing bucket', async () => {
     const remote = 'test-get.txt';
     await objectService.putObjectFromPath(bucketName, path.resolve(testPath, 'test.txt'), remote);
 
     const object = await objectService.getObject(bucketName, remote);
 
     expect(object.Body).toBeInstanceOf(Stream);
+  });
+
+  it('should be able to copy a file by remote', async () => {
+    await objectService.putObjectFromPath(bucketName, path.resolve(testPath, 'test.txt'), 'test-file-to-copy.txt');
+
+    const result = await objectService.copyObject(
+      bucketName,
+      'test-file-to-copy.txt',
+      bucketName,
+      'test-file-copied.txt',
+    );
+
+    expect(result).not.toEqual(null);
   });
 });
