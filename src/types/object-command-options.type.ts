@@ -16,6 +16,14 @@ export type PutObjectOptions = Omit<PutObjectCommandInput, 'Bucket' | 'Body' | '
   DisableAutoPrefix &
   PrefixContext;
 export type DeleteObjectOptions = Omit<DeleteObjectCommandInput, 'Bucket' | 'Key'> & DisableAutoPrefix & PrefixContext;
+export type CopyObjectOptions = Omit<PutObjectCommandInput, 'Bucket' | 'Key' | 'CopySource'> &
+  DisableAutoPrefix &
+  PrefixContext;
 export type ListObjectsOptions = Omit<ListObjectsCommandInput, 'Bucket'>;
 export type ListObjectsV2Options = Omit<ListObjectsV2CommandInput, 'Bucket'>;
-export type OptionsWithAutoPrefix = PutObjectOptions | DeleteObjectOptions | DeleteObjectsOptions | GetObjectOptions;
+export type OptionsWithAutoPrefix =
+  | PutObjectOptions
+  | DeleteObjectOptions
+  | DeleteObjectsOptions
+  | GetObjectOptions
+  | CopyObjectOptions;

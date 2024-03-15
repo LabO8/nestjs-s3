@@ -24,7 +24,7 @@ export class DeletionService {
     deleteOptions?: DeleteObjectsOptions,
     listOptions?: Omit<ListObjectsV2Options, 'Prefix' | 'ContinuationToken'>,
   ): Promise<boolean | DeleteObjectOutput[]> {
-    const { disableAutoPrefix, options: preparedOptions } = prepareOptions(deleteOptions);
+    const { disableAutoPrefix, prefixContext, options: preparedOptions } = prepareOptions(deleteOptions);
 
     let continuationToken = null;
     const result: DeleteObjectOutput[] = [];
@@ -32,7 +32,7 @@ export class DeletionService {
 
     do {
       data = await this.objectsService.listObjectsV2(bucket, {
-        Prefix: disableAutoPrefix ? prefix : this.prefixService.prefix(prefix, bucket, deleteOptions?.prefixContext),
+        Prefix: disableAutoPrefix ? prefix : this.prefixService.prefix(prefix, bucket, prefixContext),
         ContinuationToken: continuationToken,
         ...listOptions,
       });

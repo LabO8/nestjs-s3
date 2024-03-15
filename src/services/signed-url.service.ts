@@ -25,8 +25,8 @@ export class SignedUrlService {
     expiresIn: number = DEFAULT_EXPIRES_IN,
     options?: PutObjectOptions,
   ): Promise<PutSignedUrl> {
-    const { disableAutoPrefix, options: preparedOptions } = prepareOptions(options);
-    const key = disableAutoPrefix ? remote : this.prefixService.prefix(remote, bucket, options?.prefixContext);
+    const { disableAutoPrefix, prefixContext, options: preparedOptions } = prepareOptions(options);
+    const key = disableAutoPrefix ? remote : this.prefixService.prefix(remote, bucket, prefixContext);
 
     const command = new PutObjectCommand({
       Bucket: bucket,
@@ -50,11 +50,11 @@ export class SignedUrlService {
     expiresIn: number = DEFAULT_EXPIRES_IN,
     options?: GetObjectOptions,
   ): Promise<string> {
-    const { disableAutoPrefix, options: preparedOptions } = prepareOptions(options);
+    const { disableAutoPrefix, prefixContext, options: preparedOptions } = prepareOptions(options);
 
     const command = new GetObjectCommand({
       Bucket: bucket,
-      Key: disableAutoPrefix ? remote : this.prefixService.prefix(remote, bucket, options?.prefixContext),
+      Key: disableAutoPrefix ? remote : this.prefixService.prefix(remote, bucket, prefixContext),
       ...preparedOptions,
     });
 
@@ -69,11 +69,11 @@ export class SignedUrlService {
     expiresIn: number = DEFAULT_EXPIRES_IN,
     options?: DeleteObjectOptions,
   ): Promise<string> {
-    const { disableAutoPrefix, options: preparedOptions } = prepareOptions(options);
+    const { disableAutoPrefix, prefixContext, options: preparedOptions } = prepareOptions(options);
 
     const command = new DeleteObjectCommand({
       Bucket: bucket,
-      Key: disableAutoPrefix ? remote : this.prefixService.prefix(remote, bucket, options?.prefixContext),
+      Key: disableAutoPrefix ? remote : this.prefixService.prefix(remote, bucket, prefixContext),
       ...preparedOptions,
     });
 
@@ -88,13 +88,13 @@ export class SignedUrlService {
     expiresIn: number = DEFAULT_EXPIRES_IN,
     options?: DeleteObjectsOptions,
   ): Promise<string> {
-    const { disableAutoPrefix, options: preparedOptions } = prepareOptions(options);
+    const { disableAutoPrefix, prefixContext, options: preparedOptions } = prepareOptions(options);
 
     const command = new DeleteObjectsCommand({
       Bucket: bucket,
       Delete: {
         Objects: remotes.map((r) => ({
-          Key: disableAutoPrefix ? r : this.prefixService.prefix(r, bucket, options?.prefixContext),
+          Key: disableAutoPrefix ? r : this.prefixService.prefix(r, bucket, prefixContext),
         })),
       },
       ...preparedOptions,
