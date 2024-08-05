@@ -5,11 +5,13 @@ import * as path from 'path';
 import { BucketsService, ObjectsService } from '../../../src';
 
 @Command({ name: 'objects:create', description: 'Create an aws s3 object' })
-export class UploadFileCommand implements CommandRunner {
+export class UploadFileCommand extends CommandRunner {
   public constructor(
     private readonly objectService: ObjectsService,
     private readonly bucketService: BucketsService,
-  ) {}
+  ) {
+    super();
+  }
 
   public async run(
     passedParams: string[],
