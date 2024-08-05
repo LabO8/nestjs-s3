@@ -5,6 +5,7 @@ import { S3Module } from '../../src';
 import { aws, AwsType } from './aws';
 import {
   CreateBucketCommand,
+  DeleteAllBucketsCommand,
   ListBucketCommand,
   ListObjectsCommand,
   UploadFileCommand,
@@ -35,6 +36,7 @@ import {
     ListBucketCommand,
     ListObjectsCommand,
     UploadFileCommand,
+    DeleteAllBucketsCommand,
   ],
 })
 export class AppModule {}

@@ -3,8 +3,10 @@ import * as ora from 'ora';
 import { BucketsService } from '../../../src';
 
 @Command({ name: 'bucket:list', description: 'List a bucket in aws' })
-export class ListBucketCommand implements CommandRunner {
-  public constructor(private readonly bucketService: BucketsService) {}
+export class ListBucketCommand extends CommandRunner {
+  public constructor(private readonly bucketService: BucketsService) {
+    super();
+  }
 
   async run(): Promise<void> {
     const spinner = ora().start('Listing buckets');

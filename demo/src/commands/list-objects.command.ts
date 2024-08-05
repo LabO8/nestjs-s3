@@ -3,11 +3,13 @@ import * as ora from 'ora';
 import { BucketsService, ObjectsService } from '../../../src';
 
 @Command({ name: 'objects:list', description: 'List a bucket in aws' })
-export class ListObjectsCommand implements CommandRunner {
+export class ListObjectsCommand extends CommandRunner {
   public constructor(
     private readonly objectService: ObjectsService,
     private readonly bucketService: BucketsService,
-  ) {}
+  ) {
+    super();
+  }
 
   async run(passedParams: string[]): Promise<void> {
     const [bucket] = passedParams;
