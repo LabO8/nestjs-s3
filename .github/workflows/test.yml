@@ -5,7 +5,7 @@ on:
     branches:
       - master
       - dev
-      - relases/*
+      - releases/*
   pull_request_target:
     branches:
       - master
