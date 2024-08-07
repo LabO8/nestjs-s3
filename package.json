@@ -1,6 +1,6 @@
 {
   "name": "@lab08/nestjs-s3",
-  "version": "3.7.1",
+  "version": "3.6.0",
   "description": "A NestJS library that wraps the AWS S3 bucket SDK v3 and lets you use it in a more NestJS friendly way.",
   "author": "Martin Andreev <martinandreev@lab08.com>",
   "license": "MIT",
@@ -35,11 +35,11 @@
   "bugs": "https://github.com/LabO8/nestjs-s3",
   "homepage": "https://labo8.github.io/nestjs-s3/",
   "peerDependencies": {
-    "@nestjs/axios": ">=0.0.8",
-    "@nestjs/common": ">=8.0.0",
     "@aws-sdk/client-s3": ">=3.0.0",
     "@aws-sdk/node-http-handler": ">=3.0.0",
-    "@aws-sdk/s3-request-presigner": ">=3.0.0"
+    "@aws-sdk/s3-request-presigner": ">=3.0.0",
+    "@nestjs/axios": ">=0.0.8",
+    "@nestjs/common": ">=8.0.0"
   },
   "devDependencies": {
     "@aws-sdk/client-s3": "^3.623.0",
@@ -59,6 +59,7 @@
     "@types/supertest": "2.0.12",
     "@typescript-eslint/eslint-plugin": "^6.21.0",
     "@typescript-eslint/parser": "^6.21.0",
+    "axios": "^1.7.3",
     "commitlint": "^17.8.1",
     "dotenv": "^16.0.3",
     "eslint": "^8.57.0",
