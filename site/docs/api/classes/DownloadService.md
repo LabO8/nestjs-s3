@@ -20,7 +20,7 @@
 
 #### Defined in
 
-[utils/download.service.ts:12](https://github.com/LabO8/nestjs-s3/blob/1543c2d00f94450144b62a41101481b695225e3d/src/utils/download.service.ts#L12)
+[utils/download.service.ts:12](https://github.com/LabO8/nestjs-s3/blob/49dee046307be2343007f81b5481193f2a950f4b/src/utils/download.service.ts#L12)
 
 ## Methods
 
@@ -46,4 +46,4 @@
 
 #### Defined in
 
-[utils/download.service.ts:18](https://github.com/LabO8/nestjs-s3/blob/1543c2d00f94450144b62a41101481b695225e3d/src/utils/download.service.ts#L18)
+[utils/download.service.ts:18](https://github.com/LabO8/nestjs-s3/blob/49dee046307be2343007f81b5481193f2a950f4b/src/utils/download.service.ts#L18)

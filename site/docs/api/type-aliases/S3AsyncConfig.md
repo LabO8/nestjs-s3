@@ -38,4 +38,4 @@
 
 ## Defined in
 
-[types/s3-config.type.ts:14](https://github.com/LabO8/nestjs-s3/blob/1543c2d00f94450144b62a41101481b695225e3d/src/types/s3-config.type.ts#L14)
+[types/s3-config.type.ts:14](https://github.com/LabO8/nestjs-s3/blob/49dee046307be2343007f81b5481193f2a950f4b/src/types/s3-config.type.ts#L14)
