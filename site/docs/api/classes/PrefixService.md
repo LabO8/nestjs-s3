@@ -18,7 +18,7 @@
 
 #### Defined in
 
-[services/prefix.service.ts:8](https://github.com/LabO8/nestjs-s3/blob/306023e15fcb498533a66fc2f9b000dc61a2bf64/src/services/prefix.service.ts#L8)
+[services/prefix.service.ts:8](https://github.com/LabO8/nestjs-s3/blob/1543c2d00f94450144b62a41101481b695225e3d/src/services/prefix.service.ts#L8)
 
 ## Methods
 
@@ -40,4 +40,4 @@
 
 #### Defined in
 
-[services/prefix.service.ts:13](https://github.com/LabO8/nestjs-s3/blob/306023e15fcb498533a66fc2f9b000dc61a2bf64/src/services/prefix.service.ts#L13)
+[services/prefix.service.ts:13](https://github.com/LabO8/nestjs-s3/blob/1543c2d00f94450144b62a41101481b695225e3d/src/services/prefix.service.ts#L13)

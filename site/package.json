@@ -24,6 +24,9 @@
     "typedoc-github-wiki-theme": "^2.0.0",
     "minimist": "^1.2.8"
   },
+  "resolutions": {
+    "minimatch": "^3.0.5"
+  },
   "browserslist": {
     "production": [
       ">0.5%",

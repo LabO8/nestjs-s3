@@ -20,7 +20,7 @@
 
 #### Defined in
 
-[utils/deletion.service.ts:10](https://github.com/LabO8/nestjs-s3/blob/306023e15fcb498533a66fc2f9b000dc61a2bf64/src/utils/deletion.service.ts#L10)
+[utils/deletion.service.ts:10](https://github.com/LabO8/nestjs-s3/blob/1543c2d00f94450144b62a41101481b695225e3d/src/utils/deletion.service.ts#L10)
 
 ## Methods
 
@@ -50,4 +50,4 @@ Returns true if all objects were deleted.
 
 #### Defined in
 
-[utils/deletion.service.ts:20](https://github.com/LabO8/nestjs-s3/blob/306023e15fcb498533a66fc2f9b000dc61a2bf64/src/utils/deletion.service.ts#L20)
+[utils/deletion.service.ts:20](https://github.com/LabO8/nestjs-s3/blob/1543c2d00f94450144b62a41101481b695225e3d/src/utils/deletion.service.ts#L20)

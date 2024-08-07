@@ -16,7 +16,7 @@
 
 #### Defined in
 
-[services/buckets.service.ts:34](https://github.com/LabO8/nestjs-s3/blob/306023e15fcb498533a66fc2f9b000dc61a2bf64/src/services/buckets.service.ts#L34)
+[services/buckets.service.ts:34](https://github.com/LabO8/nestjs-s3/blob/1543c2d00f94450144b62a41101481b695225e3d/src/services/buckets.service.ts#L34)
 
 ## Methods
 
@@ -36,7 +36,7 @@
 
 #### Defined in
 
-[services/buckets.service.ts:36](https://github.com/LabO8/nestjs-s3/blob/306023e15fcb498533a66fc2f9b000dc61a2bf64/src/services/buckets.service.ts#L36)
+[services/buckets.service.ts:36](https://github.com/LabO8/nestjs-s3/blob/1543c2d00f94450144b62a41101481b695225e3d/src/services/buckets.service.ts#L36)
 
 ***
 
@@ -54,7 +54,7 @@
 
 #### Defined in
 
-[services/buckets.service.ts:48](https://github.com/LabO8/nestjs-s3/blob/306023e15fcb498533a66fc2f9b000dc61a2bf64/src/services/buckets.service.ts#L48)
+[services/buckets.service.ts:48](https://github.com/LabO8/nestjs-s3/blob/1543c2d00f94450144b62a41101481b695225e3d/src/services/buckets.service.ts#L48)
 
 ***
 
@@ -72,7 +72,7 @@
 
 #### Defined in
 
-[services/buckets.service.ts:60](https://github.com/LabO8/nestjs-s3/blob/306023e15fcb498533a66fc2f9b000dc61a2bf64/src/services/buckets.service.ts#L60)
+[services/buckets.service.ts:60](https://github.com/LabO8/nestjs-s3/blob/1543c2d00f94450144b62a41101481b695225e3d/src/services/buckets.service.ts#L60)
 
 ***
 
@@ -86,7 +86,7 @@
 
 #### Defined in
 
-[services/buckets.service.ts:56](https://github.com/LabO8/nestjs-s3/blob/306023e15fcb498533a66fc2f9b000dc61a2bf64/src/services/buckets.service.ts#L56)
+[services/buckets.service.ts:56](https://github.com/LabO8/nestjs-s3/blob/1543c2d00f94450144b62a41101481b695225e3d/src/services/buckets.service.ts#L56)
 
 ***
 
@@ -104,7 +104,7 @@
 
 #### Defined in
 
-[services/buckets.service.ts:66](https://github.com/LabO8/nestjs-s3/blob/306023e15fcb498533a66fc2f9b000dc61a2bf64/src/services/buckets.service.ts#L66)
+[services/buckets.service.ts:66](https://github.com/LabO8/nestjs-s3/blob/1543c2d00f94450144b62a41101481b695225e3d/src/services/buckets.service.ts#L66)
 
 ***
 
@@ -124,7 +124,7 @@
 
 #### Defined in
 
-[services/buckets.service.ts:119](https://github.com/LabO8/nestjs-s3/blob/306023e15fcb498533a66fc2f9b000dc61a2bf64/src/services/buckets.service.ts#L119)
+[services/buckets.service.ts:119](https://github.com/LabO8/nestjs-s3/blob/1543c2d00f94450144b62a41101481b695225e3d/src/services/buckets.service.ts#L119)
 
 ***
 
@@ -144,7 +144,7 @@
 
 #### Defined in
 
-[services/buckets.service.ts:83](https://github.com/LabO8/nestjs-s3/blob/306023e15fcb498533a66fc2f9b000dc61a2bf64/src/services/buckets.service.ts#L83)
+[services/buckets.service.ts:83](https://github.com/LabO8/nestjs-s3/blob/1543c2d00f94450144b62a41101481b695225e3d/src/services/buckets.service.ts#L83)
 
 ***
 
@@ -164,7 +164,7 @@
 
 #### Defined in
 
-[services/buckets.service.ts:74](https://github.com/LabO8/nestjs-s3/blob/306023e15fcb498533a66fc2f9b000dc61a2bf64/src/services/buckets.service.ts#L74)
+[services/buckets.service.ts:74](https://github.com/LabO8/nestjs-s3/blob/1543c2d00f94450144b62a41101481b695225e3d/src/services/buckets.service.ts#L74)
 
 ***
 
@@ -184,7 +184,7 @@
 
 #### Defined in
 
-[services/buckets.service.ts:107](https://github.com/LabO8/nestjs-s3/blob/306023e15fcb498533a66fc2f9b000dc61a2bf64/src/services/buckets.service.ts#L107)
+[services/buckets.service.ts:107](https://github.com/LabO8/nestjs-s3/blob/1543c2d00f94450144b62a41101481b695225e3d/src/services/buckets.service.ts#L107)
 
 ***
 
@@ -204,4 +204,4 @@
 
 #### Defined in
 
-[services/buckets.service.ts:95](https://github.com/LabO8/nestjs-s3/blob/306023e15fcb498533a66fc2f9b000dc61a2bf64/src/services/buckets.service.ts#L95)
+[services/buckets.service.ts:95](https://github.com/LabO8/nestjs-s3/blob/1543c2d00f94450144b62a41101481b695225e3d/src/services/buckets.service.ts#L95)

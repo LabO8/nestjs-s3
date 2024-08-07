@@ -18,7 +18,7 @@
 
 #### Defined in
 
-[services/objects.service.ts:37](https://github.com/LabO8/nestjs-s3/blob/306023e15fcb498533a66fc2f9b000dc61a2bf64/src/services/objects.service.ts#L37)
+[services/objects.service.ts:37](https://github.com/LabO8/nestjs-s3/blob/1543c2d00f94450144b62a41101481b695225e3d/src/services/objects.service.ts#L37)
 
 ## Methods
 
@@ -48,7 +48,7 @@
 
 #### Defined in
 
-[services/objects.service.ts:119](https://github.com/LabO8/nestjs-s3/blob/306023e15fcb498533a66fc2f9b000dc61a2bf64/src/services/objects.service.ts#L119)
+[services/objects.service.ts:119](https://github.com/LabO8/nestjs-s3/blob/1543c2d00f94450144b62a41101481b695225e3d/src/services/objects.service.ts#L119)
 
 ***
 
@@ -70,7 +70,7 @@
 
 #### Defined in
 
-[services/objects.service.ts:71](https://github.com/LabO8/nestjs-s3/blob/306023e15fcb498533a66fc2f9b000dc61a2bf64/src/services/objects.service.ts#L71)
+[services/objects.service.ts:71](https://github.com/LabO8/nestjs-s3/blob/1543c2d00f94450144b62a41101481b695225e3d/src/services/objects.service.ts#L71)
 
 ***
 
@@ -92,7 +92,7 @@
 
 #### Defined in
 
-[services/objects.service.ts:87](https://github.com/LabO8/nestjs-s3/blob/306023e15fcb498533a66fc2f9b000dc61a2bf64/src/services/objects.service.ts#L87)
+[services/objects.service.ts:87](https://github.com/LabO8/nestjs-s3/blob/1543c2d00f94450144b62a41101481b695225e3d/src/services/objects.service.ts#L87)
 
 ***
 
@@ -114,7 +114,7 @@
 
 #### Defined in
 
-[services/objects.service.ts:107](https://github.com/LabO8/nestjs-s3/blob/306023e15fcb498533a66fc2f9b000dc61a2bf64/src/services/objects.service.ts#L107)
+[services/objects.service.ts:107](https://github.com/LabO8/nestjs-s3/blob/1543c2d00f94450144b62a41101481b695225e3d/src/services/objects.service.ts#L107)
 
 ***
 
@@ -134,7 +134,7 @@
 
 #### Defined in
 
-[services/objects.service.ts:156](https://github.com/LabO8/nestjs-s3/blob/306023e15fcb498533a66fc2f9b000dc61a2bf64/src/services/objects.service.ts#L156)
+[services/objects.service.ts:156](https://github.com/LabO8/nestjs-s3/blob/1543c2d00f94450144b62a41101481b695225e3d/src/services/objects.service.ts#L156)
 
 ***
 
@@ -154,7 +154,7 @@
 
 #### Defined in
 
-[services/objects.service.ts:165](https://github.com/LabO8/nestjs-s3/blob/306023e15fcb498533a66fc2f9b000dc61a2bf64/src/services/objects.service.ts#L165)
+[services/objects.service.ts:165](https://github.com/LabO8/nestjs-s3/blob/1543c2d00f94450144b62a41101481b695225e3d/src/services/objects.service.ts#L165)
 
 ***
 
@@ -178,7 +178,7 @@
 
 #### Defined in
 
-[services/objects.service.ts:42](https://github.com/LabO8/nestjs-s3/blob/306023e15fcb498533a66fc2f9b000dc61a2bf64/src/services/objects.service.ts#L42)
+[services/objects.service.ts:42](https://github.com/LabO8/nestjs-s3/blob/1543c2d00f94450144b62a41101481b695225e3d/src/services/objects.service.ts#L42)
 
 ***
 
@@ -202,4 +202,4 @@
 
 #### Defined in
 
-[services/objects.service.ts:60](https://github.com/LabO8/nestjs-s3/blob/306023e15fcb498533a66fc2f9b000dc61a2bf64/src/services/objects.service.ts#L60)
+[services/objects.service.ts:60](https://github.com/LabO8/nestjs-s3/blob/1543c2d00f94450144b62a41101481b695225e3d/src/services/objects.service.ts#L60)
