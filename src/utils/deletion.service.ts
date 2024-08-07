@@ -1,6 +1,6 @@
 import { DeleteObjectOutput, DeleteObjectsCommand, ListObjectsV2Output, S3Client } from '@aws-sdk/client-s3';
 import { Inject, Injectable } from '@nestjs/common';
-import { PREFIX_ALGORITHM, S3_SERVICE } from '../constants';
+import { S3_SERVICE } from '../constants';
 import { DeleteObjectsOptions, ListObjectsV2Options } from '../types';
 import { ObjectsService, PrefixService } from '../services';
 import { prepareOptions } from '../helpers';

@@ -1,6 +1,5 @@
 import { Abstract, Type } from '@nestjs/common';
 import { ModuleMetadata } from '@nestjs/common/interfaces';
-import { PrefixAlgorithm } from './prefix-algorithm.type';
 import { IPrefixAlgorithm } from '../interfaces';
 
 export type S3Config = {
