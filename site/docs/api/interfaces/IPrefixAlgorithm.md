@@ -22,4 +22,4 @@
 
 #### Defined in
 
-[interfaces/prefix-algorithm.interface.ts:2](https://github.com/LabO8/nestjs-s3/blob/1543c2d00f94450144b62a41101481b695225e3d/src/interfaces/prefix-algorithm.interface.ts#L2)
+[interfaces/prefix-algorithm.interface.ts:2](https://github.com/LabO8/nestjs-s3/blob/49dee046307be2343007f81b5481193f2a950f4b/src/interfaces/prefix-algorithm.interface.ts#L2)

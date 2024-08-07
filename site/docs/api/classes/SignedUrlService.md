@@ -18,7 +18,7 @@
 
 #### Defined in
 
-[services/signed-url.service.ts:17](https://github.com/LabO8/nestjs-s3/blob/1543c2d00f94450144b62a41101481b695225e3d/src/services/signed-url.service.ts#L17)
+[services/signed-url.service.ts:17](https://github.com/LabO8/nestjs-s3/blob/49dee046307be2343007f81b5481193f2a950f4b/src/services/signed-url.service.ts#L17)
 
 ## Methods
 
@@ -42,7 +42,7 @@
 
 #### Defined in
 
-[services/signed-url.service.ts:85](https://github.com/LabO8/nestjs-s3/blob/1543c2d00f94450144b62a41101481b695225e3d/src/services/signed-url.service.ts#L85)
+[services/signed-url.service.ts:85](https://github.com/LabO8/nestjs-s3/blob/49dee046307be2343007f81b5481193f2a950f4b/src/services/signed-url.service.ts#L85)
 
 ***
 
@@ -66,7 +66,7 @@
 
 #### Defined in
 
-[services/signed-url.service.ts:66](https://github.com/LabO8/nestjs-s3/blob/1543c2d00f94450144b62a41101481b695225e3d/src/services/signed-url.service.ts#L66)
+[services/signed-url.service.ts:66](https://github.com/LabO8/nestjs-s3/blob/49dee046307be2343007f81b5481193f2a950f4b/src/services/signed-url.service.ts#L66)
 
 ***
 
@@ -90,7 +90,7 @@
 
 #### Defined in
 
-[services/signed-url.service.ts:22](https://github.com/LabO8/nestjs-s3/blob/1543c2d00f94450144b62a41101481b695225e3d/src/services/signed-url.service.ts#L22)
+[services/signed-url.service.ts:22](https://github.com/LabO8/nestjs-s3/blob/49dee046307be2343007f81b5481193f2a950f4b/src/services/signed-url.service.ts#L22)
 
 ***
 
@@ -114,4 +114,4 @@
 
 #### Defined in
 
-[services/signed-url.service.ts:47](https://github.com/LabO8/nestjs-s3/blob/1543c2d00f94450144b62a41101481b695225e3d/src/services/signed-url.service.ts#L47)
+[services/signed-url.service.ts:47](https://github.com/LabO8/nestjs-s3/blob/49dee046307be2343007f81b5481193f2a950f4b/src/services/signed-url.service.ts#L47)
