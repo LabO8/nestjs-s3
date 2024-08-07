@@ -1,38 +1,38 @@
----
-id: "PrefixService"
-title: "Class: PrefixService"
-sidebar_label: "PrefixService"
-sidebar_position: 0
-custom_edit_url: null
----
+# Class: PrefixService
 
 ## Constructors
 
-### constructor
+### new PrefixService()
 
-• **new PrefixService**(`config`)
+> **new PrefixService**(`config`, `prefixAlgorithm`): [`PrefixService`](PrefixService.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `config` | [`S3Config`](../modules#s3config) |
+• **config**: [`S3Config`](../type-aliases/S3Config.md)
+
+• **prefixAlgorithm**: [`IPrefixAlgorithm`](../interfaces/IPrefixAlgorithm.md)
+
+#### Returns
+
+[`PrefixService`](PrefixService.md)
 
 #### Defined in
 
-[services/prefix.service.ts:7](https://github.com/LabO8/nestjs-s3/blob/65a196f/src/services/prefix.service.ts#L7)
+[services/prefix.service.ts:8](https://github.com/LabO8/nestjs-s3/blob/306023e15fcb498533a66fc2f9b000dc61a2bf64/src/services/prefix.service.ts#L8)
 
 ## Methods
 
-### prefix
+### prefix()
 
-▸ **prefix**(`remote`): `string`
+> **prefix**(`remote`, `bucket`?, `context`?): `string`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `remote` | `string` |
+• **remote**: `string`
+
+• **bucket?**: `string`
+
+• **context?**: `any`
 
 #### Returns
 
@@ -40,4 +40,4 @@ custom_edit_url: null
 
 #### Defined in
 
-[services/prefix.service.ts:9](https://github.com/LabO8/nestjs-s3/blob/65a196f/src/services/prefix.service.ts#L9)
+[services/prefix.service.ts:13](https://github.com/LabO8/nestjs-s3/blob/306023e15fcb498533a66fc2f9b000dc61a2bf64/src/services/prefix.service.ts#L13)

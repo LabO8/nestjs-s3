@@ -1,28 +1,24 @@
----
-id: "S3Module"
-title: "Class: S3Module"
-sidebar_label: "S3Module"
-sidebar_position: 0
-custom_edit_url: null
----
+# Class: S3Module
 
 ## Constructors
 
-### constructor
+### new S3Module()
 
-• **new S3Module**()
+> **new S3Module**(): [`S3Module`](S3Module.md)
+
+#### Returns
+
+[`S3Module`](S3Module.md)
 
 ## Methods
 
-### forRoot
+### forRoot()
 
-▸ `Static` **forRoot**(`config`): `DynamicModule`
+> `static` **forRoot**(`config`): `DynamicModule`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `config` | [`S3Config`](../modules#s3config) |
+• **config**: [`S3Config`](../type-aliases/S3Config.md)
 
 #### Returns
 
@@ -30,19 +26,17 @@ custom_edit_url: null
 
 #### Defined in
 
-[s3.module.ts:41](https://github.com/LabO8/nestjs-s3/blob/65a196f/src/s3.module.ts#L41)
+[s3.module.ts:58](https://github.com/LabO8/nestjs-s3/blob/306023e15fcb498533a66fc2f9b000dc61a2bf64/src/s3.module.ts#L58)
 
-___
+***
 
-### forRootAsync
+### forRootAsync()
 
-▸ `Static` **forRootAsync**(`provider`): `DynamicModule`
+> `static` **forRootAsync**(`provider`): `DynamicModule`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `provider` | [`S3AsyncConfig`](../modules#s3asyncconfig) |
+• **provider**: [`S3AsyncConfig`](../type-aliases/S3AsyncConfig.md)
 
 #### Returns
 
@@ -50,4 +44,4 @@ ___
 
 #### Defined in
 
-[s3.module.ts:51](https://github.com/LabO8/nestjs-s3/blob/65a196f/src/s3.module.ts#L51)
+[s3.module.ts:68](https://github.com/LabO8/nestjs-s3/blob/306023e15fcb498533a66fc2f9b000dc61a2bf64/src/s3.module.ts#L68)
