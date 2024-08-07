@@ -111,9 +111,9 @@ yarn lint
 
 ## Authors and main contributors
 
-- **Martin Andreev <martin.andreev@lab08.com>**
-- **Dimitar Dishev <dishev@lab08.com>**
-- **Veselin Angelov <veselin.angelov@lab08.com>**
+- **Martin Andreev {'<martin.andreev@lab08.com>'}**
+- **Dimitar Dishev {'<dishev@lab08.com>'}**
+- **Veselin Angelov {'<veselin.angelov@lab08.com>'}**
 
 ## Docs
 
