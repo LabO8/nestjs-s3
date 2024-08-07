@@ -1,53 +1,53 @@
----
-id: "DeletionService"
-title: "Class: DeletionService"
-sidebar_label: "DeletionService"
-sidebar_position: 0
-custom_edit_url: null
----
+# Class: DeletionService
 
 ## Constructors
 
-### constructor
+### new DeletionService()
 
-• **new DeletionService**(`client`, `objectsService`, `prefixService`)
+> **new DeletionService**(`client`, `objectsService`, `prefixService`): [`DeletionService`](DeletionService.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `client` | `S3Client` |
-| `objectsService` | [`ObjectsService`](ObjectsService) |
-| `prefixService` | [`PrefixService`](PrefixService) |
+• **client**: `S3Client`
+
+• **objectsService**: [`ObjectsService`](ObjectsService.md)
+
+• **prefixService**: [`PrefixService`](PrefixService.md)
+
+#### Returns
+
+[`DeletionService`](DeletionService.md)
 
 #### Defined in
 
-utils/deletion.service.ts:10
+[utils/deletion.service.ts:10](https://github.com/LabO8/nestjs-s3/blob/1543c2d00f94450144b62a41101481b695225e3d/src/utils/deletion.service.ts#L10)
 
 ## Methods
 
-### deleteObjectsByPrefix
+### deleteObjectsByPrefix()
 
-▸ **deleteObjectsByPrefix**(`bucket`, `prefix`, `logDeletedObjects?`, `deleteOptions?`, `listOptions?`): `Promise`<`boolean` \| `DeleteObjectOutput`[]\>
+> **deleteObjectsByPrefix**(`bucket`, `prefix`, `logDeletedObjects`, `deleteOptions`?, `listOptions`?): `Promise`\<`boolean` \| `DeleteObjectOutput`[]\>
 
 Deletes all objects by prefix.
 
 #### Parameters
 
-| Name | Type | Default value |
-| :------ | :------ | :------ |
-| `bucket` | `string` | `undefined` |
-| `prefix` | `string` | `undefined` |
-| `logDeletedObjects` | `boolean` | `false` |
-| `deleteOptions?` | [`DeleteObjectsOptions`](../modules#deleteobjectsoptions) | `undefined` |
-| `listOptions?` | `Omit`<[`ListObjectsV2Options`](../modules#listobjectsv2options), ``"Prefix"`` \| ``"ContinuationToken"``\> | `undefined` |
+• **bucket**: `string`
+
+• **prefix**: `string`
+
+• **logDeletedObjects**: `boolean` = `false`
+
+• **deleteOptions?**: [`DeleteObjectsOptions`](../type-aliases/DeleteObjectsOptions.md)
+
+• **listOptions?**: `Omit`\<[`ListObjectsV2Options`](../type-aliases/ListObjectsV2Options.md), `"Prefix"` \| `"ContinuationToken"`\>
 
 #### Returns
 
-`Promise`<`boolean` \| `DeleteObjectOutput`[]\>
+`Promise`\<`boolean` \| `DeleteObjectOutput`[]\>
 
 Returns true if all objects were deleted.
 
 #### Defined in
 
-utils/deletion.service.ts:20
+[utils/deletion.service.ts:20](https://github.com/LabO8/nestjs-s3/blob/1543c2d00f94450144b62a41101481b695225e3d/src/utils/deletion.service.ts#L20)

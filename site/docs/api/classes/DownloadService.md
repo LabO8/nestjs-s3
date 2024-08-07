@@ -1,49 +1,49 @@
----
-id: "DownloadService"
-title: "Class: DownloadService"
-sidebar_label: "DownloadService"
-sidebar_position: 0
-custom_edit_url: null
----
+# Class: DownloadService
 
 ## Constructors
 
-### constructor
+### new DownloadService()
 
-• **new DownloadService**(`httpClient`, `prefixService`, `signedUrlService`)
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `httpClient` | `HttpService` |
-| `prefixService` | [`PrefixService`](PrefixService) |
-| `signedUrlService` | [`SignedUrlService`](SignedUrlService) |
-
-#### Defined in
-
-[utils/download.service.ts:12](https://github.com/LabO8/nestjs-s3/blob/65a196f/src/utils/download.service.ts#L12)
-
-## Methods
-
-### download
-
-▸ **download**(`bucket`, `remote`, `downloadDirectory`, `downloadOptions?`, `options?`): `Promise`<`string`\>
+> **new DownloadService**(`httpClient`, `prefixService`, `signedUrlService`): [`DownloadService`](DownloadService.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `bucket` | `string` |
-| `remote` | `string` |
-| `downloadDirectory` | `string` |
-| `downloadOptions?` | [`DownloadOptions`](../modules#downloadoptions) |
-| `options?` | [`GetObjectOptions`](../modules#getobjectoptions) |
+• **httpClient**: `HttpService`
+
+• **prefixService**: [`PrefixService`](PrefixService.md)
+
+• **signedUrlService**: [`SignedUrlService`](SignedUrlService.md)
 
 #### Returns
 
-`Promise`<`string`\>
+[`DownloadService`](DownloadService.md)
 
 #### Defined in
 
-[utils/download.service.ts:18](https://github.com/LabO8/nestjs-s3/blob/65a196f/src/utils/download.service.ts#L18)
+[utils/download.service.ts:12](https://github.com/LabO8/nestjs-s3/blob/1543c2d00f94450144b62a41101481b695225e3d/src/utils/download.service.ts#L12)
+
+## Methods
+
+### download()
+
+> **download**(`bucket`, `remote`, `downloadDirectory`, `downloadOptions`?, `options`?): `Promise`\<`string`\>
+
+#### Parameters
+
+• **bucket**: `string`
+
+• **remote**: `string`
+
+• **downloadDirectory**: `string`
+
+• **downloadOptions?**: [`DownloadOptions`](../type-aliases/DownloadOptions.md)
+
+• **options?**: [`GetObjectOptions`](../type-aliases/GetObjectOptions.md)
+
+#### Returns
+
+`Promise`\<`string`\>
+
+#### Defined in
+
+[utils/download.service.ts:18](https://github.com/LabO8/nestjs-s3/blob/1543c2d00f94450144b62a41101481b695225e3d/src/utils/download.service.ts#L18)

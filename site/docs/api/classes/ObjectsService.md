@@ -1,178 +1,205 @@
----
-id: "ObjectsService"
-title: "Class: ObjectsService"
-sidebar_label: "ObjectsService"
-sidebar_position: 0
-custom_edit_url: null
----
+# Class: ObjectsService
 
 ## Constructors
 
-### constructor
+### new ObjectsService()
 
-• **new ObjectsService**(`client`, `prefixService`)
+> **new ObjectsService**(`client`, `prefixService`): [`ObjectsService`](ObjectsService.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `client` | `S3Client` |
-| `prefixService` | [`PrefixService`](PrefixService) |
+• **client**: `S3Client`
+
+• **prefixService**: [`PrefixService`](PrefixService.md)
+
+#### Returns
+
+[`ObjectsService`](ObjectsService.md)
 
 #### Defined in
 
-[services/objects.service.ts:32](https://github.com/LabO8/nestjs-s3/blob/65a196f/src/services/objects.service.ts#L32)
+[services/objects.service.ts:37](https://github.com/LabO8/nestjs-s3/blob/1543c2d00f94450144b62a41101481b695225e3d/src/services/objects.service.ts#L37)
 
 ## Methods
 
-### deleteObject
+### copyObject()
 
-▸ **deleteObject**(`bucket`, `remote`, `options?`): `Promise`<`DeleteObjectOutput`\>
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `bucket` | `string` |
-| `remote` | `string` |
-| `options?` | [`DeleteObjectOptions`](../modules#deleteobjectoptions) |
-
-#### Returns
-
-`Promise`<`DeleteObjectOutput`\>
-
-#### Defined in
-
-[services/objects.service.ts:66](https://github.com/LabO8/nestjs-s3/blob/65a196f/src/services/objects.service.ts#L66)
-
-___
-
-### deleteObjects
-
-▸ **deleteObjects**(`bucket`, `remotes`, `options?`): `Promise`<`DeleteObjectsOutput`\>
+> **copyObject**(`sourceBucket`, `sourceKey`, `destinationBucket`, `destinationKey`, `options`?): `Promise`\<`CopyObjectOutput`\>
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `bucket` | `string` |
-| `remotes` | `string`[] |
-| `options?` | [`DeleteObjectsOptions`](../modules#deleteobjectsoptions) |
+• **sourceBucket**: `string`
+
+• **sourceKey**: `string`
+
+• **destinationBucket**: `string`
+
+• **destinationKey**: `string`
+
+• **options?**
+
+• **options.destinationOptions?**: [`CopyObjectOptions`](../type-aliases/CopyObjectOptions.md)
+
+• **options.sourceOptions?**: [`DisableAutoPrefix`](../type-aliases/DisableAutoPrefix.md) & [`PrefixContext`](../type-aliases/PrefixContext.md)
 
 #### Returns
 
-`Promise`<`DeleteObjectsOutput`\>
+`Promise`\<`CopyObjectOutput`\>
 
 #### Defined in
 
-[services/objects.service.ts:82](https://github.com/LabO8/nestjs-s3/blob/65a196f/src/services/objects.service.ts#L82)
+[services/objects.service.ts:119](https://github.com/LabO8/nestjs-s3/blob/1543c2d00f94450144b62a41101481b695225e3d/src/services/objects.service.ts#L119)
 
-___
+***
 
-### getObject
+### deleteObject()
 
-▸ **getObject**(`bucket`, `remote`, `options?`): `Promise`<`GetObjectOutput`\>
+> **deleteObject**(`bucket`, `remote`, `options`?): `Promise`\<`DeleteObjectOutput`\>
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `bucket` | `string` |
-| `remote` | `string` |
-| `options?` | [`GetObjectOptions`](../modules#getobjectoptions) |
+• **bucket**: `string`
+
+• **remote**: `string`
+
+• **options?**: [`DeleteObjectOptions`](../type-aliases/DeleteObjectOptions.md)
 
 #### Returns
 
-`Promise`<`GetObjectOutput`\>
+`Promise`\<`DeleteObjectOutput`\>
 
 #### Defined in
 
-[services/objects.service.ts:100](https://github.com/LabO8/nestjs-s3/blob/65a196f/src/services/objects.service.ts#L100)
+[services/objects.service.ts:71](https://github.com/LabO8/nestjs-s3/blob/1543c2d00f94450144b62a41101481b695225e3d/src/services/objects.service.ts#L71)
 
-___
+***
 
-### listObjects
+### deleteObjects()
 
-▸ **listObjects**(`bucket`, `options?`): `Promise`<`ListObjectsOutput`\>
+> **deleteObjects**(`bucket`, `remotes`, `options`?): `Promise`\<`DeleteObjectsOutput`\>
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `bucket` | `string` |
-| `options?` | [`ListObjectsOptions`](../modules#listobjectsoptions) |
+• **bucket**: `string`
+
+• **remotes**: `string`[]
+
+• **options?**: [`DeleteObjectsOptions`](../type-aliases/DeleteObjectsOptions.md)
 
 #### Returns
 
-`Promise`<`ListObjectsOutput`\>
+`Promise`\<`DeleteObjectsOutput`\>
 
 #### Defined in
 
-[services/objects.service.ts:112](https://github.com/LabO8/nestjs-s3/blob/65a196f/src/services/objects.service.ts#L112)
+[services/objects.service.ts:87](https://github.com/LabO8/nestjs-s3/blob/1543c2d00f94450144b62a41101481b695225e3d/src/services/objects.service.ts#L87)
 
-___
+***
 
-### listObjectsV2
+### getObject()
 
-▸ **listObjectsV2**(`bucket`, `options?`): `Promise`<`ListObjectsV2Output`\>
+> **getObject**(`bucket`, `remote`, `options`?): `Promise`\<`GetObjectOutput`\>
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `bucket` | `string` |
-| `options?` | [`ListObjectsV2Options`](../modules#listobjectsv2options) |
+• **bucket**: `string`
+
+• **remote**: `string`
+
+• **options?**: [`GetObjectOptions`](../type-aliases/GetObjectOptions.md)
 
 #### Returns
 
-`Promise`<`ListObjectsV2Output`\>
+`Promise`\<`GetObjectOutput`\>
 
 #### Defined in
 
-[services/objects.service.ts:121](https://github.com/LabO8/nestjs-s3/blob/65a196f/src/services/objects.service.ts#L121)
+[services/objects.service.ts:107](https://github.com/LabO8/nestjs-s3/blob/1543c2d00f94450144b62a41101481b695225e3d/src/services/objects.service.ts#L107)
 
-___
+***
 
-### putObject
+### listObjects()
 
-▸ **putObject**(`bucket`, `body`, `remote`, `options?`): `Promise`<`PutObjectOutput`\>
+> **listObjects**(`bucket`, `options`?): `Promise`\<`ListObjectsOutput`\>
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `bucket` | `string` |
-| `body` | `Buffer` |
-| `remote` | `string` |
-| `options?` | [`PutObjectOptions`](../modules#putobjectoptions) |
+• **bucket**: `string`
+
+• **options?**: [`ListObjectsOptions`](../type-aliases/ListObjectsOptions.md)
 
 #### Returns
 
-`Promise`<`PutObjectOutput`\>
+`Promise`\<`ListObjectsOutput`\>
 
 #### Defined in
 
-[services/objects.service.ts:37](https://github.com/LabO8/nestjs-s3/blob/65a196f/src/services/objects.service.ts#L37)
+[services/objects.service.ts:156](https://github.com/LabO8/nestjs-s3/blob/1543c2d00f94450144b62a41101481b695225e3d/src/services/objects.service.ts#L156)
 
-___
+***
 
-### putObjectFromPath
+### listObjectsV2()
 
-▸ **putObjectFromPath**(`bucket`, `path`, `remote`, `options?`): `Promise`<`PutObjectOutput`\>
+> **listObjectsV2**(`bucket`, `options`?): `Promise`\<`ListObjectsV2Output`\>
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `bucket` | `string` |
-| `path` | `string` |
-| `remote` | `string` |
-| `options?` | [`PutObjectOptions`](../modules#putobjectoptions) |
+• **bucket**: `string`
+
+• **options?**: [`ListObjectsV2Options`](../type-aliases/ListObjectsV2Options.md)
 
 #### Returns
 
-`Promise`<`PutObjectOutput`\>
+`Promise`\<`ListObjectsV2Output`\>
 
 #### Defined in
 
-[services/objects.service.ts:55](https://github.com/LabO8/nestjs-s3/blob/65a196f/src/services/objects.service.ts#L55)
+[services/objects.service.ts:165](https://github.com/LabO8/nestjs-s3/blob/1543c2d00f94450144b62a41101481b695225e3d/src/services/objects.service.ts#L165)
+
+***
+
+### putObject()
+
+> **putObject**(`bucket`, `body`, `remote`, `options`?): `Promise`\<`PutObjectOutput`\>
+
+#### Parameters
+
+• **bucket**: `string`
+
+• **body**: `Buffer`
+
+• **remote**: `string`
+
+• **options?**: [`PutObjectOptions`](../type-aliases/PutObjectOptions.md)
+
+#### Returns
+
+`Promise`\<`PutObjectOutput`\>
+
+#### Defined in
+
+[services/objects.service.ts:42](https://github.com/LabO8/nestjs-s3/blob/1543c2d00f94450144b62a41101481b695225e3d/src/services/objects.service.ts#L42)
+
+***
+
+### putObjectFromPath()
+
+> **putObjectFromPath**(`bucket`, `path`, `remote`, `options`?): `Promise`\<`PutObjectOutput`\>
+
+#### Parameters
+
+• **bucket**: `string`
+
+• **path**: `string`
+
+• **remote**: `string`
+
+• **options?**: [`PutObjectOptions`](../type-aliases/PutObjectOptions.md)
+
+#### Returns
+
+`Promise`\<`PutObjectOutput`\>
+
+#### Defined in
+
+[services/objects.service.ts:60](https://github.com/LabO8/nestjs-s3/blob/1543c2d00f94450144b62a41101481b695225e3d/src/services/objects.service.ts#L60)
