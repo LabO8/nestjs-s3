@@ -9,6 +9,7 @@ export type S3Config = {
   prefix?: string;
   endPoint?: string;
   prefixAlgorithm?: IPrefixAlgorithm;
+  useAccelerateEndpoint?: boolean;
 };
 
 export type S3AsyncConfig = Pick<ModuleMetadata, 'imports' | 'providers'> & {
