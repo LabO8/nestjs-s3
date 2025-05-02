@@ -10,6 +10,7 @@ export const createS3ServiceProvider = (): Provider => ({
     new S3Client({
       endpoint: config.endPoint ?? null,
       region: config.region,
+      useAccelerateEndpoint: config.useAccelerateEndpoint ?? false,
       credentials: {
         accessKeyId: config.accessKeyId,
         secretAccessKey: config.secretAccessKey,
