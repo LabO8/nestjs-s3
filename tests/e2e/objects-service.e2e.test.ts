@@ -18,9 +18,9 @@ describe('Object service', () => {
     testingModule = await Test.createTestingModule({
       imports: [
         S3Module.forRoot({
-          region: process.env.AWS_REGION,
-          accessKeyId: process.env.AWS_ACCESS_KEY_ID,
-          secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
+          region: process.env.AWS_REGION ?? '',
+          accessKeyId: process.env.AWS_ACCESS_KEY_ID ?? '',
+          secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY ?? '',
           prefix: 'test/',
         }),
       ],

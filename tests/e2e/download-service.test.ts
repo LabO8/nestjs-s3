@@ -22,9 +22,9 @@ describe('Download util service', () => {
     testingModule = await Test.createTestingModule({
       imports: [
         S3Module.forRoot({
-          region: process.env.AWS_REGION,
-          accessKeyId: process.env.AWS_ACCESS_KEY_ID,
-          secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
+          region: process.env.AWS_REGION ?? '',
+          accessKeyId: process.env.AWS_ACCESS_KEY_ID ?? '',
+          secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY ?? '',
         }),
       ],
     }).compile();
@@ -67,7 +67,7 @@ describe('Download util service', () => {
       downloadService.download(testBucket, remote, path.resolve(downloadPath, 't'), {
         createPath: false,
       }),
-    ).rejects.toThrowError(MissingDownloadDirectoryException);
+    ).rejects.toThrow(MissingDownloadDirectoryException);
   });
 
   it('can not download an object from a existng bucket if the download path does not exists and cannot create if it does not have permissions', async () => {

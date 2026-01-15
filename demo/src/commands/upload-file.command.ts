@@ -1,6 +1,6 @@
 import * as fs from 'fs';
 import { Command, CommandRunner, Option } from 'nest-commander';
-import * as ora from 'ora';
+import ora from 'ora';
 import * as path from 'path';
 import { BucketsService, ObjectsService } from '../../../src';
 

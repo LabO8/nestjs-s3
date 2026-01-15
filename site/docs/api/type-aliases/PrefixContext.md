@@ -1,13 +1,13 @@
 # Type Alias: PrefixContext
 
-> **PrefixContext**: `object`
+> **PrefixContext** = `object`
 
-## Type declaration
+Defined in: [types/prefix.type.ts:3](https://github.com/LabO8/nestjs-s3/blob/ad059a6199bca96cb3120eb68144ed879ab6c69e/src/types/prefix.type.ts#L3)
+
+## Properties
 
 ### prefixContext?
 
 > `optional` **prefixContext**: `any`
 
-## Defined in
-
-[types/prefix.type.ts:3](https://github.com/LabO8/nestjs-s3/blob/49dee046307be2343007f81b5481193f2a950f4b/src/types/prefix.type.ts#L3)
+Defined in: [types/prefix.type.ts:3](https://github.com/LabO8/nestjs-s3/blob/ad059a6199bca96cb3120eb68144ed879ab6c69e/src/types/prefix.type.ts#L3)

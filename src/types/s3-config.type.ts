@@ -1,6 +1,7 @@
 import { Abstract, Type } from '@nestjs/common';
 import { ModuleMetadata } from '@nestjs/common/interfaces';
 import { IPrefixAlgorithm } from '../interfaces';
+import { S3ClientConfig } from '@aws-sdk/client-s3';
 
 export type S3Config = {
   region: string;
@@ -9,6 +10,7 @@ export type S3Config = {
   prefix?: string;
   endPoint?: string;
   prefixAlgorithm?: IPrefixAlgorithm;
+  s3ClientConfig?: Partial<S3ClientConfig>;
 };
 
 export type S3AsyncConfig = Pick<ModuleMetadata, 'imports' | 'providers'> & {

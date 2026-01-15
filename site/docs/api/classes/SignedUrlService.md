@@ -1,117 +1,145 @@
 # Class: SignedUrlService
 
+Defined in: [services/signed-url.service.ts:16](https://github.com/LabO8/nestjs-s3/blob/ad059a6199bca96cb3120eb68144ed879ab6c69e/src/services/signed-url.service.ts#L16)
+
 ## Constructors
 
-### new SignedUrlService()
+### Constructor
 
-> **new SignedUrlService**(`client`, `prefixService`): [`SignedUrlService`](SignedUrlService.md)
+> **new SignedUrlService**(`client`, `prefixService`): `SignedUrlService`
+
+Defined in: [services/signed-url.service.ts:17](https://github.com/LabO8/nestjs-s3/blob/ad059a6199bca96cb3120eb68144ed879ab6c69e/src/services/signed-url.service.ts#L17)
 
 #### Parameters
 
-• **client**: `S3Client`
+##### client
 
-• **prefixService**: [`PrefixService`](PrefixService.md)
+`S3Client`
+
+##### prefixService
+
+[`PrefixService`](PrefixService.md)
 
 #### Returns
 
-[`SignedUrlService`](SignedUrlService.md)
-
-#### Defined in
-
-[services/signed-url.service.ts:17](https://github.com/LabO8/nestjs-s3/blob/49dee046307be2343007f81b5481193f2a950f4b/src/services/signed-url.service.ts#L17)
+`SignedUrlService`
 
 ## Methods
 
 ### getDeleteObjectsSignedUrl()
 
-> **getDeleteObjectsSignedUrl**(`bucket`, `remotes`, `expiresIn`, `options`?): `Promise`\<`string`\>
+> **getDeleteObjectsSignedUrl**(`bucket`, `remotes`, `expiresIn`, `options?`): `Promise`\<`string`\>
+
+Defined in: [services/signed-url.service.ts:85](https://github.com/LabO8/nestjs-s3/blob/ad059a6199bca96cb3120eb68144ed879ab6c69e/src/services/signed-url.service.ts#L85)
 
 #### Parameters
 
-• **bucket**: `string`
+##### bucket
 
-• **remotes**: `string`[]
+`string`
 
-• **expiresIn**: `number` = `DEFAULT_EXPIRES_IN`
+##### remotes
 
-• **options?**: [`DeleteObjectsOptions`](../type-aliases/DeleteObjectsOptions.md)
+`string`[]
+
+##### expiresIn
+
+`number` = `DEFAULT_EXPIRES_IN`
+
+##### options?
+
+[`DeleteObjectsOptions`](../type-aliases/DeleteObjectsOptions.md)
 
 #### Returns
 
 `Promise`\<`string`\>
-
-#### Defined in
-
-[services/signed-url.service.ts:85](https://github.com/LabO8/nestjs-s3/blob/49dee046307be2343007f81b5481193f2a950f4b/src/services/signed-url.service.ts#L85)
 
 ***
 
 ### getDeleteSignedUrl()
 
-> **getDeleteSignedUrl**(`bucket`, `remote`, `expiresIn`, `options`?): `Promise`\<`string`\>
+> **getDeleteSignedUrl**(`bucket`, `remote`, `expiresIn`, `options?`): `Promise`\<`string`\>
+
+Defined in: [services/signed-url.service.ts:66](https://github.com/LabO8/nestjs-s3/blob/ad059a6199bca96cb3120eb68144ed879ab6c69e/src/services/signed-url.service.ts#L66)
 
 #### Parameters
 
-• **bucket**: `string`
+##### bucket
 
-• **remote**: `string`
+`string`
 
-• **expiresIn**: `number` = `DEFAULT_EXPIRES_IN`
+##### remote
 
-• **options?**: [`DeleteObjectOptions`](../type-aliases/DeleteObjectOptions.md)
+`string`
+
+##### expiresIn
+
+`number` = `DEFAULT_EXPIRES_IN`
+
+##### options?
+
+[`DeleteObjectOptions`](../type-aliases/DeleteObjectOptions.md)
 
 #### Returns
 
 `Promise`\<`string`\>
-
-#### Defined in
-
-[services/signed-url.service.ts:66](https://github.com/LabO8/nestjs-s3/blob/49dee046307be2343007f81b5481193f2a950f4b/src/services/signed-url.service.ts#L66)
 
 ***
 
 ### getPutSignedUrl()
 
-> **getPutSignedUrl**(`bucket`, `remote`, `expiresIn`, `options`?): `Promise`\<[`PutSignedUrl`](../type-aliases/PutSignedUrl.md)\>
+> **getPutSignedUrl**(`bucket`, `remote`, `expiresIn`, `options?`): `Promise`\<[`PutSignedUrl`](../type-aliases/PutSignedUrl.md)\>
+
+Defined in: [services/signed-url.service.ts:22](https://github.com/LabO8/nestjs-s3/blob/ad059a6199bca96cb3120eb68144ed879ab6c69e/src/services/signed-url.service.ts#L22)
 
 #### Parameters
 
-• **bucket**: `string`
+##### bucket
 
-• **remote**: `string`
+`string`
 
-• **expiresIn**: `number` = `DEFAULT_EXPIRES_IN`
+##### remote
 
-• **options?**: [`PutObjectOptions`](../type-aliases/PutObjectOptions.md)
+`string`
+
+##### expiresIn
+
+`number` = `DEFAULT_EXPIRES_IN`
+
+##### options?
+
+[`PutObjectOptions`](../type-aliases/PutObjectOptions.md)
 
 #### Returns
 
 `Promise`\<[`PutSignedUrl`](../type-aliases/PutSignedUrl.md)\>
 
-#### Defined in
-
-[services/signed-url.service.ts:22](https://github.com/LabO8/nestjs-s3/blob/49dee046307be2343007f81b5481193f2a950f4b/src/services/signed-url.service.ts#L22)
-
 ***
 
 ### getSignedUrl()
 
-> **getSignedUrl**(`bucket`, `remote`, `expiresIn`, `options`?): `Promise`\<`string`\>
+> **getSignedUrl**(`bucket`, `remote`, `expiresIn`, `options?`): `Promise`\<`string`\>
+
+Defined in: [services/signed-url.service.ts:47](https://github.com/LabO8/nestjs-s3/blob/ad059a6199bca96cb3120eb68144ed879ab6c69e/src/services/signed-url.service.ts#L47)
 
 #### Parameters
 
-• **bucket**: `string`
+##### bucket
 
-• **remote**: `string`
+`string`
 
-• **expiresIn**: `number` = `DEFAULT_EXPIRES_IN`
+##### remote
 
-• **options?**: [`GetObjectOptions`](../type-aliases/GetObjectOptions.md)
+`string`
+
+##### expiresIn
+
+`number` = `DEFAULT_EXPIRES_IN`
+
+##### options?
+
+[`GetObjectOptions`](../type-aliases/GetObjectOptions.md)
 
 #### Returns
 
 `Promise`\<`string`\>
-
-#### Defined in
-
-[services/signed-url.service.ts:47](https://github.com/LabO8/nestjs-s3/blob/49dee046307be2343007f81b5481193f2a950f4b/src/services/signed-url.service.ts#L47)

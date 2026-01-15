@@ -8,8 +8,11 @@ const config = {
   tagline: 'Dinosaurs are cool',
   url: 'https://nestjs-s3.github.io',
   baseUrl: '/nestjs-s3/',
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: 'throw',
+    }
+  },
   favicon: 'img/favicon.ico',
   organizationName: 'lab08',
   projectName: 'nestjs-s3', // Usually your repo name.
@@ -21,11 +24,6 @@ const config = {
         entryPoints: ['../src/index.ts'],
         tsconfig: '../tsconfig.json',
         readme: null,
-        sidebar: {
-          categoryLabel: 'API',
-          position: 2,
-          fullNames: true,
-        },
       },
     ],
   ],

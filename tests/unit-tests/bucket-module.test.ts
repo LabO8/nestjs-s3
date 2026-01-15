@@ -29,6 +29,6 @@ describe('Bucket module', () => {
     });
 
     await bucketService.list();
-    expect(spy).toBeCalled();
+    expect(spy).toHaveBeenCalled();
   });
 });
