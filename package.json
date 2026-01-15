@@ -1,6 +1,6 @@
 {
   "name": "@lab08/nestjs-s3",
-  "version": "4.0.1",
+  "version": "4.1.0",
   "description": "A NestJS library that wraps the AWS S3 bucket SDK v3 and lets you use it in a more NestJS friendly way.",
   "author": "Martin Andreev <martinandreev@lab08.com>",
   "license": "MIT",
