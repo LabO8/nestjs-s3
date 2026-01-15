@@ -63,6 +63,9 @@ S3Module.forRootAsync({
   import: [ConfigModule],
 });
 ```
+
+You can also pass any valid s3 client config via the `s3ClientConfig` property.
+
 ## Authors and main contributors
 
 - **Martin Andreev [martin.andreev\@lab08.com](mailto:martin.andreev@lab08.com)**

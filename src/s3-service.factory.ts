@@ -14,5 +14,6 @@ export const createS3ServiceProvider = (): Provider => ({
         accessKeyId: config.accessKeyId,
         secretAccessKey: config.secretAccessKey,
       },
+      ...(config?.s3ClientConfig ?? {}),
     }),
 });

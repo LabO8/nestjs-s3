@@ -14,9 +14,9 @@ describe('Bucket service', () => {
     testingModule = await Test.createTestingModule({
       imports: [
         S3Module.forRoot({
-          region: process.env.AWS_REGION,
-          accessKeyId: process.env.AWS_ACCESS_KEY_ID,
-          secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
+          region: process.env.AWS_REGION ?? '',
+          accessKeyId: process.env.AWS_ACCESS_KEY_ID ?? '',
+          secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY ?? '',
         }),
       ],
     }).compile();
@@ -34,7 +34,7 @@ describe('Bucket service', () => {
   it('should be able to view buckets', async () => {
     const buckets = await bucketService.list();
 
-    expect(buckets.Buckets.length).toBeGreaterThanOrEqual(1);
+    expect(buckets.Buckets?.length).toBeGreaterThanOrEqual(1);
   });
 
   it('should be able to create buckets', async () => {
@@ -48,7 +48,7 @@ describe('Bucket service', () => {
 
     await bucketService.create(bucketName);
 
-    await expect(bucketService.delete(bucketName)).resolves.not.toThrowError();
+    await expect(bucketService.delete(bucketName)).resolves.not.toThrow();
   });
 
   it('should not be able to delete bucket that does not exist', async () => {

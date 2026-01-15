@@ -1,8 +1,10 @@
 # Type Alias: S3AsyncConfig
 
-> **S3AsyncConfig**: `Pick`\<`ModuleMetadata`, `"imports"` \| `"providers"`\> & `object`
+> **S3AsyncConfig** = `Pick`\<`ModuleMetadata`, `"imports"` \| `"providers"`\> & `object`
 
-## Type declaration
+Defined in: [types/s3-config.type.ts:16](https://github.com/LabO8/nestjs-s3/blob/ad059a6199bca96cb3120eb68144ed879ab6c69e/src/types/s3-config.type.ts#L16)
+
+## Type Declaration
 
 ### inject?
 
@@ -14,7 +16,9 @@
 
 #### Parameters
 
-• ...**args**: `any`[]
+##### args
+
+...`any`[]
 
 #### Returns
 
@@ -30,12 +34,10 @@
 
 #### Parameters
 
-• ...**args**: `any`[]
+##### args
+
+...`any`[]
 
 #### Returns
 
 `Promise`\<`Omit`\<[`S3Config`](S3Config.md), `"prefixAlgorithm"`\>\> \| `Omit`\<[`S3Config`](S3Config.md), `"prefixAlgorithm"`\>
-
-## Defined in
-
-[types/s3-config.type.ts:14](https://github.com/LabO8/nestjs-s3/blob/49dee046307be2343007f81b5481193f2a950f4b/src/types/s3-config.type.ts#L14)

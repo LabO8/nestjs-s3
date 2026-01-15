@@ -1,5 +1,5 @@
 import { CommandRunner, Command } from 'nest-commander';
-import * as ora from 'ora';
+import ora from 'ora';
 import { BucketsService } from '../../../src';
 
 @Command({ name: 'bucket:create', description: 'Create a bucket in aws' })

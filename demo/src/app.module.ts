@@ -1,4 +1,4 @@
-import { Module } from '@nestjs/common';
+import { DynamicModule, Module } from '@nestjs/common';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import * as path from 'path';
 import { S3Module } from '../../src';
@@ -28,7 +28,7 @@ import {
       },
       imports: [ConfigModule],
       inject: [ConfigService],
-    }),
+    }) as DynamicModule,
   ],
   controllers: [],
   providers: [

@@ -1,30 +1,38 @@
 # Class: DefaultPrefixAlgorithmService
 
+Defined in: [services/default-prefix-algorithm.service.ts:3](https://github.com/LabO8/nestjs-s3/blob/ad059a6199bca96cb3120eb68144ed879ab6c69e/src/services/default-prefix-algorithm.service.ts#L3)
+
 ## Implements
 
 - [`IPrefixAlgorithm`](../interfaces/IPrefixAlgorithm.md)
 
 ## Constructors
 
-### new DefaultPrefixAlgorithmService()
+### Constructor
 
-> **new DefaultPrefixAlgorithmService**(): [`DefaultPrefixAlgorithmService`](DefaultPrefixAlgorithmService.md)
+> **new DefaultPrefixAlgorithmService**(): `DefaultPrefixAlgorithmService`
 
 #### Returns
 
-[`DefaultPrefixAlgorithmService`](DefaultPrefixAlgorithmService.md)
+`DefaultPrefixAlgorithmService`
 
 ## Methods
 
 ### prefix()
 
-> **prefix**(`remote`, `prefix`?): `string`
+> **prefix**(`remote`, `prefix?`): `string`
+
+Defined in: [services/default-prefix-algorithm.service.ts:4](https://github.com/LabO8/nestjs-s3/blob/ad059a6199bca96cb3120eb68144ed879ab6c69e/src/services/default-prefix-algorithm.service.ts#L4)
 
 #### Parameters
 
-• **remote**: `string`
+##### remote
 
-• **prefix?**: `string`
+`string`
+
+##### prefix?
+
+`string`
 
 #### Returns
 
@@ -33,7 +41,3 @@
 #### Implementation of
 
 [`IPrefixAlgorithm`](../interfaces/IPrefixAlgorithm.md).[`prefix`](../interfaces/IPrefixAlgorithm.md#prefix)
-
-#### Defined in
-
-[services/default-prefix-algorithm.service.ts:4](https://github.com/LabO8/nestjs-s3/blob/49dee046307be2343007f81b5481193f2a950f4b/src/services/default-prefix-algorithm.service.ts#L4)

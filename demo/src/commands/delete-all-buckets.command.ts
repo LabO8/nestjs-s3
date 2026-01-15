@@ -1,6 +1,6 @@
 import { Command, CommandRunner } from 'nest-commander';
 import { BucketsService, DeletionService, ObjectsService } from '../../../src';
-import * as ora from 'ora';
+import ora from 'ora';
 
 @Command({
   name: 'bucket:delete:all',
@@ -15,7 +15,7 @@ export class DeleteAllBucketsCommand extends CommandRunner {
     super();
   }
 
-  async run(passedParams: string[]): Promise<void> {
+  async run(): Promise<void> {
     const spinner = ora().start('Fetching buckets...');
 
     const buckets = await this.bucketService.list();

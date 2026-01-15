@@ -1,17 +1,21 @@
 # Type Alias: PutSignedUrl
 
-> **PutSignedUrl**: `object`
+> **PutSignedUrl** = `object`
 
-## Type declaration
+Defined in: [types/signed-url.type.ts:1](https://github.com/LabO8/nestjs-s3/blob/ad059a6199bca96cb3120eb68144ed879ab6c69e/src/types/signed-url.type.ts#L1)
+
+## Properties
 
 ### remote
 
 > **remote**: `string`
 
+Defined in: [types/signed-url.type.ts:2](https://github.com/LabO8/nestjs-s3/blob/ad059a6199bca96cb3120eb68144ed879ab6c69e/src/types/signed-url.type.ts#L2)
+
+***
+
 ### url
 
 > **url**: `string`
 
-## Defined in
-
-[types/signed-url.type.ts:1](https://github.com/LabO8/nestjs-s3/blob/49dee046307be2343007f81b5481193f2a950f4b/src/types/signed-url.type.ts#L1)
+Defined in: [types/signed-url.type.ts:3](https://github.com/LabO8/nestjs-s3/blob/ad059a6199bca96cb3120eb68144ed879ab6c69e/src/types/signed-url.type.ts#L3)

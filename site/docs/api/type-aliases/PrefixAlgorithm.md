@@ -1,19 +1,23 @@
 # Type Alias: PrefixAlgorithm()
 
-> **PrefixAlgorithm**: (`remote`, `prefix`?, `bucket`?) => `string`
+> **PrefixAlgorithm** = (`remote`, `prefix?`, `bucket?`) => `string`
+
+Defined in: [types/prefix-algorithm.type.ts:1](https://github.com/LabO8/nestjs-s3/blob/ad059a6199bca96cb3120eb68144ed879ab6c69e/src/types/prefix-algorithm.type.ts#L1)
 
 ## Parameters
 
-• **remote**: `string`
+### remote
 
-• **prefix?**: `string`
+`string`
 
-• **bucket?**: `string`
+### prefix?
+
+`string`
+
+### bucket?
+
+`string`
 
 ## Returns
 
 `string`
-
-## Defined in
-
-[types/prefix-algorithm.type.ts:1](https://github.com/LabO8/nestjs-s3/blob/49dee046307be2343007f81b5481193f2a950f4b/src/types/prefix-algorithm.type.ts#L1)

@@ -113,7 +113,7 @@ yarn lint
 
 - **Martin Andreev [martin.andreev@lab08.com](mailto:martin.andreev@lab08.com)**
 - **Dimitar Dishev [dishev@lab08.com](mailto:dishev@lab08.com)**
-- **Veselin Angelov [veselin.angelov@lab08.com](mailto:veselin.angelov@lab08.com){'<>'}**
+- **Veselin Angelov [veselin.angelov@lab08.com](mailto:veselin.angelov@lab08.com)**
 
 ## Docs
 
