@@ -14,7 +14,7 @@ We can do multiple things with this service like:
 - create buckets
 - list buckets
 - delete buckets
-- tag buckets, etc.
+- tag buckets, etc..
 
 ## Basic usage
 
