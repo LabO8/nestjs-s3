@@ -1,6 +1,6 @@
 # Class: PrefixService
 
-Defined in: [services/prefix.service.ts:7](https://github.com/LabO8/nestjs-s3/blob/ad059a6199bca96cb3120eb68144ed879ab6c69e/src/services/prefix.service.ts#L7)
+Defined in: [services/prefix.service.ts:7](https://github.com/nickchauhan/nestjs-s3/blob/c23807e9a7c2368d5f5240ce0bcf423a36aeffe9/src/services/prefix.service.ts#L7)
 
 ## Constructors
 
@@ -8,7 +8,7 @@ Defined in: [services/prefix.service.ts:7](https://github.com/LabO8/nestjs-s3/bl
 
 > **new PrefixService**(`config`, `prefixAlgorithm`): `PrefixService`
 
-Defined in: [services/prefix.service.ts:8](https://github.com/LabO8/nestjs-s3/blob/ad059a6199bca96cb3120eb68144ed879ab6c69e/src/services/prefix.service.ts#L8)
+Defined in: [services/prefix.service.ts:8](https://github.com/nickchauhan/nestjs-s3/blob/c23807e9a7c2368d5f5240ce0bcf423a36aeffe9/src/services/prefix.service.ts#L8)
 
 #### Parameters
 
@@ -30,7 +30,7 @@ Defined in: [services/prefix.service.ts:8](https://github.com/LabO8/nestjs-s3/bl
 
 > **prefix**(`remote`, `bucket?`, `context?`): `string`
 
-Defined in: [services/prefix.service.ts:13](https://github.com/LabO8/nestjs-s3/blob/ad059a6199bca96cb3120eb68144ed879ab6c69e/src/services/prefix.service.ts#L13)
+Defined in: [services/prefix.service.ts:13](https://github.com/nickchauhan/nestjs-s3/blob/c23807e9a7c2368d5f5240ce0bcf423a36aeffe9/src/services/prefix.service.ts#L13)
 
 #### Parameters
 

@@ -5,6 +5,7 @@ import { createS3ServiceProvider } from './s3-service.factory';
 import {
   BucketsService,
   DefaultPrefixAlgorithmService,
+  MultipartUploadService,
   ObjectsService,
   PrefixService,
   SignedUrlService,
@@ -18,6 +19,7 @@ const providers: Provider[] = [
   ObjectsService,
   PrefixService,
   SignedUrlService,
+  MultipartUploadService,
   DownloadService,
   DeletionService,
 ];

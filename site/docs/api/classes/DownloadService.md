@@ -1,6 +1,6 @@
 # Class: DownloadService
 
-Defined in: [utils/download.service.ts:11](https://github.com/LabO8/nestjs-s3/blob/ad059a6199bca96cb3120eb68144ed879ab6c69e/src/utils/download.service.ts#L11)
+Defined in: [utils/download.service.ts:11](https://github.com/nickchauhan/nestjs-s3/blob/c23807e9a7c2368d5f5240ce0bcf423a36aeffe9/src/utils/download.service.ts#L11)
 
 ## Constructors
 
@@ -8,7 +8,7 @@ Defined in: [utils/download.service.ts:11](https://github.com/LabO8/nestjs-s3/bl
 
 > **new DownloadService**(`httpClient`, `prefixService`, `signedUrlService`): `DownloadService`
 
-Defined in: [utils/download.service.ts:12](https://github.com/LabO8/nestjs-s3/blob/ad059a6199bca96cb3120eb68144ed879ab6c69e/src/utils/download.service.ts#L12)
+Defined in: [utils/download.service.ts:12](https://github.com/nickchauhan/nestjs-s3/blob/c23807e9a7c2368d5f5240ce0bcf423a36aeffe9/src/utils/download.service.ts#L12)
 
 #### Parameters
 
@@ -34,7 +34,7 @@ Defined in: [utils/download.service.ts:12](https://github.com/LabO8/nestjs-s3/bl
 
 > **download**(`bucket`, `remote`, `downloadDirectory`, `downloadOptions?`, `options?`): `Promise`\<`string`\>
 
-Defined in: [utils/download.service.ts:18](https://github.com/LabO8/nestjs-s3/blob/ad059a6199bca96cb3120eb68144ed879ab6c69e/src/utils/download.service.ts#L18)
+Defined in: [utils/download.service.ts:18](https://github.com/nickchauhan/nestjs-s3/blob/c23807e9a7c2368d5f5240ce0bcf423a36aeffe9/src/utils/download.service.ts#L18)
 
 #### Parameters
 

@@ -2,7 +2,7 @@
 
 > **S3Config** = `object`
 
-Defined in: [types/s3-config.type.ts:6](https://github.com/LabO8/nestjs-s3/blob/ad059a6199bca96cb3120eb68144ed879ab6c69e/src/types/s3-config.type.ts#L6)
+Defined in: [types/s3-config.type.ts:6](https://github.com/nickchauhan/nestjs-s3/blob/c23807e9a7c2368d5f5240ce0bcf423a36aeffe9/src/types/s3-config.type.ts#L6)
 
 ## Properties
 
@@ -10,7 +10,7 @@ Defined in: [types/s3-config.type.ts:6](https://github.com/LabO8/nestjs-s3/blob/
 
 > **accessKeyId**: `string`
 
-Defined in: [types/s3-config.type.ts:8](https://github.com/LabO8/nestjs-s3/blob/ad059a6199bca96cb3120eb68144ed879ab6c69e/src/types/s3-config.type.ts#L8)
+Defined in: [types/s3-config.type.ts:8](https://github.com/nickchauhan/nestjs-s3/blob/c23807e9a7c2368d5f5240ce0bcf423a36aeffe9/src/types/s3-config.type.ts#L8)
 
 ***
 
@@ -18,7 +18,28 @@ Defined in: [types/s3-config.type.ts:8](https://github.com/LabO8/nestjs-s3/blob/
 
 > `optional` **endPoint**: `string`
 
-Defined in: [types/s3-config.type.ts:11](https://github.com/LabO8/nestjs-s3/blob/ad059a6199bca96cb3120eb68144ed879ab6c69e/src/types/s3-config.type.ts#L11)
+Defined in: [types/s3-config.type.ts:11](https://github.com/nickchauhan/nestjs-s3/blob/c23807e9a7c2368d5f5240ce0bcf423a36aeffe9/src/types/s3-config.type.ts#L11)
+
+***
+
+### multipartUpload?
+
+> `optional` **multipartUpload**: `object`
+
+Defined in: [types/s3-config.type.ts:14](https://github.com/nickchauhan/nestjs-s3/blob/c23807e9a7c2368d5f5240ce0bcf423a36aeffe9/src/types/s3-config.type.ts#L14)
+
+#### defaultPartSize?
+
+> `optional` **defaultPartSize**: `number`
+
+Default part size for multipart uploads in bytes
+Must be at least 5MB (5 * 1024 * 1024)
+
+##### Default
+
+```ts
+5242880 (5MB)
+```
 
 ***
 
@@ -26,7 +47,7 @@ Defined in: [types/s3-config.type.ts:11](https://github.com/LabO8/nestjs-s3/blob
 
 > `optional` **prefix**: `string`
 
-Defined in: [types/s3-config.type.ts:10](https://github.com/LabO8/nestjs-s3/blob/ad059a6199bca96cb3120eb68144ed879ab6c69e/src/types/s3-config.type.ts#L10)
+Defined in: [types/s3-config.type.ts:10](https://github.com/nickchauhan/nestjs-s3/blob/c23807e9a7c2368d5f5240ce0bcf423a36aeffe9/src/types/s3-config.type.ts#L10)
 
 ***
 
@@ -34,7 +55,7 @@ Defined in: [types/s3-config.type.ts:10](https://github.com/LabO8/nestjs-s3/blob
 
 > `optional` **prefixAlgorithm**: [`IPrefixAlgorithm`](../interfaces/IPrefixAlgorithm.md)
 
-Defined in: [types/s3-config.type.ts:12](https://github.com/LabO8/nestjs-s3/blob/ad059a6199bca96cb3120eb68144ed879ab6c69e/src/types/s3-config.type.ts#L12)
+Defined in: [types/s3-config.type.ts:12](https://github.com/nickchauhan/nestjs-s3/blob/c23807e9a7c2368d5f5240ce0bcf423a36aeffe9/src/types/s3-config.type.ts#L12)
 
 ***
 
@@ -42,7 +63,7 @@ Defined in: [types/s3-config.type.ts:12](https://github.com/LabO8/nestjs-s3/blob
 
 > **region**: `string`
 
-Defined in: [types/s3-config.type.ts:7](https://github.com/LabO8/nestjs-s3/blob/ad059a6199bca96cb3120eb68144ed879ab6c69e/src/types/s3-config.type.ts#L7)
+Defined in: [types/s3-config.type.ts:7](https://github.com/nickchauhan/nestjs-s3/blob/c23807e9a7c2368d5f5240ce0bcf423a36aeffe9/src/types/s3-config.type.ts#L7)
 
 ***
 
@@ -50,7 +71,7 @@ Defined in: [types/s3-config.type.ts:7](https://github.com/LabO8/nestjs-s3/blob/
 
 > `optional` **s3ClientConfig**: `Partial`\<`S3ClientConfig`\>
 
-Defined in: [types/s3-config.type.ts:13](https://github.com/LabO8/nestjs-s3/blob/ad059a6199bca96cb3120eb68144ed879ab6c69e/src/types/s3-config.type.ts#L13)
+Defined in: [types/s3-config.type.ts:13](https://github.com/nickchauhan/nestjs-s3/blob/c23807e9a7c2368d5f5240ce0bcf423a36aeffe9/src/types/s3-config.type.ts#L13)
 
 ***
 
@@ -58,4 +79,4 @@ Defined in: [types/s3-config.type.ts:13](https://github.com/LabO8/nestjs-s3/blob
 
 > **secretAccessKey**: `string`
 
-Defined in: [types/s3-config.type.ts:9](https://github.com/LabO8/nestjs-s3/blob/ad059a6199bca96cb3120eb68144ed879ab6c69e/src/types/s3-config.type.ts#L9)
+Defined in: [types/s3-config.type.ts:9](https://github.com/nickchauhan/nestjs-s3/blob/c23807e9a7c2368d5f5240ce0bcf423a36aeffe9/src/types/s3-config.type.ts#L9)

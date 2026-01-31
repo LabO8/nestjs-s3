@@ -1,6 +1,6 @@
 # Class: DeletionService
 
-Defined in: [utils/deletion.service.ts:9](https://github.com/LabO8/nestjs-s3/blob/ad059a6199bca96cb3120eb68144ed879ab6c69e/src/utils/deletion.service.ts#L9)
+Defined in: [utils/deletion.service.ts:9](https://github.com/nickchauhan/nestjs-s3/blob/c23807e9a7c2368d5f5240ce0bcf423a36aeffe9/src/utils/deletion.service.ts#L9)
 
 ## Constructors
 
@@ -8,7 +8,7 @@ Defined in: [utils/deletion.service.ts:9](https://github.com/LabO8/nestjs-s3/blo
 
 > **new DeletionService**(`client`, `objectsService`, `prefixService`): `DeletionService`
 
-Defined in: [utils/deletion.service.ts:10](https://github.com/LabO8/nestjs-s3/blob/ad059a6199bca96cb3120eb68144ed879ab6c69e/src/utils/deletion.service.ts#L10)
+Defined in: [utils/deletion.service.ts:10](https://github.com/nickchauhan/nestjs-s3/blob/c23807e9a7c2368d5f5240ce0bcf423a36aeffe9/src/utils/deletion.service.ts#L10)
 
 #### Parameters
 
@@ -34,7 +34,7 @@ Defined in: [utils/deletion.service.ts:10](https://github.com/LabO8/nestjs-s3/bl
 
 > **deleteObjectsByPrefix**(`bucket`, `prefix`, `logDeletedObjects`, `deleteOptions?`, `listOptions?`): `Promise`\<`boolean` \| `DeleteObjectOutput`[]\>
 
-Defined in: [utils/deletion.service.ts:20](https://github.com/LabO8/nestjs-s3/blob/ad059a6199bca96cb3120eb68144ed879ab6c69e/src/utils/deletion.service.ts#L20)
+Defined in: [utils/deletion.service.ts:20](https://github.com/nickchauhan/nestjs-s3/blob/c23807e9a7c2368d5f5240ce0bcf423a36aeffe9/src/utils/deletion.service.ts#L20)
 
 Deletes all objects by prefix.
 

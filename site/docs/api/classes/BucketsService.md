@@ -1,6 +1,6 @@
 # Class: BucketsService
 
-Defined in: [services/buckets.service.ts:33](https://github.com/LabO8/nestjs-s3/blob/ad059a6199bca96cb3120eb68144ed879ab6c69e/src/services/buckets.service.ts#L33)
+Defined in: [services/buckets.service.ts:33](https://github.com/nickchauhan/nestjs-s3/blob/c23807e9a7c2368d5f5240ce0bcf423a36aeffe9/src/services/buckets.service.ts#L33)
 
 ## Constructors
 
@@ -8,7 +8,7 @@ Defined in: [services/buckets.service.ts:33](https://github.com/LabO8/nestjs-s3/
 
 > **new BucketsService**(`client`): `BucketsService`
 
-Defined in: [services/buckets.service.ts:34](https://github.com/LabO8/nestjs-s3/blob/ad059a6199bca96cb3120eb68144ed879ab6c69e/src/services/buckets.service.ts#L34)
+Defined in: [services/buckets.service.ts:34](https://github.com/nickchauhan/nestjs-s3/blob/c23807e9a7c2368d5f5240ce0bcf423a36aeffe9/src/services/buckets.service.ts#L34)
 
 #### Parameters
 
@@ -26,7 +26,7 @@ Defined in: [services/buckets.service.ts:34](https://github.com/LabO8/nestjs-s3/
 
 > **create**(`bucket`, `options`): `Promise`\<`CreateBucketCommandOutput`\>
 
-Defined in: [services/buckets.service.ts:36](https://github.com/LabO8/nestjs-s3/blob/ad059a6199bca96cb3120eb68144ed879ab6c69e/src/services/buckets.service.ts#L36)
+Defined in: [services/buckets.service.ts:36](https://github.com/nickchauhan/nestjs-s3/blob/c23807e9a7c2368d5f5240ce0bcf423a36aeffe9/src/services/buckets.service.ts#L36)
 
 #### Parameters
 
@@ -48,7 +48,7 @@ Defined in: [services/buckets.service.ts:36](https://github.com/LabO8/nestjs-s3/
 
 > **delete**(`bucket`): `Promise`\<`DeleteBucketCommandOutput`\>
 
-Defined in: [services/buckets.service.ts:48](https://github.com/LabO8/nestjs-s3/blob/ad059a6199bca96cb3120eb68144ed879ab6c69e/src/services/buckets.service.ts#L48)
+Defined in: [services/buckets.service.ts:48](https://github.com/nickchauhan/nestjs-s3/blob/c23807e9a7c2368d5f5240ce0bcf423a36aeffe9/src/services/buckets.service.ts#L48)
 
 #### Parameters
 
@@ -66,7 +66,7 @@ Defined in: [services/buckets.service.ts:48](https://github.com/LabO8/nestjs-s3/
 
 > **find**(`bucket`): `Promise`\<`Bucket`\>
 
-Defined in: [services/buckets.service.ts:60](https://github.com/LabO8/nestjs-s3/blob/ad059a6199bca96cb3120eb68144ed879ab6c69e/src/services/buckets.service.ts#L60)
+Defined in: [services/buckets.service.ts:60](https://github.com/nickchauhan/nestjs-s3/blob/c23807e9a7c2368d5f5240ce0bcf423a36aeffe9/src/services/buckets.service.ts#L60)
 
 #### Parameters
 
@@ -84,7 +84,7 @@ Defined in: [services/buckets.service.ts:60](https://github.com/LabO8/nestjs-s3/
 
 > **list**(): `Promise`\<`ListBucketsCommandOutput`\>
 
-Defined in: [services/buckets.service.ts:56](https://github.com/LabO8/nestjs-s3/blob/ad059a6199bca96cb3120eb68144ed879ab6c69e/src/services/buckets.service.ts#L56)
+Defined in: [services/buckets.service.ts:56](https://github.com/nickchauhan/nestjs-s3/blob/c23807e9a7c2368d5f5240ce0bcf423a36aeffe9/src/services/buckets.service.ts#L56)
 
 #### Returns
 
@@ -96,7 +96,7 @@ Defined in: [services/buckets.service.ts:56](https://github.com/LabO8/nestjs-s3/
 
 > **tagging**(`bucket`): `Promise`\<`GetBucketTaggingCommandOutput`\>
 
-Defined in: [services/buckets.service.ts:66](https://github.com/LabO8/nestjs-s3/blob/ad059a6199bca96cb3120eb68144ed879ab6c69e/src/services/buckets.service.ts#L66)
+Defined in: [services/buckets.service.ts:66](https://github.com/nickchauhan/nestjs-s3/blob/c23807e9a7c2368d5f5240ce0bcf423a36aeffe9/src/services/buckets.service.ts#L66)
 
 #### Parameters
 
@@ -114,7 +114,7 @@ Defined in: [services/buckets.service.ts:66](https://github.com/LabO8/nestjs-s3/
 
 > **updateAccelerateConfiguration**(`bucket`, `configuration`): `Promise`\<`PutBucketAccelerateConfigurationCommandOutput`\>
 
-Defined in: [services/buckets.service.ts:119](https://github.com/LabO8/nestjs-s3/blob/ad059a6199bca96cb3120eb68144ed879ab6c69e/src/services/buckets.service.ts#L119)
+Defined in: [services/buckets.service.ts:119](https://github.com/nickchauhan/nestjs-s3/blob/c23807e9a7c2368d5f5240ce0bcf423a36aeffe9/src/services/buckets.service.ts#L119)
 
 #### Parameters
 
@@ -136,7 +136,7 @@ Defined in: [services/buckets.service.ts:119](https://github.com/LabO8/nestjs-s3
 
 > **updateAcl**(`bucket`, `configuration`): `Promise`\<`PutBucketAclCommandOutput`\>
 
-Defined in: [services/buckets.service.ts:83](https://github.com/LabO8/nestjs-s3/blob/ad059a6199bca96cb3120eb68144ed879ab6c69e/src/services/buckets.service.ts#L83)
+Defined in: [services/buckets.service.ts:83](https://github.com/nickchauhan/nestjs-s3/blob/c23807e9a7c2368d5f5240ce0bcf423a36aeffe9/src/services/buckets.service.ts#L83)
 
 #### Parameters
 
@@ -158,7 +158,7 @@ Defined in: [services/buckets.service.ts:83](https://github.com/LabO8/nestjs-s3/
 
 > **updateCors**(`bucket`, `configuration`): `Promise`\<`PutBucketCorsCommandOutput`\>
 
-Defined in: [services/buckets.service.ts:74](https://github.com/LabO8/nestjs-s3/blob/ad059a6199bca96cb3120eb68144ed879ab6c69e/src/services/buckets.service.ts#L74)
+Defined in: [services/buckets.service.ts:74](https://github.com/nickchauhan/nestjs-s3/blob/c23807e9a7c2368d5f5240ce0bcf423a36aeffe9/src/services/buckets.service.ts#L74)
 
 #### Parameters
 
@@ -180,7 +180,7 @@ Defined in: [services/buckets.service.ts:74](https://github.com/LabO8/nestjs-s3/
 
 > **updateEncryption**(`bucket`, `configuration`): `Promise`\<`PutBucketEncryptionCommandOutput`\>
 
-Defined in: [services/buckets.service.ts:107](https://github.com/LabO8/nestjs-s3/blob/ad059a6199bca96cb3120eb68144ed879ab6c69e/src/services/buckets.service.ts#L107)
+Defined in: [services/buckets.service.ts:107](https://github.com/nickchauhan/nestjs-s3/blob/c23807e9a7c2368d5f5240ce0bcf423a36aeffe9/src/services/buckets.service.ts#L107)
 
 #### Parameters
 
@@ -202,7 +202,7 @@ Defined in: [services/buckets.service.ts:107](https://github.com/LabO8/nestjs-s3
 
 > **updateLogging**(`bucket`, `configuration`): `Promise`\<`PutBucketLoggingCommandOutput`\>
 
-Defined in: [services/buckets.service.ts:95](https://github.com/LabO8/nestjs-s3/blob/ad059a6199bca96cb3120eb68144ed879ab6c69e/src/services/buckets.service.ts#L95)
+Defined in: [services/buckets.service.ts:95](https://github.com/nickchauhan/nestjs-s3/blob/c23807e9a7c2368d5f5240ce0bcf423a36aeffe9/src/services/buckets.service.ts#L95)
 
 #### Parameters
 

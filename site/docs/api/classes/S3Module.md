@@ -1,6 +1,6 @@
 # Class: S3Module
 
-Defined in: [s3.module.ts:57](https://github.com/LabO8/nestjs-s3/blob/ad059a6199bca96cb3120eb68144ed879ab6c69e/src/s3.module.ts#L57)
+Defined in: [s3.module.ts:59](https://github.com/nickchauhan/nestjs-s3/blob/c23807e9a7c2368d5f5240ce0bcf423a36aeffe9/src/s3.module.ts#L59)
 
 ## Constructors
 
@@ -18,7 +18,7 @@ Defined in: [s3.module.ts:57](https://github.com/LabO8/nestjs-s3/blob/ad059a6199
 
 > `static` **forRoot**(`config`): `DynamicModule`
 
-Defined in: [s3.module.ts:58](https://github.com/LabO8/nestjs-s3/blob/ad059a6199bca96cb3120eb68144ed879ab6c69e/src/s3.module.ts#L58)
+Defined in: [s3.module.ts:60](https://github.com/nickchauhan/nestjs-s3/blob/c23807e9a7c2368d5f5240ce0bcf423a36aeffe9/src/s3.module.ts#L60)
 
 #### Parameters
 
@@ -36,7 +36,7 @@ Defined in: [s3.module.ts:58](https://github.com/LabO8/nestjs-s3/blob/ad059a6199
 
 > `static` **forRootAsync**(`provider`): `DynamicModule`
 
-Defined in: [s3.module.ts:68](https://github.com/LabO8/nestjs-s3/blob/ad059a6199bca96cb3120eb68144ed879ab6c69e/src/s3.module.ts#L68)
+Defined in: [s3.module.ts:70](https://github.com/nickchauhan/nestjs-s3/blob/c23807e9a7c2368d5f5240ce0bcf423a36aeffe9/src/s3.module.ts#L70)
 
 #### Parameters
 

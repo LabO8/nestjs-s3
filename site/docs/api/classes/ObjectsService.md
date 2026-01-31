@@ -1,6 +1,6 @@
 # Class: ObjectsService
 
-Defined in: [services/objects.service.ts:36](https://github.com/LabO8/nestjs-s3/blob/ad059a6199bca96cb3120eb68144ed879ab6c69e/src/services/objects.service.ts#L36)
+Defined in: [services/objects.service.ts:36](https://github.com/nickchauhan/nestjs-s3/blob/c23807e9a7c2368d5f5240ce0bcf423a36aeffe9/src/services/objects.service.ts#L36)
 
 ## Constructors
 
@@ -8,7 +8,7 @@ Defined in: [services/objects.service.ts:36](https://github.com/LabO8/nestjs-s3/
 
 > **new ObjectsService**(`client`, `prefixService`): `ObjectsService`
 
-Defined in: [services/objects.service.ts:37](https://github.com/LabO8/nestjs-s3/blob/ad059a6199bca96cb3120eb68144ed879ab6c69e/src/services/objects.service.ts#L37)
+Defined in: [services/objects.service.ts:37](https://github.com/nickchauhan/nestjs-s3/blob/c23807e9a7c2368d5f5240ce0bcf423a36aeffe9/src/services/objects.service.ts#L37)
 
 #### Parameters
 
@@ -30,7 +30,7 @@ Defined in: [services/objects.service.ts:37](https://github.com/LabO8/nestjs-s3/
 
 > **copyObject**(`sourceBucket`, `sourceKey`, `destinationBucket`, `destinationKey`, `options?`): `Promise`\<`CopyObjectOutput`\>
 
-Defined in: [services/objects.service.ts:119](https://github.com/LabO8/nestjs-s3/blob/ad059a6199bca96cb3120eb68144ed879ab6c69e/src/services/objects.service.ts#L119)
+Defined in: [services/objects.service.ts:119](https://github.com/nickchauhan/nestjs-s3/blob/c23807e9a7c2368d5f5240ce0bcf423a36aeffe9/src/services/objects.service.ts#L119)
 
 #### Parameters
 
@@ -70,7 +70,7 @@ Defined in: [services/objects.service.ts:119](https://github.com/LabO8/nestjs-s3
 
 > **deleteObject**(`bucket`, `remote`, `options?`): `Promise`\<`DeleteObjectOutput`\>
 
-Defined in: [services/objects.service.ts:71](https://github.com/LabO8/nestjs-s3/blob/ad059a6199bca96cb3120eb68144ed879ab6c69e/src/services/objects.service.ts#L71)
+Defined in: [services/objects.service.ts:71](https://github.com/nickchauhan/nestjs-s3/blob/c23807e9a7c2368d5f5240ce0bcf423a36aeffe9/src/services/objects.service.ts#L71)
 
 #### Parameters
 
@@ -96,7 +96,7 @@ Defined in: [services/objects.service.ts:71](https://github.com/LabO8/nestjs-s3/
 
 > **deleteObjects**(`bucket`, `remotes`, `options?`): `Promise`\<`DeleteObjectsOutput`\>
 
-Defined in: [services/objects.service.ts:87](https://github.com/LabO8/nestjs-s3/blob/ad059a6199bca96cb3120eb68144ed879ab6c69e/src/services/objects.service.ts#L87)
+Defined in: [services/objects.service.ts:87](https://github.com/nickchauhan/nestjs-s3/blob/c23807e9a7c2368d5f5240ce0bcf423a36aeffe9/src/services/objects.service.ts#L87)
 
 #### Parameters
 
@@ -122,7 +122,7 @@ Defined in: [services/objects.service.ts:87](https://github.com/LabO8/nestjs-s3/
 
 > **getObject**(`bucket`, `remote`, `options?`): `Promise`\<`GetObjectOutput`\>
 
-Defined in: [services/objects.service.ts:107](https://github.com/LabO8/nestjs-s3/blob/ad059a6199bca96cb3120eb68144ed879ab6c69e/src/services/objects.service.ts#L107)
+Defined in: [services/objects.service.ts:107](https://github.com/nickchauhan/nestjs-s3/blob/c23807e9a7c2368d5f5240ce0bcf423a36aeffe9/src/services/objects.service.ts#L107)
 
 #### Parameters
 
@@ -148,7 +148,7 @@ Defined in: [services/objects.service.ts:107](https://github.com/LabO8/nestjs-s3
 
 > **listObjects**(`bucket`, `options?`): `Promise`\<`ListObjectsOutput`\>
 
-Defined in: [services/objects.service.ts:156](https://github.com/LabO8/nestjs-s3/blob/ad059a6199bca96cb3120eb68144ed879ab6c69e/src/services/objects.service.ts#L156)
+Defined in: [services/objects.service.ts:156](https://github.com/nickchauhan/nestjs-s3/blob/c23807e9a7c2368d5f5240ce0bcf423a36aeffe9/src/services/objects.service.ts#L156)
 
 #### Parameters
 
@@ -170,7 +170,7 @@ Defined in: [services/objects.service.ts:156](https://github.com/LabO8/nestjs-s3
 
 > **listObjectsV2**(`bucket`, `options?`): `Promise`\<`ListObjectsV2Output`\>
 
-Defined in: [services/objects.service.ts:165](https://github.com/LabO8/nestjs-s3/blob/ad059a6199bca96cb3120eb68144ed879ab6c69e/src/services/objects.service.ts#L165)
+Defined in: [services/objects.service.ts:165](https://github.com/nickchauhan/nestjs-s3/blob/c23807e9a7c2368d5f5240ce0bcf423a36aeffe9/src/services/objects.service.ts#L165)
 
 #### Parameters
 
@@ -192,7 +192,7 @@ Defined in: [services/objects.service.ts:165](https://github.com/LabO8/nestjs-s3
 
 > **putObject**(`bucket`, `body`, `remote`, `options?`): `Promise`\<`PutObjectOutput`\>
 
-Defined in: [services/objects.service.ts:42](https://github.com/LabO8/nestjs-s3/blob/ad059a6199bca96cb3120eb68144ed879ab6c69e/src/services/objects.service.ts#L42)
+Defined in: [services/objects.service.ts:42](https://github.com/nickchauhan/nestjs-s3/blob/c23807e9a7c2368d5f5240ce0bcf423a36aeffe9/src/services/objects.service.ts#L42)
 
 #### Parameters
 
@@ -222,7 +222,7 @@ Defined in: [services/objects.service.ts:42](https://github.com/LabO8/nestjs-s3/
 
 > **putObjectFromPath**(`bucket`, `path`, `remote`, `options?`): `Promise`\<`PutObjectOutput`\>
 
-Defined in: [services/objects.service.ts:60](https://github.com/LabO8/nestjs-s3/blob/ad059a6199bca96cb3120eb68144ed879ab6c69e/src/services/objects.service.ts#L60)
+Defined in: [services/objects.service.ts:60](https://github.com/nickchauhan/nestjs-s3/blob/c23807e9a7c2368d5f5240ce0bcf423a36aeffe9/src/services/objects.service.ts#L60)
 
 #### Parameters
 

@@ -2,7 +2,7 @@
 
 > **PutSignedUrl** = `object`
 
-Defined in: [types/signed-url.type.ts:1](https://github.com/LabO8/nestjs-s3/blob/ad059a6199bca96cb3120eb68144ed879ab6c69e/src/types/signed-url.type.ts#L1)
+Defined in: [types/signed-url.type.ts:1](https://github.com/nickchauhan/nestjs-s3/blob/c23807e9a7c2368d5f5240ce0bcf423a36aeffe9/src/types/signed-url.type.ts#L1)
 
 ## Properties
 
@@ -10,7 +10,7 @@ Defined in: [types/signed-url.type.ts:1](https://github.com/LabO8/nestjs-s3/blob
 
 > **remote**: `string`
 
-Defined in: [types/signed-url.type.ts:2](https://github.com/LabO8/nestjs-s3/blob/ad059a6199bca96cb3120eb68144ed879ab6c69e/src/types/signed-url.type.ts#L2)
+Defined in: [types/signed-url.type.ts:2](https://github.com/nickchauhan/nestjs-s3/blob/c23807e9a7c2368d5f5240ce0bcf423a36aeffe9/src/types/signed-url.type.ts#L2)
 
 ***
 
@@ -18,4 +18,4 @@ Defined in: [types/signed-url.type.ts:2](https://github.com/LabO8/nestjs-s3/blob
 
 > **url**: `string`
 
-Defined in: [types/signed-url.type.ts:3](https://github.com/LabO8/nestjs-s3/blob/ad059a6199bca96cb3120eb68144ed879ab6c69e/src/types/signed-url.type.ts#L3)
+Defined in: [types/signed-url.type.ts:3](https://github.com/nickchauhan/nestjs-s3/blob/c23807e9a7c2368d5f5240ce0bcf423a36aeffe9/src/types/signed-url.type.ts#L3)

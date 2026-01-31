@@ -11,6 +11,14 @@ export type S3Config = {
   endPoint?: string;
   prefixAlgorithm?: IPrefixAlgorithm;
   s3ClientConfig?: Partial<S3ClientConfig>;
+  multipartUpload?: {
+    /**
+     * Default part size for multipart uploads in bytes
+     * Must be at least 5MB (5 * 1024 * 1024)
+     * @default 5242880 (5MB)
+     */
+    defaultPartSize?: number;
+  };
 };
 
 export type S3AsyncConfig = Pick<ModuleMetadata, 'imports' | 'providers'> & {
