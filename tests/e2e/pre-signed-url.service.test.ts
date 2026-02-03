@@ -14,9 +14,9 @@ describe('Pre signed url service', () => {
     testingModule = await Test.createTestingModule({
       imports: [
         S3Module.forRoot({
-          region: process.env.AWS_REGION,
-          accessKeyId: process.env.AWS_ACCESS_KEY_ID,
-          secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
+          region: process.env.AWS_REGION ?? '',
+          accessKeyId: process.env.AWS_ACCESS_KEY_ID ?? '',
+          secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY ?? '',
         }),
       ],
     }).compile();
@@ -29,6 +29,7 @@ describe('Pre signed url service', () => {
 
   afterAll(async () => {
     await bucketService.delete(testBucket);
+    await testingModule.close();
   });
 
   it('can get a presigned put url with a existing bucket', async () => {

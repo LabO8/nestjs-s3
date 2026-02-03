@@ -35,6 +35,7 @@ describe('Object service', () => {
   afterAll(async () => {
     await objectService.deleteObjects(bucketName, testFiles);
     await bucketService.delete(bucketName);
+    await testingModule.close();
   });
 
   it('should be able to upload a file from a buffer to a bucket', async () => {

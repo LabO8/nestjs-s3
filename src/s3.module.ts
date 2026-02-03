@@ -8,6 +8,7 @@ import {
   MultipartUploadService,
   ObjectsService,
   PrefixService,
+  S3ClientLifecycleService,
   SignedUrlService,
 } from './services';
 import { S3AsyncConfig, S3Config } from './types';
@@ -15,6 +16,7 @@ import { DeletionService, DownloadService } from './utils';
 
 const providers: Provider[] = [
   createS3ServiceProvider(),
+  S3ClientLifecycleService,
   BucketsService,
   ObjectsService,
   PrefixService,

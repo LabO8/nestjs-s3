@@ -20,8 +20,8 @@ import {
   PartSizeCalculation,
   PresignedUploadUrl,
   UploadPart,
-} from 'src/types/multipart-upload.type';
-import { S3Config } from 'src/types';
+} from '../types/multipart-upload.type';
+import { S3Config } from '../types/s3-config.type';
 
 @Injectable()
 export class MultipartUploadService {

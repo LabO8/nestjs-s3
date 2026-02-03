@@ -16,9 +16,9 @@ describe('Deletion service', () => {
     testingModule = await Test.createTestingModule({
       imports: [
         S3Module.forRoot({
-          region: process.env.AWS_REGION,
-          accessKeyId: process.env.AWS_ACCESS_KEY_ID,
-          secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
+          region: process.env.AWS_REGION ?? '',
+          accessKeyId: process.env.AWS_ACCESS_KEY_ID ?? '',
+          secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY ?? '',
           prefix: 'test/',
         }),
       ],
@@ -39,6 +39,7 @@ describe('Deletion service', () => {
 
   afterAll(async () => {
     await bucketService.delete(bucketName);
+    await testingModule.close();
   });
 
   it('should be able to delete files recursively by prefix from a bucket', async () => {

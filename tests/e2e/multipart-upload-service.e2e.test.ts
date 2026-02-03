@@ -127,6 +127,12 @@ describe('MultipartUploadService (e2e)', () => {
     }
 
     await bucketService.delete(bucketName);
+
+    // Destroy S3 client connection
+    s3Client.destroy();
+
+    // Close NestJS testing module
+    await testingModule.close();
   });
 
   describe('initiateMultipartUpload', () => {

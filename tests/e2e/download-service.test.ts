@@ -40,6 +40,7 @@ describe('Download util service', () => {
   afterAll(async () => {
     await objectService.deleteObject(testBucket, remote);
     await bucketService.delete(testBucket);
+    await testingModule.close();
   });
 
   it('can download an object from a existng bucket', async () => {
