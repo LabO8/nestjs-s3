@@ -7,6 +7,7 @@ import {
   PutObjectCommandInput,
 } from '@aws-sdk/client-s3';
 import { DisableAutoPrefix, PrefixContext } from './prefix.type';
+import { MultipartUploadOptions } from './multipart-upload.type';
 
 export type GetObjectOptions = Omit<GetObjectCommandInput, 'Bucket' | 'Key'> & DisableAutoPrefix & PrefixContext;
 export type DeleteObjectsOptions = Omit<DeleteObjectsCommandInput, 'Bucket' | 'Delete'> &
@@ -26,4 +27,5 @@ export type OptionsWithAutoPrefix =
   | DeleteObjectOptions
   | DeleteObjectsOptions
   | GetObjectOptions
-  | CopyObjectOptions;
+  | CopyObjectOptions
+  | MultipartUploadOptions;

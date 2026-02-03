@@ -170,7 +170,7 @@ Calculates optimal part size and total number of parts for a file.
 **Parameters:**
 
 - `fileSize` - Total file size in bytes (must be > 0)
-- `preferredPartSize` - Optional preferred part size in bytes (must be greater or equal to 5MB if provided)
+- `preferredPartSize` - Optional preferred part size in bytes ( `>= 5MB` if provided)
 
 **Returns:** `{ partSize: number, totalParts: number }`
 
