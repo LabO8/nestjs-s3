@@ -29,6 +29,7 @@ describe('Bucket service', () => {
   afterAll(async () => {
     await bucketService.delete(testBucketCreate);
     await bucketService.delete(testBucket);
+    await testingModule.close();
   });
 
   it('should be able to view buckets', async () => {
