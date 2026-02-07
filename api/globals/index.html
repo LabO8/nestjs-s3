@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.9.2">
 <title data-rh="true">@lab08/nestjs-s3 | NestJS S3 Module</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://nestjs-s3.github.io/nestjs-s3/api/globals"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="@lab08/nestjs-s3 | NestJS S3 Module"><meta data-rh="true" name="description" content="Classes"><meta data-rh="true" property="og:description" content="Classes"><link data-rh="true" rel="icon" href="/nestjs-s3/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://nestjs-s3.github.io/nestjs-s3/api/globals"><link data-rh="true" rel="alternate" href="https://nestjs-s3.github.io/nestjs-s3/api/globals" hreflang="en"><link data-rh="true" rel="alternate" href="https://nestjs-s3.github.io/nestjs-s3/api/globals" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"@lab08/nestjs-s3","item":"https://nestjs-s3.github.io/nestjs-s3/api/globals"}]}</script><link rel="stylesheet" href="/nestjs-s3/assets/css/styles.cacea904.css">
-<script src="/nestjs-s3/assets/js/runtime~main.11dde3ab.js" defer="defer"></script>
-<script src="/nestjs-s3/assets/js/main.13dfd17f.js" defer="defer"></script>
+<script src="/nestjs-s3/assets/js/runtime~main.4eaf6533.js" defer="defer"></script>
+<script src="/nestjs-s3/assets/js/main.1f76cda3.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg style="display: none;"><defs>
@@ -18,8 +18,10 @@
 <li class=""><a class="" href="/nestjs-s3/api/classes/DefaultPrefixAlgorithmService">DefaultPrefixAlgorithmService</a></li>
 <li class=""><a class="" href="/nestjs-s3/api/classes/DeletionService">DeletionService</a></li>
 <li class=""><a class="" href="/nestjs-s3/api/classes/DownloadService">DownloadService</a></li>
+<li class=""><a class="" href="/nestjs-s3/api/classes/MultipartUploadService">MultipartUploadService</a></li>
 <li class=""><a class="" href="/nestjs-s3/api/classes/ObjectsService">ObjectsService</a></li>
 <li class=""><a class="" href="/nestjs-s3/api/classes/PrefixService">PrefixService</a></li>
+<li class=""><a class="" href="/nestjs-s3/api/classes/S3ClientLifecycleService">S3ClientLifecycleService</a></li>
 <li class=""><a class="" href="/nestjs-s3/api/classes/S3Module">S3Module</a></li>
 <li class=""><a class="" href="/nestjs-s3/api/classes/SignedUrlService">SignedUrlService</a></li>
 </ul>
@@ -37,13 +39,21 @@
 <li class=""><a class="" href="/nestjs-s3/api/type-aliases/GetObjectOptions">GetObjectOptions</a></li>
 <li class=""><a class="" href="/nestjs-s3/api/type-aliases/ListObjectsOptions">ListObjectsOptions</a></li>
 <li class=""><a class="" href="/nestjs-s3/api/type-aliases/ListObjectsV2Options">ListObjectsV2Options</a></li>
+<li class=""><a class="" href="/nestjs-s3/api/type-aliases/ListPartsResult">ListPartsResult</a></li>
+<li class=""><a class="" href="/nestjs-s3/api/type-aliases/MultipartUploadAbortion">MultipartUploadAbortion</a></li>
+<li class=""><a class="" href="/nestjs-s3/api/type-aliases/MultipartUploadCompletion">MultipartUploadCompletion</a></li>
+<li class=""><a class="" href="/nestjs-s3/api/type-aliases/MultipartUploadInitiation">MultipartUploadInitiation</a></li>
+<li class=""><a class="" href="/nestjs-s3/api/type-aliases/MultipartUploadOptions">MultipartUploadOptions</a></li>
 <li class=""><a class="" href="/nestjs-s3/api/type-aliases/OptionsWithAutoPrefix">OptionsWithAutoPrefix</a></li>
+<li class=""><a class="" href="/nestjs-s3/api/type-aliases/PartSizeCalculation">PartSizeCalculation</a></li>
 <li class=""><a class="" href="/nestjs-s3/api/type-aliases/PrefixAlgorithm">PrefixAlgorithm</a></li>
 <li class=""><a class="" href="/nestjs-s3/api/type-aliases/PrefixContext">PrefixContext</a></li>
+<li class=""><a class="" href="/nestjs-s3/api/type-aliases/PresignedUploadUrl">PresignedUploadUrl</a></li>
 <li class=""><a class="" href="/nestjs-s3/api/type-aliases/PutObjectOptions">PutObjectOptions</a></li>
 <li class=""><a class="" href="/nestjs-s3/api/type-aliases/PutSignedUrl">PutSignedUrl</a></li>
 <li class=""><a class="" href="/nestjs-s3/api/type-aliases/S3AsyncConfig">S3AsyncConfig</a></li>
 <li class=""><a class="" href="/nestjs-s3/api/type-aliases/S3Config">S3Config</a></li>
+<li class=""><a class="" href="/nestjs-s3/api/type-aliases/UploadPart">UploadPart</a></li>
 </ul>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="variables">Variables<a href="#variables" class="hash-link" aria-label="Direct link to Variables" title="Direct link to Variables" translate="no">​</a></h2>
 <ul>
