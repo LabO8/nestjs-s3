@@ -125,6 +125,7 @@ If you want to read the
 2. Run yarn install
 
 ```bash
+git clone https://github.com/LabO8/nestjs-s3.git
 cd nestjs-s3
 yarn install
 ```
